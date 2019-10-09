@@ -40,4 +40,18 @@ public class MCubeController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value = "/changePasswordProcess", method=RequestMethod.POST)
+	public String changePasswordProcess(HttpServletRequest request, HttpServletResponse response, Model model) {
+		String mav = "home";
+		try {
+			
+			
+		}catch (Exception e) {
+			System.err.println("Exception in changePasswordProcess:"+e.getMessage());
+			e.printStackTrace();
+		}
+		
+		return mav;
+	}
 }

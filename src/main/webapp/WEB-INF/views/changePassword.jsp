@@ -63,23 +63,23 @@ AUTOMATION</h2>
 					  </div>
               <!--  <h1>Login</h1>-->
                <!-- <p class="text-muted">Sign In to your account</p>-->
-               <form action="${pageContext.request.contextPath}/toChangePassword"
+               <form action="${pageContext.request.contextPath}/changePasswordProcess"
 									id="submitInsertClient" method="post">
                
                
                 <div class="input-group mb-3">
-                <div class="input-group mb-2">
+               	 <div class="input-group mb-2">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control password" type="password" name="new_password"
-                    id="new_password" placeholder="New Password">
+                  <input class="form-control password" type="password" name="new_password" onchange="passwordChanged()" maxlength="14"
+                    id="new_password" placeholder="New Password" pattern="(?=^.{8,14}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$">
                   </div>
                     <div class="input-group mb-1">
-						<label class="control-label col-sm-2" for="page_name"></label>
-							<div class="col-sm-3"><span id="strength" style="font-size: 10px;">
+						<label class="input-group mb-2" for="page_name"></label>
+							<div class="input-group mb-6"><span id="strength" style="font-size: 10px;">
 							(Password format: Must contain at least <b>one number(0-9)</b> and <b>
 							one upper case(A-Z)</b> and <b> one lower case(a-z)</b> letter, and
 							<b> one special character</b> and <b>at least 8 </b> and <b>maximum 14 </b>
@@ -94,7 +94,7 @@ AUTOMATION</h2>
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control password" type="password" name="confirm_password"
+                  <input class="form-control password" type="password" name="confirm_password" maxlength="14"
                   placeholder="Confirm Password" onblur="validatePassword()" id="confirm_password">
                 </div>
                 <div class="row">
@@ -152,6 +152,38 @@ AUTOMATION</h2>
 			   $('.password').attr('type', 'password'); 
 			});
 	</script>
+	
+	<script>
+function passwordChanged() {
+var strength = document.getElementById("strength");
+$("#error_password").hide();
+var strongRegex = new RegExp(
+"^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])([$&+,:;=?@#|'<>.^*()%!-](?=.*\\W).*$",
+"g");
+var mediumRegex = new RegExp(
+"^(?=.{6,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$",
+"g");
+var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+var pwd = document.getElementById("new_password").value;
+
+if (pwd.length == 0) {
+document.getElementById("strength").innerHTML = "Type Password";
+document.getElementById("allowPass").value=0;
+} else if (false == enoughRegex.test(pwd)) {
+document.getElementById("strength").innerHTML = "More Characters";
+document.getElementById("allowPass").value=0;
+} else if (strongRegex.test(pwd)) {
+document.getElementById("strength").innerHTML = "<span style='color:green'>Strong!</span>";
+document.getElementById("allowPass").value=1;
+} else if (mediumRegex.test(pwd)) {
+document.getElementById("strength").innerHTML = "<span style='color:orange'>Medium!</span>";
+document.getElementById("allowPass").value=1;
+} else {
+document.getElementById("strength").innerHTML = "<span style='color:red'>Weak!</span>";
+document.getElementById("allowPass").value=0;
+}
+}
+</script>
  
   </body>
 </html>
