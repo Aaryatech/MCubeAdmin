@@ -64,33 +64,51 @@ AUTOMATION</h2>
               <!--  <h1>Login</h1>-->
                <!-- <p class="text-muted">Sign In to your account</p>-->
                <form action="${pageContext.request.contextPath}/toChangePassword"
-									id="submitInsertClient" method="post">
+									id="submitForm" method="post">
                
                
-                <div class="input-group mb-3">
+                <div class="input-group mb-3">                
+                 <div class="input-group mb-2">
+                
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="icon-screen-smartphone"></i>
                     </span>
                   </div>
-                  <input class="form-control" type="text" placeholder="Mobile No.">
+                  <input class="form-control" type="text" placeholder="Mobile No." name="mobile_no"
+                  maxlength="10" id="mobile_no">
+               </div>
+               
+                 <div class="input-group mb-1">
+					<span class="validation-invalid-label" id="error_phone"
+							style="display: none; color: red;">Please enter contact number.</span>
+					</div>
+               </div>
+              
+                
+                <div class="input-group mb-3">
+                <div class="input-group mb-2">
+	                  <div class="input-group-prepend">
+	                    <span class="input-group-text">
+	                      <i class="icon-envelope"></i>
+	                    </span>
+	                  </div>
+	                  <input class="form-control" type="email" placeholder="Email Id" name="email" id="email">
+               	</div>
+                <div class="input-group mb-1">
+						<span class="validation-invalid-label" id="error_email"
+									style="display: none; color: red;">Please enter email.</span>
+							</div>
                 </div>
-                <div class="input-group mb-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="icon-envelope"></i>
-                    </span>
-                  </div>
-                  <input class="form-control" type="email" placeholder="Email Id">
-                </div>
+                
                 <div class="row">
                   <div class="col-6">
                     <button class="btn btn-red px-4" type="submit">Submit</button>
                   </div>
                  
-                  <!-- <div class="col-6 text-right">
-                    <button class="btn btn-link px-0" type="button">Forgot password?</button>
-                  </div> -->
+                   <div class="col-6 text-right">
+                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-link px-0" type="button">Cancel</button></a>
+                  </div> 
                 </div>
                 </form>
               </div>
@@ -116,6 +134,75 @@ AUTOMATION</h2>
   
 				  
 <script src=" https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script>
+		$(document).ready(function($) {
+
+			$("#submitForm").submit(function(e) {
+				var isError = false;
+				var errMsg = "";
+
+				if (!$("#email").val() || !validateEmail($("#email").val())) {
+
+					isError = true;
+
+					$("#error_email").show()
+
+				} else {
+					$("#error_email").hide()
+				}
+				
+				if (!$("#mobile_no").val() || !validateMobile($("#mobile_no").val())) {
+
+					isError = true;
+
+					$("#error_phone").show()
+
+				} else {
+					$("#error_phone").hide()
+				}
+
+				if (!isError) {
+
+					var x = true;
+					if (x == true) {
+
+						document.getElementById("submtbtn").disabled = true;
+						return true;
+					}
+					//end ajax send this to php page
+				}
+				return false;
+			});
+		});
+		//
+		
+		function validateEmail(email) {
+
+			var eml = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+			if (eml.test($.trim(email)) == false) {
+
+				return false;
+
+			}
+
+			return true;
+
+		}
+		function validateMobile(mobile) {
+			var mob = /^[1-9]{1}[0-9]{9}$/;
+
+			if (mob.test($.trim(mobile)) == false) {
+
+				//alert("Please enter a valid email address .");
+				return false;
+
+			}
+			return true;
+
+		}
+
+	</script>
  
   </body>
 </html>

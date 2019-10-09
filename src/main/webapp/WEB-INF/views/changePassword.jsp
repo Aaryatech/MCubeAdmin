@@ -68,6 +68,7 @@ AUTOMATION</h2>
                
                
                 <div class="input-group mb-3">
+                <div class="input-group mb-2">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="icon-lock"></i>
@@ -75,6 +76,17 @@ AUTOMATION</h2>
                   </div>
                   <input class="form-control password" type="password" name="new_password"
                     id="new_password" placeholder="New Password">
+                  </div>
+                    <div class="input-group mb-1">
+						<label class="control-label col-sm-2" for="page_name"></label>
+							<div class="col-sm-3"><span id="strength" style="font-size: 10px;">
+							(Password format: Must contain at least <b>one number(0-9)</b> and <b>
+							one upper case(A-Z)</b> and <b> one lower case(a-z)</b> letter, and
+							<b> one special character</b> and <b>at least 8 </b> and <b>maximum 14 </b>
+							characters)</span> 
+														</div>
+													</div>
+                    
                 </div>
                 <div class="input-group mb-4">
                   <div class="input-group-prepend">
@@ -90,9 +102,9 @@ AUTOMATION</h2>
                     <button class="btn btn-red px-4" type="submit">Submit</button>
                   </div>
                  
-                  <!-- <div class="col-6 text-right">
-                    <button class="btn btn-link px-0" type="button">Forgot password?</button>
-                  </div> -->
+                  <div class="col-6 text-right">
+                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-link px-0" type="button">Cancel</button></a>
+                  </div>
                 </div>
                 </form>
               </div>
