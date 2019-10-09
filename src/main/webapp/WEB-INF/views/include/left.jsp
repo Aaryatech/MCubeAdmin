@@ -80,7 +80,7 @@
 					<ul class="nav nav-group-sub" data-submenu-title="Master">
 
 						<li class="nav-item"><a
-							href="${pageContext.request.contextPath}/editUser"
+							href="${pageContext.request.contextPath}/showEditUser"
 							class="nav-link">Edit User Profile</a></li>
 
 						<li class="nav-item"><a

@@ -46,11 +46,11 @@
 							class="icon-more"></i></a>
 					</div>
 
-					<div class="breadcrumb justify-content-center">
+					<%-- <div class="breadcrumb justify-content-center">
 						<a href="${pageContext.request.contextPath}/userList"
 							class="breadcrumb-elements-item">User List</a>
 
-					</div>
+					</div> --%>
 
 
 				</div>
@@ -74,7 +74,7 @@
 
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Add User</h6>
+								<h6 class="card-title">Edit User</h6>
 								<!-- <div class="header-elements">
 									<div class="list-icons">
 										<a class="list-icons-item" data-action="collapse"></a>
@@ -122,9 +122,8 @@
 
 								<form
 									action="${pageContext.request.contextPath}/submitInsertUserInfo"
-									id="submitInsertEmp" method="get"
-									enctype="multipart/form-data">
-									 
+									id="submitInsertEmp" method="get" enctype="multipart/form-data">
+
 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="profilePic">
@@ -132,10 +131,9 @@
 										<div class="col-lg-4">
 											<div class="input-group-btn  ">
 
-												<span class="filename" style="user-select: none1;"><img
-													id="temppreviewimageki1" name="image1"
-													class="temppreviewimageki1" alt="l"
-													style="width: 200px; height: auto; display: none"> </span>
+												<img
+													src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+													class="rounded-circle mr-2" height="34" alt="">
 												<!-- image-preview-clear button -->
 												<button type="button" title="Clear selected files"
 													class="btn btn-default btn-secondary fileinput-remove fileinput-remove-button legitRipple image-preview-clear image-preview-clear1"
@@ -157,7 +155,7 @@
 										<div class="col-lg-4"></div>
 									</div>
 
-							
+
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
 											Employee Name <span style="color: red">* </span>:
@@ -165,51 +163,24 @@
 										<div class="col-lg-3">
 											<input type="text" class="form-control  "
 												placeholder="First Name" id="fname" name="fname"
-												autocomplete="off" onchange="trim(this)"> <span
-												class="validation-invalid-label" id="error_fname"
+												value="Harsha" autocomplete="off" onchange="trim(this)">
+											<span class="validation-invalid-label" id="error_fname"
 												style="display: none;">This field is required.</span>
 										</div>
-
-
-
-										<div class="col-lg-3">
-											<input type="text" class="form-control  "
-												placeholder="Middle Name" id="mname" name="mname"
-												autocomplete="off" onchange="trim(this)"> <span
-												class="validation-invalid-label" id="error_mname"
-												style="display: none;">This field is required.</span>
-										</div>
-
-
 
 
 										<div class="col-lg-3">
 											<input type="text" class="form-control  "
 												placeholder="Last Name" id="sname" name="sname"
-												autocomplete="off" onchange="trim(this)"> <span
-												class="validation-invalid-label" id="error_sname"
+												value="Patil" autocomplete="off" onchange="trim(this)">
+											<span class="validation-invalid-label" id="error_sname"
 												style="display: none;">This field is required.</span>
 										</div>
 									</div>
 
 
-								 
-									 
-									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="permntAdd"> 
-											Address <span style="color: red">* </span>:
-										</label>
-										<div class="col-lg-10">
-											<textarea rows="3" cols="3" class="form-control"
-												placeholder="Permanent Address" onchange="trim(this)"
-												id="permntAdd" name="permntAdd"></textarea>
-											<span class="validation-invalid-label" id="error_permntAdd"
-												style="display: none;">This field is required.</span>
 
-										</div>
-									</div>
-									 
- 
+
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="mobile1">Contact
 											No <span style="color: red">* </span>:
@@ -217,94 +188,35 @@
 										<div class="col-lg-4">
 											<input type="text" class="form-control"
 												placeholder="Contact No." id="mobile1" name="mobile1"
-												onchange="checkUnique(this.value,1)" autocomplete="off"
-												onchange="trim(this)" maxlength="10"> <span
-												class="validation-invalid-label" id="error_mobile1"
+												value="8956232121" onchange="checkUnique(this.value,1)"
+												autocomplete="off" onchange="trim(this)" maxlength="10">
+											<span class="validation-invalid-label" id="error_mobile1"
 												style="display: none;">This field is required.</span> <span
 												class="validation-invalid-label" id="error_mobile1_unique"
 												style="display: none;">This Mobile No. is already
 												exist.</span>
 										</div>
-										
+									</div>
+
+
+
+
+									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="email">Email
 											<span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-4">
 											<input type="text" class="form-control" placeholder="Email"
-												id="email" name="email" onchange="checkUnique(this.value,2)"
-												autocomplete="off"> <span
-												class="validation-invalid-label" id="error_email"
+												value="patilharsha208@gmail.com" id="email" name="email"
+												onchange="checkUnique(this.value,2)" autocomplete="off">
+											<span class="validation-invalid-label" id="error_email"
 												style="display: none;">This field is required.</span> <span
 												class="validation-invalid-label" id="error_email_unique"
 												style="display: none;">This Email is already exist.</span>
 										</div>
-										
- 
-									</div>
-									
-									
-									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="catId">
-											Access Right <span style="color: red">* </span>:
-										</label>
-										<div class="col-lg-10">
-											<select name="catId" data-placeholder="Select Category"
-												id="catId"
-												class="form-control form-control-select2 select2-hidden-accessible"
-												data-fouc="" aria-hidden="true">
 
-												<option value="">Select </option>
- 
-													<option value="1">Master Admin</option>
-														<option value="2"> Admin</option>
-															<option value="3"> Associate</option>
-											 
-											</select> <span class="validation-invalid-label" id="error_catId"
-												style="display: none;">This field is required.</span>
-										</div>
-									</div>
-  
-									
-
-									<div class="form-group row">
-										
-
-										<label class="col-form-label col-lg-2" for="gender">Gender
-											<span style="color: red">* </span>:
-										</label>
-										<div class="form-check form-check-inline">
-											<label class="form-check-label"> <input type="radio"
-												class="form-check-input" name="gender" id="gender" checked
-												value="0"> Male
-											</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<label class="form-check-label"> <input type="radio"
-												class="form-check-input" name="gender" id="gender" value="1">
-												Female
-											</label>
-										</div>
 
 									</div>
-
-								 
-  
-									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="joiningDate">Birth
-											Date <span style="color: red">* </span>:
-										</label>
-										<div class="col-lg-10">
-											<input type="text" class="form-control datepickerclass "
-												name="joiningDate" id="joiningDate"
-												placeholder="Joining Date"> <span
-												class="validation-invalid-label" id="error_joiningDate"
-												style="display: none;">This field is required.</span>
-										</div>
-									</div>
- 
-
-								 
-  
 
 
 									<div class="form-group row mb-0">
@@ -343,8 +255,8 @@
 
 	</div>
 	<!-- /page content -->
-	 
-	 
+
+
 	<script>
 		function trim(el) {
 			el.value = el.value.replace(/(^\s*)|(\s*$)/gi, ""). // removes leading and trailing spaces
@@ -366,7 +278,6 @@
 			return true;
 
 		}
-	
 	</script>
 	<script type="text/javascript">
 		// Single picker
@@ -458,9 +369,8 @@
 		});
 	</script>
 
-	
- 
+
+
 
 </body>
 </html>
- 

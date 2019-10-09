@@ -46,6 +46,24 @@ public class MasterController {
 		}
 		return mav;
 	}
+	
+
+	@RequestMapping(value = "/showEditUser", method = RequestMethod.GET)
+	public ModelAndView showEditUser(HttpServletRequest request, HttpServletResponse response) {
+	 
+		HttpSession session = request.getSession();
+		ModelAndView mav = null;
+		 
+		try {
+			mav = new ModelAndView("editUserProf");
+	 
+	 
+		} catch (Exception e) {
+			System.err.println("Exce in communication " + e.getMessage());
+			e.printStackTrace();
+		}
+		return mav;
+	}
 
 	
 
