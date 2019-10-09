@@ -1,0 +1,399 @@
+.app-footer-v2
+{
+	padding: 20px 0px ;
+	background: #94191c;
+	text-align: center;
+	color: white;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #23282c;
+	text-align: left;
+}
+
+.login-background
+{
+	background: url("../img/background.jpg") no-repeat center center fixed ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-position: center;
+  background-repeat: no-repeat;
+	width: 100%; 
+    height: 100%; 
+    position: fixed; 
+	
+}
+.login-background .logo
+{
+	padding-bottom: 40px;
+}
+.login-background .title-head
+{
+	padding-bottom: 40px;
+	color: #ac1d24;
+	text-transform: uppercase;
+}
+.padding-tb
+{
+	padding: 150px 0px;
+
+}
+.padding-tp
+{
+	padding-top: 50px;
+}
+
+.login-bg
+{
+	background: rgb(176,29,37);
+background: linear-gradient(180deg, rgba(176,29,37,1) 0%, rgba(123,25,28,1) 71%, rgba(61,20,18,1) 100%);
+}
+.login-bg h2 {
+	font-weight: bold;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+
+.login-hr {
+	
+	width: 54%;
+	color: white;
+	border-top: 1px solid #d9d6d6;
+}
+.align-self-center {
+	-ms-flex-item-align: center !important;
+	align-self: center !important;
+}
+.btn-red {
+	color: #fff;
+	background-color: #ac1d24;
+	border-color: #620305;
+}
+.btn-red:hover {
+	color: #fff;
+	background-color: #0a8030;
+    border-color: #034028;
+}
+.error
+{
+	color: #ac1d24;
+}
+.rule h6
+{
+	color:  #ac1d24;
+}
+.rule ul 
+{
+	padding-left: 10px;
+}
+.rule ul li
+{
+	color: #9f9f9f;
+	font-size: 13px;
+}
+.breadcrumb {
+	
+	background-color: #2f353a;
+	
+}
+.breadcrumb .breadcrumb-item  {
+	
+color: white;
+	
+}
+.breadcrumb-menu .btn:hover, .breadcrumb-menu .btn.active {
+	color: #FFFFFF;
+	background: transparent;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html:not([dir="rtl"]) .sidebar-lg-show.sidebar-fixed .main, html:not([dir="rtl"]) .sidebar-lg-show.sidebar-fixed .app-footer, html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .main, html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .app-footer {
+	margin-left: 0px;
+}
+.col-custom-5 {
+	padding: 0px 15px;
+	width: 20%;
+	
+}
+.box-v1 {	background-color: #14a301 !important;}
+.box-v2 {	background-color: #7266ba !important;}
+.box-v3 {	background-color: #37bc9b !important;}
+.box-v4 {	background-color: #3b89eb !important;}
+.box-v5 {	background-color: #f19900 !important;}
+#example img {
+	width: 30px;
+	
+}
+#example tr th {
+	background: #94191c;
+	color: white;
+	
+}
+.aside-options ul li {
+	list-style-type: none;
+	font-size: 14px;
+	border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 5px;
+padding-top: 5px;
+}
+.aside-options ul  {
+	padding-left: 0px;
+}
+.aside-options ul li a  {
+	text-decoration: none;
+}
+.card {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid #127704;
+	border-radius: 0.25rem;
+}
+.card-header {
+	color: white;
+	
+}
+.card-header .card-header-actions a {
+	color: white;
+	
+}
+.card-header .card-header-actions a:hover {
+	color:#1B1B1B;
+	text-decoration: none;
+	
+}
+.submit
+{
+	border: 2px solid green;
+padding: 5px 30px;
+	color: darkgreen;
+	
+}
+.export {
+	border: 2px solid #530507;
+	padding: 5px 30px;
+	color: white;
+	background: #94191c;
+}
+.export:hover {
+	border: 2px solid #530507;
+	padding: 5px 30px;
+	color: #94191c;
+	background: #FFFFFF;
+
+}
+.card-header {
+	padding: 5px 15px;
+	background-color: #127704;
+	border-bottom: 1px solid #c8ced3;
+}
+.header-fixed .app-header {
+	padding: 0px 15px;
+}
+
+
+/* paginestion*/
+
+/* GENERAL STYLES */
+
+.pagination{
+  padding: 30px 0;
+}
+
+.pagination ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination a{
+  display: inline-block;
+  padding: 10px 18px;
+  color: #222;
+}
+
+.p12 a:first-of-type, .p12 a:last-of-type, .p12 .is-active{
+  background-color:#127704;
+  color: #fff;
+  font-weight: bold;
+}
+/*card box*/
+.card-box {
+	border: 1px solid #127704;
+	padding: 0px 0px 10px 0px;
+	border-radius: 10px;
+	
+}
+.card-box a 
+{
+	color: white;
+}
+.card-box a:hover
+{
+	color: #1F1F1F;
+}
+.card-title {
+	padding: 5px 15px;
+	background-color: #127704;
+	border-radius: 10px 10px 0px 0px;
+	}
+.card-title p{color: white; padding-bottom: 2px; margin-bottom: 0px;}
+.card-box-header-1 {
+	display: inline-block;
+	
+	margin-right: -0.25rem;
+}
+.card-box-header {
+	display: inline-block;
+	float: right;
+	margin-right: -0.25rem;
+}
+
+.breadcrumb a {
+	color: #1ace01;
+	text-decoration: none;
+	background-color: transparent;
+}
+.pad-t20
+{
+	padding-top: 20px;
+}
+.document{
+border: 2px solid green;
+border-radius: 5px;
+	margin-bottom: 25px;
+}
+
+.icon {
+	background: green;
+	text-align: center;
+	width: 40%;
+	float: left;
+	padding: 15px 0px;
+}
+.icon-excel {
+	text-align: center;	
+	background: white;
+	width: 60%;
+	display: inline-block;
+	padding: 15px 0px;
+}
+.check-box {
+	background: green;
+	color: white;
+}
+.check-box input {
+	
+    margin: .4rem;
+}
+.aside-menu {
+	top: 55px;
+}
+
+/* search */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #008000;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #57625D;
+}
+
+.searchTerm:focus{
+  color: #2A2A2A;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #008000;
+background: #008000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap {
+	padding-bottom: 20px;
+}
+
+
+.preview
+{
+    padding: 10px;
+    position: relative;
+}
+
+.preview i
+{
+    color: white;
+    font-size: 35px;
+    transform: translate(50px,130px);
+	top: 75%;
+	position: relative;
+}
+
+.preview-img
+{
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.7);
+}
+
+.browse-button
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute; /* Tweak the position property if the element seems to be unfit */
+    top: 10px;
+left: 31px;
+    background: linear-gradient(180deg, transparent, black);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.browse-button:hover
+{
+    opacity: 1;
+}
+
+.browse-input
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    transform: translate(-1px,-26px);
+    opacity: 0;
+}
