@@ -23,7 +23,7 @@ public class MasterController {
 	public ModelAndView userList(Locale locale, Model model,HttpSession session) {
 
 		 
- 			ModelAndView mav = new ModelAndView("Master1/userList");
+ 			ModelAndView mav = new ModelAndView("Master/userList");
 	 
 	 
 	 
@@ -47,6 +47,17 @@ public class MasterController {
 		return mav;
 	}
 
+	
+
+	@RequestMapping(value = "/submitInsertUserInfo", method = RequestMethod.GET)
+	public ModelAndView submitInsertUserInfo(Locale locale, Model model,HttpSession session) {
+
+		
+		ModelAndView mav = new ModelAndView("Master/userList");
+		 
+		return mav;
+	}
+	
 	
 	
 	@RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
@@ -78,6 +89,8 @@ public class MasterController {
 		 
 		return mav;
 	}
+	
+	
 
 	 
 	

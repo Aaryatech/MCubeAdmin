@@ -115,23 +115,20 @@
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash" style="color: black;"></i>
-									</a>
-									
-									<a
+									</a> <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black;"></i>
-									</a></td>
+										title="Block"><i class="icon-user-block "
+											style="color: black;"></i> </a></td>
 								</tr>
 
 
-<tr>
-									<td>1</td>
+								<tr>
+									<td>2</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
 										class="rounded-circle mr-2" height="34" alt=""></td>
 									<td>Amit Chavan</td>
-									<td> Admin</td>
+									<td>Admin</td>
 									<td>7845121323</td>
 									<td>amitchavan12@gmail.com</td>
 
@@ -145,13 +142,10 @@
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash" style="color: black;"></i>
-									</a>
-									
-									<a
+									</a> <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black;"></i>
-									</a></td>
+										title="Block"><i class="icon-user-block "
+											style="color: black;"></i> </a></td>
 								</tr>
 
 

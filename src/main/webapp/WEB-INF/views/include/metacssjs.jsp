@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Task Management System</title>
+<title>M Cube Financials</title>
 <link rel="shortcut icon"
 	href="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
 	type="image/x-icon" />
