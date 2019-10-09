@@ -84,7 +84,7 @@
 							class="nav-link">Edit User Profile</a></li>
 
 						<li class="nav-item"><a
-							href="${pageContext.request.contextPath}/toChangePassword"
+							href="${pageContext.request.contextPath}/changeUserPassword"
 							class="nav-link">Change Password</a></li>
 
 					</ul></li>

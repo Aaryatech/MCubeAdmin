@@ -154,36 +154,37 @@ AUTOMATION</h2>
 	</script>
 	
 	<script>
-function passwordChanged() {
-var strength = document.getElementById("strength");
-$("#error_password").hide();
-var strongRegex = new RegExp(
-"^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])([$&+,:;=?@#|'<>.^*()%!-](?=.*\\W).*$",
-"g");
-var mediumRegex = new RegExp(
-"^(?=.{6,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$",
-"g");
-var enoughRegex = new RegExp("(?=.{6,}).*", "g");
-var pwd = document.getElementById("new_password").value;
 
-if (pwd.length == 0) {
-document.getElementById("strength").innerHTML = "Type Password";
-document.getElementById("allowPass").value=0;
-} else if (false == enoughRegex.test(pwd)) {
-document.getElementById("strength").innerHTML = "More Characters";
-document.getElementById("allowPass").value=0;
-} else if (strongRegex.test(pwd)) {
-document.getElementById("strength").innerHTML = "<span style='color:green'>Strong!</span>";
-document.getElementById("allowPass").value=1;
-} else if (mediumRegex.test(pwd)) {
-document.getElementById("strength").innerHTML = "<span style='color:orange'>Medium!</span>";
-document.getElementById("allowPass").value=1;
-} else {
-document.getElementById("strength").innerHTML = "<span style='color:red'>Weak!</span>";
-document.getElementById("allowPass").value=0;
-}
-}
-</script>
+		function passwordChanged() {
+			var strength = document.getElementById("strength");
+			$("#error_password").hide();
+			var strongRegex = new RegExp(
+					"^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])([$&+,:;=?@#|'<>.^*()%!-](?=.*\\W).*$",
+					"g");
+			var mediumRegex = new RegExp(
+					"^(?=.{6,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$",
+					"g");
+			var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+			var pwd = document.getElementById("new_password").value;
+
+			if (pwd.length == 0) {
+				document.getElementById("strength").innerHTML = "Type Password";
+				document.getElementById("allowPass").value = 0;
+			} else if (false == enoughRegex.test(pwd)) {
+				document.getElementById("strength").innerHTML = "More Characters";
+				document.getElementById("allowPass").value = 0;
+			} else if (strongRegex.test(pwd)) {
+				document.getElementById("strength").innerHTML = "<span style='color:green'>Strong!</span>";
+				document.getElementById("allowPass").value = 1;
+			} else if (mediumRegex.test(pwd)) {
+				document.getElementById("strength").innerHTML = "<span style='color:orange'>Medium!</span>";
+				document.getElementById("allowPass").value = 1;
+			} else {
+				document.getElementById("strength").innerHTML = "<span style='color:red'>Weak!</span>";
+				document.getElementById("allowPass").value = 0;
+			}
+		}
+	</script>
  
   </body>
 </html>
