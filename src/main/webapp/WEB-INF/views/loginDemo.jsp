@@ -81,7 +81,7 @@ AUTOMATION</h2>
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control" type="password" placeholder="Password">
+                  <input class="form-control password" type="password" placeholder="Password">
                 </div>
                 <div class="row">
                   <div class="col-6">
@@ -89,7 +89,7 @@ AUTOMATION</h2>
                   </div>
                  
                   <div class="col-6 text-right">
-                    <button class="btn btn-link px-0" type="button">Forgot password?</button>
+                   <a 	href="${pageContext.request.contextPath}/showForgotPass"><button class="btn btn-link px-0" type="button">Forgot password?</button></a>
                   </div>
                 </div>
                 </form>
@@ -116,6 +116,12 @@ AUTOMATION</h2>
   
 				  
 <script src=" https://code.jquery.com/jquery-3.3.1.js"></script>
- 
+ <script type="text/javascript">
+ $('.password').hover(function () {
+	   $('.password').attr('type', 'text'); 
+	}, function () {
+	   $('.password').attr('type', 'password'); 
+	});
+ </script>
   </body>
 </html>

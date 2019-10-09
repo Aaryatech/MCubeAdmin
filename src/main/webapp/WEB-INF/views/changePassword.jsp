@@ -59,7 +59,7 @@ AUTOMATION</h2>
 			   <div class="card p-4">
               <div class="card-body ">
 				  <div class="title-head text-center">
-				 <h2>FORGOT PASSWORD</h2>
+				 <h2>CHANGE PASSWORD</h2>
 					  </div>
               <!--  <h1>Login</h1>-->
                <!-- <p class="text-muted">Sign In to your account</p>-->
@@ -70,18 +70,20 @@ AUTOMATION</h2>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="icon-screen-smartphone"></i>
+                      <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control" type="text" placeholder="Mobile No.">
+                  <input class="form-control password" type="password" name="new_password"
+                    id="new_password" placeholder="New Password">
                 </div>
                 <div class="input-group mb-4">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="icon-envelope"></i>
+                      <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control" type="email" placeholder="Email Id">
+                  <input class="form-control password" type="password" name="confirm_password"
+                  placeholder="Confirm Password" onblur="validatePassword()" id="confirm_password">
                 </div>
                 <div class="row">
                   <div class="col-6">
@@ -116,6 +118,28 @@ AUTOMATION</h2>
   
 				  
 <script src=" https://code.jquery.com/jquery-3.3.1.js"></script>
+ 
+ <script>		
+		 function validatePassword() {
+			 //alert("Hi");
+				var pass = document.getElementById("new_password").value;
+				var conpass = document.getElementById("confirm_password").value;
+				// alert(pass+" "+conpass);
+
+				if (pass != conpass) {
+
+					document.getElementById("confirm_password").value = "";
+					alert("Confirm password not matched!");
+					return false;
+				}
+			}
+		 
+		 $('.password').hover(function () {
+			   $('.password').attr('type', 'text'); 
+			}, function () {
+			   $('.password').attr('type', 'password'); 
+			});
+	</script>
  
   </body>
 </html>
