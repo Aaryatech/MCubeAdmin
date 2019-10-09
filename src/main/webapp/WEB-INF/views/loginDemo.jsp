@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -73,7 +74,12 @@ AUTOMATION</h2>
                       <i class="icon-user"></i>
                     </span>
                   </div>
-                  <input class="form-control" type="text" placeholder="Username">
+                  <input class="form-control" type="text" placeholder="Username" id="uname" autocomplete="off">
+                  	
+                </div>
+                
+                                <div class="input-group mb-3"><span class="validation-invalid-label" id="error_uname"
+												style="display: none;">This field is required.</span>
                 </div>
                 <div class="input-group mb-4">
                   <div class="input-group-prepend">
@@ -81,16 +87,25 @@ AUTOMATION</h2>
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control password" type="password" placeholder="Password">
+                  <input class="form-control" type="password" placeholder="Password" id="pass">&nbsp;&nbsp;
+                  	
                 </div>
+                 <div class="input-group mb-3">
+                 <span class="validation-invalid-label" id="error_pass"
+												style="display: none; font-color:red">This field is required.</span>
+                 </div>
                 <div class="row">
                   <div class="col-6">
-                    <button class="btn btn-red px-4" type="submit">Login</button>
+                    <button class="btn btn-red px-4" id="submtbtn" type="submit">Login</button>
                   </div>
                  
-                  <div class="col-6 text-right">
+                
+  <div class="col-6 text-right">
                    <a 	href="${pageContext.request.contextPath}/showForgotPass"><button class="btn btn-link px-0" type="button">Forgot password?</button></a>
                   </div>
+
+
+
                 </div>
                 </form>
               </div>
@@ -116,12 +131,59 @@ AUTOMATION</h2>
   
 				  
 <script src=" https://code.jquery.com/jquery-3.3.1.js"></script>
- <script type="text/javascript">
- $('.password').hover(function () {
-	   $('.password').attr('type', 'text'); 
-	}, function () {
-	   $('.password').attr('type', 'password'); 
-	});
- </script>
+<script type="text/javascript">
+
+$(document)
+.ready(
+		function($) {
+
+			$("#submitInsertClient")
+					.submit(
+							function(e) {
+								var isError = false;
+								var errMsg = "";
+
+								if (!$("#uname").val()) {
+
+									isError = true;
+
+									$("#error_uname").show()
+									//return false;
+								} else {
+									$("#error_uname").hide()
+								}
+								if (!$("#pass").val()) {
+
+									isError = true;
+
+									$("#error_pass").show()
+									//return false;
+								} else {
+									$("#error_pass").hide()
+								}
+
+								if (!isError) {
+
+									var x = true;
+									if (x == true) {
+
+										document
+												.getElementById("submtbtn").disabled = true;
+										return true;
+									}
+									//end ajax send this to php page
+								}
+								return false;
+							});
+		});
+
+
+
+
+
+
+
+</script>
+ 
   </body>
 </html>

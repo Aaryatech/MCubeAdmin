@@ -50,7 +50,7 @@
 						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
 						
 						<div class="dropdown-divider"></div>
-						<a href="${pageContext.request.contextPath}/logout" class="dropdown-item" onClick="return confirm('Are you sure you want to logout?');"><i class="icon-switch2"></i> Logout</a>
+						<a href="${pageContext.request.contextPath}/" class="dropdown-item" ><i class="icon-switch2"></i> Logout</a>
 					</div>
 			
 			</li>
