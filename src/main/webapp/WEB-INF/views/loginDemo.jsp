@@ -1,4 +1,5 @@
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -28,7 +29,7 @@
 
   
     <!-- By ats -->
-   
+   <%-- <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include> --%>
    <script 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <style>
   .card-group {
@@ -59,6 +60,19 @@ AUTOMATION</h2>
             </div>
 			   <div class="card p-4">
               <div class="card-body ">
+             <%--  <c:if test="${sessionScope.msg!=null}">
+								<div
+									class="alert bg-success text-white alert-styled-left alert-dismissible">
+									<button type="button" class="close" data-dismiss="alert">
+										<span>×</span>
+									</button>
+									<span class="font-weight-semibold">Well done!</span><strong>${msg}</strong>									
+								</div>
+								<%
+									session=request.getSession();
+									session.removeAttribute("msg");									
+								%> 
+								</c:if> --%>
 				  <div class="logo text-center">
 				  <img src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg" alt="logo" width="70%" class="text-center">
 					  </div>

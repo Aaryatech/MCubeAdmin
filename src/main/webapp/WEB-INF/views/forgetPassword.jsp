@@ -76,7 +76,7 @@ AUTOMATION</h2>
                     </span>
                   </div>
                   <input class="form-control" type="text" placeholder="Mobile No." name="mobile_no"
-                  maxlength="10" id="mobile_no">
+                  maxlength="10" id="mobile_no" value="9658741414">
                </div>
                
                  <div class="input-group mb-1">
@@ -93,7 +93,8 @@ AUTOMATION</h2>
 	                      <i class="icon-envelope"></i>
 	                    </span>
 	                  </div>
-	                  <input class="form-control" type="email" placeholder="Email Id" name="email" id="email">
+	                  <input class="form-control" type="email" placeholder="Email Id" name="email" id="email"
+	                  value="sam1215@yahoo.com">
                	</div>
                 <div class="input-group mb-1">
 						<span class="validation-invalid-label" id="error_email"
