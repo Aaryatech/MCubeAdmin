@@ -72,12 +72,12 @@ background: linear-gradient(180deg, rgba(176,29,37,1) 0%, rgba(123,25,28,1) 71%,
 .btn-red {
 	color: #fff;
 	background-color: #ac1d24;
-	border-color: #620305;
+	
 }
 .btn-red:hover {
 	color: #fff;
-	background-color: #0a8030;
-    border-color: #034028;
+	background-color: #6f3232;
+   
 }
 .error
 {
