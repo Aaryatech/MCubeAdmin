@@ -62,19 +62,19 @@
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/customerList"
-							class="nav-link"><i class="icon-file-media "></i><span>Customer Master</span></a></li>
+							class="nav-link"><i class="icon-file-media " 	style="font-size:30px"></i><span>Customer Master</span></a></li>
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/userList"
-							class="nav-link"><i class="icon-user "></i><span>User Master</span></a></li>
+							class="nav-link"><i class="icon-user " style="font-size:30px"></i><span>User Master</span></a></li>
 							
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showLineItemCodeReqList"
-							class="nav-link"><i class="icon-user "></i><span>Line Item Code Request</span></a></li>
+							class="nav-link"><i class="icon-list-unordered " style="font-size:30px"></i><span>Line Item Code Request</span></a></li>
 							
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showDeclineItemCodeReqList"
-							class="nav-link"><i class="icon-user "></i><span>Decline Item Code Request</span></a></li>
+							class="nav-link"><i class="icon-x" style="font-size:30px"></i><span>Decline Item Code Request</span></a></li>
 
 
 
@@ -89,11 +89,11 @@
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showEditUser"
-							class="nav-link"><i class="icon-profile"></i><span>Edit User Profile</span></a></li> 
+							class="nav-link"><i class="icon-profile" style="font-size:30px"></i><span>Edit User Profile</span></a></li> 
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/changeUserPassword"
-							class="nav-link"><i class="icon-cog"></i><span>Change Password</span></a></li>
+							class="nav-link"><i class="icon-cog" style="font-size:30px"></i><span>Change Password</span></a></li>
 
 					</ul></li>
 
