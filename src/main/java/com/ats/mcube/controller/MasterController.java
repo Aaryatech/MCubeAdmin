@@ -97,7 +97,9 @@ public class MasterController {
 	}
 	
 	
-	 
+	
+	
+
 
 	@RequestMapping(value = "/customerList", method = RequestMethod.GET)
 	public ModelAndView customerList(Locale locale, Model model,HttpSession session) {
@@ -109,7 +111,57 @@ public class MasterController {
 	}
 	
 	
+	@RequestMapping(value = "/showAddTemplate", method = RequestMethod.GET)
+	public ModelAndView v(Locale locale, Model model,HttpSession session) {
 
+		 
+ 			ModelAndView mav = new ModelAndView("Master/addTemplate");
 	 
+	 
+	 
+		return mav;
+	}
+	
+	@RequestMapping(value = "/showImpMasterCat", method = RequestMethod.GET)
+	public ModelAndView showImpMasterCat(Locale locale, Model model,HttpSession session) {
+
+		 
+ 			ModelAndView mav = new ModelAndView("Master/impMasterCategorization");
+	 
+	 
+	 
+		return mav;
+	}
+	 
+	
+
+	@RequestMapping(value = "/submitInsertTemp", method = RequestMethod.GET)
+	public ModelAndView submitInsertTemp(Locale locale, Model model,HttpSession session) {
+
+		
+		ModelAndView mav = new ModelAndView("Master/addTemplate");
+		 
+		return mav;
+	}
+	
+	
+	@RequestMapping(value = "/submitInsertCust", method = RequestMethod.GET)
+	public ModelAndView submitInsertCust(Locale locale, Model model,HttpSession session) {
+
+		
+		ModelAndView mav = new ModelAndView("Master/customerList");
+		 
+		return mav;
+	}
+	
+	
+	@RequestMapping(value = "/submitInsertCatMast", method = RequestMethod.GET)
+	public ModelAndView submitInsertCatMast(Locale locale, Model model,HttpSession session) {
+
+		
+		ModelAndView mav = new ModelAndView("Master/impMasterCategorization");
+		 
+		return mav;
+	}
 	
 }

@@ -250,8 +250,7 @@
 													type="button" class="btn btn-primary">
 													<i class="${sessionScope.cancelIcon}" aria-hidden="true"></i>&nbsp;&nbsp;
 													Cancel
-												</button></a> <input type="hidden" id="mobile1Exist" name="mobile1Exist"><input
-												type="hidden" id="emailExist" name="emailExist">
+												</button></a>  
 										</div>
 									</div>
 								</form>

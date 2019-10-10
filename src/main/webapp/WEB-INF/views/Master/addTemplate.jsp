@@ -73,8 +73,8 @@
 
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h2 class="card-title"><i class="icon-user-plus "
-											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add Customer</h2>
+								<h2 class="card-title"><i class="icon-file-plus "
+											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add Template</h2>
 								 
 							</div>
 
@@ -117,7 +117,7 @@
 								%>
 
 								<form
-									action="${pageContext.request.contextPath}/submitInsertCust"
+									action="${pageContext.request.contextPath}/submitInsertTemp"
 									id="submitInsertEmp" method="get" enctype="multipart/form-data">
 
  
@@ -128,7 +128,7 @@
 										</label>
 										<div class="col-lg-5">
 											<input type="text" class="form-control  "
-												placeholder=" Name" id="fname" name="fname"  
+												placeholder="First Name" id="fname" name="fname" Value="Nikhil Salunkhe" readonly="readonly"
 												autocomplete="off" onchange="trim(this)">  
 										</div>
 
@@ -168,7 +168,7 @@
 										<label class="col-form-label col-lg-2" for="fname">
 											Template <span style="color: red">* </span>:
 										</label>
-										<div class="col-lg-3">
+										<div class="col-lg-5">
 											<input type="file" class="form-control  "
 												placeholder="First Name" id="fname" name="fname" Value="Nikhil Salunkhe" readonly="readonly"
 												autocomplete="off" onchange="trim(this)"> 

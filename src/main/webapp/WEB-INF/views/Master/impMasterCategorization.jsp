@@ -46,10 +46,7 @@
 							class="icon-more"></i></a>
 					</div>
 
-					<div class="breadcrumb justify-content-center">
-						
-
-					</div>
+					<div class="breadcrumb justify-content-center"></div>
 
 
 				</div>
@@ -73,9 +70,12 @@
 
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h2 class="card-title"><i class="icon-user-plus "
-											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add Customer</h2>
-								 
+								<h2 class="card-title">
+									<i class="icon-download10 "
+										style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Import
+									Master Categorization
+								</h2>
+
 							</div>
 
 							<div class="card-body">
@@ -117,140 +117,112 @@
 								%>
 
 								<form
-									action="${pageContext.request.contextPath}/submitInsertCust"
+									action="${pageContext.request.contextPath}/submitInsertCatMast"
 									id="submitInsertEmp" method="get" enctype="multipart/form-data">
 
- 
+
 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
 											Client Name <span style="color: red">* </span>:
 										</label>
-										<div class="col-lg-5">
+										<div class="col-lg-3">
 											<input type="text" class="form-control  "
-												placeholder=" Name" id="fname" name="fname"  
-												autocomplete="off" onchange="trim(this)">  
+												placeholder="First Name" id="fname" name="fname"
+												Value="Nikhil Salunkhe" readonly="readonly"
+												autocomplete="off" onchange="trim(this)">
 										</div>
 
- 
+
 									</div>
 
-									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="locId">
-											Property Type<span style="color: red">* </span>:
-										</label>
-										<div class="col-lg-5">
-											<select name="locId" data-placeholder="Select" id="locId"
-												class="form-control form-control-select2 select2-hidden-accessible"
-												data-fouc="" aria-hidden="true">
- 												<option value="">Select</option>
- 												<option value="1">Home Loan</option>
- 												<option value="1">Car Loan</option>
- 
-											</select>
-										</div>
-									</div>
 
-									 <div class="form-group row">
-										<label class="col-form-label col-lg-2" for="fname">
-											Template Name <span style="color: red">* </span>:
-										</label>
-										<div class="col-lg-5">
-											<input type="text" class="form-control  "
-												placeholder="Template Name" id="fname" name="fname"s
-												autocomplete="off" onchange="trim(this)">  
-										</div>
 
- 
-									</div>
-									
+
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
 											Template <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-3">
 											<input type="file" class="form-control  "
-												placeholder="First Name" id="fname" name="fname" Value="Nikhil Salunkhe" readonly="readonly"
-												autocomplete="off" onchange="trim(this)"> 
+												placeholder="First Name" id="fname" name="fname"
+												Value="Nikhil Salunkhe" readonly="readonly"
+												autocomplete="off" onchange="trim(this)">
 										</div>
 
- 
+
 									</div>
 
 									<div class="form-group row mb-0">
 										<div class="col-lg-10 ml-lg-auto">
 											<!-- <button type="reset" class="btn btn-light legitRipple">Reset</button> -->
-											<button type="submit" class="btn btn-primary"
-												id="submtbtn">
+											<button type="submit" class="btn btn-primary" id="submtbtn">
 												Submit <i class="icon-paperplane ml-2"></i>
 											</button>
 											<a href="${pageContext.request.contextPath}/customerList"><button
 													type="button" class="btn btn-primary">
 													<i class="${sessionScope.cancelIcon}" aria-hidden="true"></i>&nbsp;&nbsp;
 													Cancel
-												</button></a>  
+												</button></a>
 										</div>
 									</div>
 								</form>
-								
-								
+
+
 								<table
-							class="table table-bordered table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
-							id="printtable1">
-							<thead>
-								<tr class="bg-blue">
-									<th width="5%">Sr.no</th>
-									<th>Property Type</th>
-									<th>Template Name</th>
-									<th>Link</th>
-									 
-									<th class="text-center" width="10%">Actions</th>
-								</tr>
-							</thead>
-							<tbody>
+									class="table table-bordered table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
+									id="printtable1">
+									<thead>
+										<tr class="bg-blue">
+											<th width="5%">Sr.no</th>
+											<th>Property Type</th>
+											<th>Categorization</th>
+											<th>Sub Account</th>
+											<th>Line Item</th>
 
-								<tr>
-									<td>1</td>
-								 	<td>Home Loan </td>
-									<td>Template 1</td>
-								 
-								
-									<td>L1</td>
+											<th class="text-center" width="10%">Actions</th>
+										</tr>
+									</thead>
+									<tbody>
 
+										<tr>
+											<td>1</td>
+											<td>Home Loan</td>
+											<td>X</td>
+											<td>-</td>
+											<td>L1</td>
 
-
-									<td class="text-center"><a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
-
-										<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a> </td>
-								</tr>
+											<td class="text-center"><a
+												href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+												title="Edit"><i class="icon-pencil7"
+													style="color: black; font-size: 20px;"></i></a> <a
+												href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+												onClick="return confirm('Are you sure want to delete this record');"
+												title="Delete"><i class="icon-trash"
+													style="color: black; font-size: 20px;"></i> </a></td>
+										</tr>
 
 
-							<tr>
-									<td>1</td>
-								 	<td>Car Loan</td>
-									<td>Template 2</td>
- 									<td>L2</td>
- 
-									<td class="text-center"><a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
+										<tr>
+											<td>1</td>
+											<td>Car Loan</td>
+											<td>Y</td>
+											<td>-</td>
+											<td>L2</td>
 
-										<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a> </td>
-								</tr>
+											<td class="text-center"><a
+												href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+												title="Edit"><i class="icon-pencil7"
+													style="color: black; font-size: 20px;"></i></a> <a
+												href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+												onClick="return confirm('Are you sure want to delete this record');"
+												title="Delete"><i class="icon-trash"
+													style="color: black; font-size: 20px;"></i> </a></td>
+										</tr>
 
-							</tbody>
-						</table>
-								
+									</tbody>
+								</table>
+
 							</div>
 						</div>
 
@@ -272,7 +244,7 @@
 	</div>
 	<!-- /page content -->
 
-	 
+
 
 	<script type="text/javascript">
 		function setDate(value) {
@@ -346,31 +318,25 @@
 
 		}
 
-		$(document)
-				.ready(
-						function($) {
+		$(document).ready(function($) {
 
-							$("#submitInsertEmp")
-									.submit(
-											function(e) {
-												var isError = false;
-												var errMsg = "";
+			$("#submitInsertEmp").submit(function(e) {
+				var isError = false;
+				var errMsg = "";
 
-												
-												if (!isError) {
+				if (!isError) {
 
-													var x = true;
-													if (x == true) {
+					var x = true;
+					if (x == true) {
 
-														document
-																.getElementById("submtbtn").disabled = true;
-														return true;
-													}
-													//end ajax send this to php page
-												}
-												return false;
-											});
-						});
+						document.getElementById("submtbtn").disabled = true;
+						return true;
+					}
+					//end ajax send this to php page
+				}
+				return false;
+			});
+		});
 		//
 	</script>
 	<script type="text/javascript">

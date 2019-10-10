@@ -41,7 +41,7 @@
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i
 							class="icon-more"></i></a>
-
+0
 
 
 					</div>
@@ -73,7 +73,7 @@
 											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Customer List</h2></td>
 								 
 									<td width="40%" align="right"><a
-										href="${pageContext.request.contextPath}/addUser"
+										href="${pageContext.request.contextPath}/addCustomer"
 										class="breadcrumb-elements-item">
 											<button type="button" class="btn btn-primary">Add
 												Customer</button>
@@ -136,11 +136,11 @@
 									<td class="text-center">
 									
 									<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="${pageContext.request.contextPath}/showAddTemplate"
 										title="Add Template"><i class="icon-add "
 											style="color: black; font-size:20px;"></i> </a>
 									<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="${pageContext.request.contextPath}/showImpMasterCat"
 										title="Import Master Categorization"><i class="icon-import  "
 											style="color: black; font-size:20px;"></i> </a>
 									
