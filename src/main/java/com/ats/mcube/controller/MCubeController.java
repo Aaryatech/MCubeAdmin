@@ -30,7 +30,7 @@ public class MCubeController {
 	}
 	
 	
-	@RequestMapping(value = "/toChangePassword", method=RequestMethod.GET)
+	@RequestMapping(value = "/toChangePassword", method=RequestMethod.POST)
 	public String toChangePassword(HttpServletRequest request, HttpServletResponse response, Model model) {
 		String  mav = "changePassword";
 		try {
