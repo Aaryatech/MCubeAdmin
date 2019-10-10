@@ -79,11 +79,11 @@ AUTOMATION</h2>
                   </div>
                     <div class="input-group mb-1">
 						<label class="input-group mb-2" for="page_name"></label>
-							<div class="input-group mb-6"><span id="strength" style="font-size: 10px;">
+							<div class="input-group mb-6"><span id="strength" style="font-size: 12px;">
 							(Password format: Must contain at least <b>one number(0-9)</b> and <b>
 							one upper case(A-Z)</b> and <b> one lower case(a-z)</b> letter, and
 							<b> one special character</b> and <b>at least 8 </b> and <b>maximum 14 </b>
-							characters)</span> 
+							characters.)</span> 
 														</div>
 													</div>
                     
