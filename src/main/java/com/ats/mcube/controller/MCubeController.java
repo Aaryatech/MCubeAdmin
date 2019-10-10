@@ -10,8 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.sun.xml.internal.ws.resources.HttpserverMessages;
-
 @Controller
 @Scope("session")
 public class MCubeController {
@@ -20,7 +18,8 @@ public class MCubeController {
 	public String showForgotPass(HttpServletRequest request, HttpServletResponse response, Model model) {
 		String  mav = "forgetPassword";
 		try {
-			
+			HttpSession session = request.getSession();
+			System.out.println("Ses------"+session.getAttribute("msg"));
 		}catch (Exception e) {
 			System.err.println("Exception in showForgotPass:"+e.getMessage());
 			e.printStackTrace();
@@ -46,9 +45,10 @@ public class MCubeController {
 	
 	@RequestMapping(value = "/changePasswordProcess", method=RequestMethod.POST)
 	public String changePasswordProcess(HttpServletRequest request, HttpServletResponse response, Model model) {
-		String mav = "home";
+		String mav = "redirect:/";
 		try {
-			
+			HttpSession session = request.getSession();
+			session.setAttribute("msg", "Password Changed Sucessfully");
 			
 		}catch (Exception e) {
 			System.err.println("Exception in changePasswordProcess:"+e.getMessage());
@@ -63,7 +63,9 @@ public class MCubeController {
 		String mav = "changeUserPassword";
 		try {
 			
-			
+			/*HttpSession session = request.getSession();
+			session.setAttribute("successMsg", "Password Changed Sucessfully");*/
+			model.addAttribute("msg", "Password Changed Sucessfully");
 		}catch (Exception e) {
 			System.err.println("Exception in changeUserPassword:"+e.getMessage());
 			e.printStackTrace();
@@ -75,10 +77,10 @@ public class MCubeController {
 	
 	@RequestMapping(value = "/updateUserNewPassword", method=RequestMethod.POST)
 	public String updateUserNewPassword(HttpServletRequest request, HttpServletResponse response, Model model) {
-		String mav = "changeUserPassword";
+		String mav = "redirect:/changeUserPassword";
 		try {
 			HttpSession session = request.getSession();
-			session.setAttribute("successMsg", "Password Changed Sucessfully");
+			session.setAttribute("msg", "Password Changed Sucessfully");
 			
 		}catch (Exception e) {
 			System.err.println("Exception in updateUserNewPassword:"+e.getMessage());

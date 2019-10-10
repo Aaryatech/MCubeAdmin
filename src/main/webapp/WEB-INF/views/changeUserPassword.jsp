@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%><%@ taglib
-	uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
-<c:url var="getSubmoduleList" value="/getSubmoduleList" />
-<c:url value="/getUserInfo" var="getUserInfo"></c:url>
 
 <style type="text/css">
 .password_hint {
@@ -110,7 +109,7 @@
 
 							<div class="card-body">
 
-								<%
+								<%-- <%
 									if (session.getAttribute("errorMsg") != null) {
 								%>
 								<div
@@ -129,7 +128,7 @@
 									}
 								%>
 								<%
-									if (session.getAttribute("successMsg") != null) {
+									if (session.getAttribute("msg") != null) {
 								%>
 								<div
 									class="alert bg-success text-white alert-styled-left alert-dismissible">
@@ -138,13 +137,28 @@
 									</button>
 									<span class="font-weight-semibold">Well done!</span>
 									<%
-										out.println(session.getAttribute("successMsg"));
+										out.println(session.getAttribute("msg"));
 									%>
 								</div>
 								<%
-									session.removeAttribute("successMsg");
+									session=request.getSession();
+									session.removeAttribute("msg");
 									}
-								%>
+								%> --%>
+								
+								<c:if test="${sessionScope.msg!=null}">
+								<div
+									class="alert bg-success text-white alert-styled-left alert-dismissible">
+									<button type="button" class="close" data-dismiss="alert">
+										<span>×</span>
+									</button>
+									<span class="font-weight-semibold">Well done!</span><strong>${msg}</strong>									
+								</div>
+								<%
+									session=request.getSession();
+									session.removeAttribute("msg");									
+								%> 
+								</c:if>
 
 								<form
 									action="${pageContext.request.contextPath}/updateUserNewPassword"
@@ -222,20 +236,6 @@
 												<!-- <input type="hidden" id="mobile1Exist" name="mobile1Exist"><input
 												type="hidden" id="emailExist" name="emailExist"> -->
 										</div>
-										
-										<!--   <div class="col-6 rule password_hint"><h6>Password Hint</h6>
-                 <span class="rules">Standard password Rules
-					  <ul>
-						  <li>14 Character Password</li>
-						   <li>Min 8 and Max 14 characters necessary</li>
-							<li>Min 1 Capital Letter(A-Z)</li>
-							<li>Min 1 Small Letter(a-z)</li>
-							<li>Min 1 Number(0-9)</li>
-							<li>Min 1 Special Character</li>
-					</ul>
-				</span>
-                </div> -->
-										
 									</div>
 								</form>
 									<p class="desc text-danger fontsize11">Notice : * Fields
