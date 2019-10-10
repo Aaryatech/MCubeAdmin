@@ -163,8 +163,14 @@
 											<span class="validation-invalid-label" id="error_confirm_password"
 												style="display: none;">Please enter confirm password.</span> 
 										</div>
+										
+														
+				<span id="strength" style="font-size: 15px; color: red; padding-top: 15px;">
+							(Password format: Must contain at least <b>one number(0-9)</b> and <b>
+							one upper case(A-Z)</b> and <b> one lower case(a-z)</b> letter, and
+							<b> one special character</b> and <b>at least 8 </b> and <b>maximum 14 </b>
+							characters.)</span> 
 									</div>
-
 
 									<div class="form-group row mb-0">
 										<div class="col-lg-10 ml-lg-auto">
@@ -183,12 +189,7 @@
 										</div>
 									</div>
 								</form>
-								
-				<span id="strength" style="font-size: 10px; color: red">
-							(Password format: Must contain at least <b>one number(0-9)</b> and <b>
-							one upper case(A-Z)</b> and <b> one lower case(a-z)</b> letter, and
-							<b> one special character</b> and <b>at least 8 </b> and <b>maximum 14 </b>
-							characters)</span> 
+				
 														
 													
 							</div>
