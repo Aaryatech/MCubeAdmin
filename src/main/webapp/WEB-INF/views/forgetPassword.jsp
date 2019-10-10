@@ -107,7 +107,7 @@ AUTOMATION</h2>
                   </div>
                  
                    <div class="col-6 text-right">
-                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-link px-0" type="button">Cancel</button></a>
+                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-red px-4" type="button">Cancel</button></a>
                   </div> 
                 </div>
                 </form>

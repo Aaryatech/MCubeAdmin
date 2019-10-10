@@ -33,6 +33,30 @@
   .card-group {
     box-shadow:none;
 }
+
+.password_hint {
+  padding-top:10px;
+  position: relative;
+  display: inline-block;
+}
+
+.password_hint .rules {
+  visibility: hidden;
+  width: 438px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0 0 15px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.password_hint:hover .rules {
+  visibility: visible;
+}
   </style>
   </head>
   <body >
@@ -67,25 +91,14 @@ AUTOMATION</h2>
 									id="submitInsertClient" method="post">
                
                
-                <div class="input-group mb-3">
-               	 <div class="input-group mb-2">
+                <div class="input-group mb-4">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control password" type="password" name="new_password" onchange="passwordChanged()" maxlength="14"
+                  <input class="form-control password" type="password" name="new_password" onchange="passwordChanged()" maxlength="14" value="@Qwerty123456"
                     id="new_password" placeholder="New Password" pattern="(?=^.{8,14}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$">
-                  </div>
-                    <div class="input-group mb-1">
-						<label class="input-group mb-2" for="page_name"></label>
-							<div class="input-group mb-6"><span id="strength" style="font-size: 12px;">
-							(Password format: Must contain at least <b>one number(0-9)</b> and <b>
-							one upper case(A-Z)</b> and <b> one lower case(a-z)</b> letter, and
-							<b> one special character</b> and <b>at least 8 </b> and <b>maximum 14 </b>
-							characters.)</span> 
-														</div>
-													</div>
                     
                 </div>
                 <div class="input-group mb-4">
@@ -95,16 +108,28 @@ AUTOMATION</h2>
                     </span>
                   </div>
                   <input class="form-control password" type="password" name="confirm_password" maxlength="14"
-                  placeholder="Confirm Password" onblur="validatePassword()" id="confirm_password">
+                  placeholder="Confirm Password" onblur="validatePassword()" id="confirm_password" value="@Qwerty123456">
                 </div>
                 <div class="row">
                   <div class="col-6">
                     <button class="btn btn-red px-4" type="submit">Submit</button>
                   </div>
-                 
-                  <div class="col-6 text-right">
-                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-link px-0" type="button">Cancel</button></a>
-                  </div>
+                   <div class="col-6 text-right">
+                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-red px-4" type="button">Cancel</button></a>
+                  </div> 
+                  
+                  <div class="col-6 rule password_hint"><h6>Password Hint</h6>
+                 <span class="rules">Standard password Rules
+					  <ul>
+						  <li>14 Character Password</li>
+						   <li>Min 8 and Max 14 characters necessary</li>
+							<li>Min 1 Capital Letter(A-Z)</li>
+							<li>Min 1 Small Letter(a-z)</li>
+							<li>Min 1 Number(0-9)</li>
+							<li>Min 1 Special Character</li>
+					</ul>
+				</span>
+                </div>
                 </div>
                 </form>
               </div>

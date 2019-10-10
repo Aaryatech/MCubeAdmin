@@ -9,6 +9,32 @@
 <c:url var="getSubmoduleList" value="/getSubmoduleList" />
 <c:url value="/getUserInfo" var="getUserInfo"></c:url>
 
+<style type="text/css">
+.password_hint {
+  padding-top:10px;
+  position: relative;
+  display: inline-block;
+  color: red;
+}
+
+.password_hint .rules {
+  visibility: hidden;
+  width: 438px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0 0 15px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.password_hint:hover .rules {
+  visibility: visible;
+}
+</style>
 </head>
 
 <body>
@@ -129,7 +155,7 @@
 											Old Password<span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-4">
-											<input type="password" class="form-control password"
+											<input type="password" class="form-control password"  value="#Sts@123e"
 												placeholder="Old Password" id="old_password" name="old_password"
 												autocomplete="off" onchange="trim(this)">
 											<span class="validation-invalid-label" id="error_old_password"
@@ -143,13 +169,29 @@
 											Password <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-4">
-											<input type="password" class="form-control password"
+											<input type="password" class="form-control password" value="@Qwerty!2"
 												placeholder="New Password" id="new_password" name="new_password"
 												autocomplete="off" onchange="passwordChanged()" maxlength="14"
 												pattern="(?=^.{8,14}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$">
 											<span class="validation-invalid-label" id="error_new_password"
 												style="display: none;">Please enter new password.</span> 
 										</div>
+										
+										<div class="col-lg-3">
+											<div class="col-6 rule password_hint"><h6>Password Hint</h6>
+								                 <span class="rules">Standard password Rules
+													  <ul>
+														  <li>14 Character Password</li>
+														   <li>Min 8 and Max 14 characters necessary</li>
+															<li>Min 1 Capital Letter(A-Z)</li>
+															<li>Min 1 Small Letter(a-z)</li>
+															<li>Min 1 Number(0-9)</li>
+															<li>Min 1 Special Character</li>
+													</ul>
+												</span>
+            							    </div>
+										</div>
+										
 									</div>
 
 
@@ -158,18 +200,11 @@
 											Password<span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-4">
-											<input type="password" class="form-control password" placeholder="Confirm Password"
+											<input type="password" class="form-control password" placeholder="Confirm Password" value="@Qwerty!2"
 											 id="confirm_password" name="confirm_password" autocomplete="off"  maxlength="14" onblur="validatePassword()">
 											<span class="validation-invalid-label" id="error_confirm_password"
 												style="display: none;">Please enter confirm password.</span> 
-										</div>
-										
-														
-				<span id="strength" style="font-size: 15px; color: red; padding-top: 15px;">
-							(Password format: Must contain at least <b>one number(0-9)</b> and <b>
-							one upper case(A-Z)</b> and <b> one lower case(a-z)</b> letter, and
-							<b> one special character</b> and <b>at least 8 </b> and <b>maximum 14 </b>
-							characters.)</span> 
+										</div>										
 									</div>
 
 									<div class="form-group row mb-0">
@@ -187,11 +222,24 @@
 												<!-- <input type="hidden" id="mobile1Exist" name="mobile1Exist"><input
 												type="hidden" id="emailExist" name="emailExist"> -->
 										</div>
+										
+										<!--   <div class="col-6 rule password_hint"><h6>Password Hint</h6>
+                 <span class="rules">Standard password Rules
+					  <ul>
+						  <li>14 Character Password</li>
+						   <li>Min 8 and Max 14 characters necessary</li>
+							<li>Min 1 Capital Letter(A-Z)</li>
+							<li>Min 1 Small Letter(a-z)</li>
+							<li>Min 1 Number(0-9)</li>
+							<li>Min 1 Special Character</li>
+					</ul>
+				</span>
+                </div> -->
+										
 									</div>
 								</form>
-				
-														
-													
+									<p class="desc text-danger fontsize11">Notice : * Fields
+										are mandatory.</p>
 							</div>
 						</div>
 
