@@ -67,6 +67,14 @@
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/userList"
 							class="nav-link"><i class="icon-user "></i><span>User Master</span></a></li>
+							
+						<li class="nav-item"><a
+							href="${pageContext.request.contextPath}/showLineItemCodeReqList"
+							class="nav-link"><i class="icon-user "></i><span>Line Item Code Request</span></a></li>
+							
+						<li class="nav-item"><a
+							href="${pageContext.request.contextPath}/showDeclineItemCodeReqList"
+							class="nav-link"><i class="icon-user "></i><span>Decline Item Code Request</span></a></li>
 
 
 

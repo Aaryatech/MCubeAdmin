@@ -90,4 +90,34 @@ public class MCubeController {
 		return mav;
 	}
 	
+	
+	/********************************Line Item Code Request**************************************/
+	
+	@RequestMapping(value = "/showLineItemCodeReqList", method=RequestMethod.GET)
+	public String showLineItemCodeReqList(HttpServletRequest request, HttpServletResponse response, Model model) {
+		String mav = "Master/lineItemCodeReqList";
+		try {
+			
+			
+		}catch (Exception e) {
+			System.err.println("Exception in showLineItemCodeReqList:"+e.getMessage());
+			e.printStackTrace();
+		}
+		
+		return mav;
+	}
+	
+	@RequestMapping(value = "/showDeclineItemCodeReqList", method=RequestMethod.GET)
+	public String showDiclineItemCodeReqList(HttpServletRequest request, HttpServletResponse response, Model model) {
+		String mav = "Master/declineItemCodeReqList";
+		try {
+			
+			
+		}catch (Exception e) {
+			System.err.println("Exception in showDiclineItemCodeReqList:"+e.getMessage());
+			e.printStackTrace();
+		}
+		
+		return mav;
+	}
 }
