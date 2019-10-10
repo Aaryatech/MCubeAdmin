@@ -79,7 +79,7 @@ AUTOMATION</h2>
                 </div>
                 
                                 <div class="input-group mb-3"><span class="validation-invalid-label" id="error_uname"
-												style="display: none;">This field is required.</span>
+												style="display: none; color: red;">This field is required.</span>
                 </div>
                 <div class="input-group mb-4">
                   <div class="input-group-prepend">
@@ -92,7 +92,7 @@ AUTOMATION</h2>
                 </div>
                  <div class="input-group mb-3">
                  <span class="validation-invalid-label" id="error_pass"
-												style="display: none; font-color:red">This field is required.</span>
+												style="display: none; color: red;">This field is required.</span>
                  </div>
                 <div class="row">
                   <div class="col-6">

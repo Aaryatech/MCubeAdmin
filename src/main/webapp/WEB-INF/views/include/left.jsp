@@ -62,11 +62,11 @@
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/customerList"
-							class="nav-link">Customer Master</a></li>
+							class="nav-link"><i class="icon-file-media "></i><span>Customer Master</span></a></li>
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/userList"
-							class="nav-link">User Master</a></li>
+							class="nav-link"><i class="icon-user "></i><span>User Master</span></a></li>
 
 
 
@@ -81,11 +81,11 @@
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showEditUser"
-							class="nav-link">Edit User Profile</a></li>
+							class="nav-link"><i class="icon-profile"></i><span>Edit User Profile</span></a></li> 
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/changeUserPassword"
-							class="nav-link">Change Password</a></li>
+							class="nav-link"><i class="icon-cog"></i><span>Change Password</span></a></li>
 
 					</ul></li>
 

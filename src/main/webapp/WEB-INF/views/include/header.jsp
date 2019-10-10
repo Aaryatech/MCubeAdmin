@@ -44,7 +44,7 @@
 				class="navbar-nav-link d-flex align-items-center dropdown-toggle"
 				data-toggle="dropdown"> <img
 					src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-					class="rounded-circle mr-2" height="34" alt=""> <span>User</span>
+					class="rounded-circle mr-2" height="40" width="40" alt=""> <span>User</span>
 			</a>
 			<div class="dropdown-menu dropdown-menu-right">
 						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>

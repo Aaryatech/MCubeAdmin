@@ -61,10 +61,26 @@
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-					<i class="icon-user-block "
-											style="color: black;"></i><h5 class="card-title">User List</h5>
+					<%-- <h5 class="card-title"><i class="icon-users4 "
+											style="color: black;"></i>&nbsp;&nbsp;User List</h5>
 								<h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
-							> Add User </a></h5>
+							> Add User </a></h5> --%>
+							
+							
+							<table width="100%">
+							<tr width="100%">
+								<td width="60%"><h5 class="card-title"><i class="icon-users4 "
+											style="color: black;"></i>&nbsp;&nbsp;User List</h5></td>
+								 
+									<td width="40%" align="right"><a
+										href="${pageContext.request.contextPath}/addUser"
+										class="breadcrumb-elements-item">
+											<button type="button" class="btn btn-primary">Add
+												User</button>
+									</a></td>
+							 
+							</tr>
+						</table>
 						 
 					</div>
 					
@@ -74,7 +90,7 @@
 				 
 					<div class="card-body">
 					
-					<div class="form-group row">
+					<!-- <div class="form-group row">
 						<label class="col-form-label col-lg-2" for="locId"> Access
 							Right:
 						</label>
@@ -96,7 +112,7 @@
 						</div>
 					 
 					</div>
-
+ -->
 						<table
 							class="table table-bordered table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
 							id="printtable1">
