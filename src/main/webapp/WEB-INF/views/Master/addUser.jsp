@@ -73,8 +73,8 @@
 
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h6 class="card-title"><i class="icon-user-plus "
-											style="color: black;"></i>&nbsp;&nbsp;Add User</h6>
+								<h2 class="card-title"><i class="icon-user-plus "
+											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add User</h2>
 								<a href="${pageContext.request.contextPath}/userList"
 							class="breadcrumb-elements-item">User List</a>
 							</div>
