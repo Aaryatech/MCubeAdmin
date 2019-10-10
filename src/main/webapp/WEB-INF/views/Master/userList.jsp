@@ -47,12 +47,7 @@
 					</div>
 
 
-					<div class="breadcrumb justify-content-center">
-						<a href="${pageContext.request.contextPath}/addUser"
-							class="breadcrumb-elements-item"> Add User </a>
-
-					</div>
-
+				 
 
 				</div>
 			</div>
@@ -66,15 +61,41 @@
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">User List</h5>
-						<!-- <div class="header-elements">
-							<div class="list-icons">
-								<a class="list-icons-item" data-action="collapse"></a>
-							</div>
-						</div> -->
+					<i class="icon-user-block "
+											style="color: black;"></i><h5 class="card-title">User List</h5>
+								<h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
+							> Add User </a></h5>
+						 
 					</div>
-
+					
+				 
+					
+						 
+				 
 					<div class="card-body">
+					
+					<div class="form-group row">
+						<label class="col-form-label col-lg-2" for="locId"> Access
+							Right:
+						</label>
+						<div class="col-lg-4">
+							<select name="locId" data-placeholder="Select" id="locId"
+								class="form-control form-control-select2 select2-hidden-accessible"
+								data-fouc="" aria-hidden="true">
+
+								<option value="">Select</option>
+
+
+								<option value="1">Master Admin</option>
+
+								<option value="1">Admin</option>
+
+								<option value="1">Associate</option>
+
+							</select>
+						</div>
+					 
+					</div>
 
 						<table
 							class="table table-bordered table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"

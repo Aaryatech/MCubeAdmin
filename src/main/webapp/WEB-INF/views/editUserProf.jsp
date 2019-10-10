@@ -158,7 +158,7 @@
 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
-											Employee Name <span style="color: red">* </span>:
+											User Name <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-3">
 											<input type="text" class="form-control  "

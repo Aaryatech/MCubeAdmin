@@ -39,11 +39,11 @@
 						class="icon-home4"></i> <span> Dashboard </span>
 				</a></li>
 				 --%>
-				<%-- <li class="nav-item"><a
+				<li class="nav-item"><a
 					href="${pageContext.request.contextPath}/dashboard1"
 					class="nav-link active" onclick="selectSubMod(0,0)"> <i
-						class="icon-home4"></i> <span> Dashboard1 </span>
-				</a></li> --%>
+						class="icon-grid3 "></i> <span> Dashboard </span>
+				</a></li>
 
 				<li class="nav-item"><a
 					href="${pageContext.request.contextPath}/welcomePage"
@@ -56,7 +56,7 @@
 
 
 				<li class="nav-item nav-item-submenu"><a href="#"
-					class="nav-link"><i class="icon-file-plus"></i><span>Master</span></a>
+					class="nav-link"><i class="icon-stack"></i><span>Master</span></a>
 
 					<ul class="nav nav-group-sub" data-submenu-title="Master">
 
@@ -75,7 +75,7 @@
 
 
 				<li class="nav-item nav-item-submenu"><a href="#"
-					class="nav-link"><i class="icon-file-plus"></i><span>User</span></a>
+					class="nav-link"><i class="icon-users2 "></i><span>User</span></a>
 
 					<ul class="nav nav-group-sub" data-submenu-title="Master">
 

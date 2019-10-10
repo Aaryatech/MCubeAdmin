@@ -7,7 +7,7 @@
 			class="d-inline-block"> <%-- <img src="${pageContext.request.contextPath}/resources/global_assets/images/logo_light.png" alt=""> --%>
 			<img
 			src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
-			alt="" style="height: 35px; width: 120px;">
+			alt="" style="height: 40px; width: 150px;">
 		</a>
 	</div>
 

@@ -122,9 +122,8 @@
 
 								<form
 									action="${pageContext.request.contextPath}/submitInsertUserInfo"
-									id="submitInsertEmp" method="get"
-									enctype="multipart/form-data">
-									 
+									id="submitInsertEmp" method="get" enctype="multipart/form-data">
+
 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="profilePic">
@@ -157,7 +156,7 @@
 										<div class="col-lg-4"></div>
 									</div>
 
-							
+
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
 											Employee Name <span style="color: red">* </span>:
@@ -172,15 +171,6 @@
 
 
 
-										<div class="col-lg-3">
-											<input type="text" class="form-control  "
-												placeholder="Middle Name" id="mname" name="mname"
-												autocomplete="off" onchange="trim(this)"> <span
-												class="validation-invalid-label" id="error_mname"
-												style="display: none;">This field is required.</span>
-										</div>
-
-
 
 
 										<div class="col-lg-3">
@@ -192,24 +182,28 @@
 										</div>
 									</div>
 
-
-								 
-									 
 									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="permntAdd"> 
-											Address <span style="color: red">* </span>:
+										<label class="col-form-label col-lg-2" for="locId">
+											Access Right <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-10">
-											<textarea rows="3" cols="3" class="form-control"
-												placeholder="Permanent Address" onchange="trim(this)"
-												id="permntAdd" name="permntAdd"></textarea>
-											<span class="validation-invalid-label" id="error_permntAdd"
-												style="display: none;">This field is required.</span>
+											<select name="locId" data-placeholder="Select" id="locId"
+												class="form-control form-control-select2 select2-hidden-accessible"
+												data-fouc="" aria-hidden="true">
 
+												<option value="">Select</option>
+
+
+												<option value="1">Master Admin</option>
+
+												<option value="1">Admin</option>
+
+												<option value="1">Associate</option>
+
+											</select>
 										</div>
 									</div>
-									 
- 
+
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="mobile1">Contact
 											No <span style="color: red">* </span>:
@@ -225,7 +219,11 @@
 												style="display: none;">This Mobile No. is already
 												exist.</span>
 										</div>
-										
+									</div>
+
+
+
+									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="email">Email
 											<span style="color: red">* </span>:
 										</label>
@@ -238,73 +236,10 @@
 												class="validation-invalid-label" id="error_email_unique"
 												style="display: none;">This Email is already exist.</span>
 										</div>
-										
- 
-									</div>
-									
-									
-									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="catId">
-											Access Right <span style="color: red">* </span>:
-										</label>
-										<div class="col-lg-10">
-											<select name="catId" data-placeholder="Select Category"
-												id="catId"
-												class="form-control form-control-select2 select2-hidden-accessible"
-												data-fouc="" aria-hidden="true">
 
-												<option value="">Select </option>
- 
-													<option value="1">Master Admin</option>
-														<option value="2"> Admin</option>
-															<option value="3"> Associate</option>
-											 
-											</select> <span class="validation-invalid-label" id="error_catId"
-												style="display: none;">This field is required.</span>
-										</div>
-									</div>
-  
-									
-
-									<div class="form-group row">
-										
-
-										<label class="col-form-label col-lg-2" for="gender">Gender
-											<span style="color: red">* </span>:
-										</label>
-										<div class="form-check form-check-inline">
-											<label class="form-check-label"> <input type="radio"
-												class="form-check-input" name="gender" id="gender" checked
-												value="0"> Male
-											</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<label class="form-check-label"> <input type="radio"
-												class="form-check-input" name="gender" id="gender" value="1">
-												Female
-											</label>
-										</div>
 
 									</div>
 
-								 
-  
-									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="joiningDate">Birth
-											Date <span style="color: red">* </span>:
-										</label>
-										<div class="col-lg-10">
-											<input type="text" class="form-control datepickerclass "
-												name="joiningDate" id="joiningDate"
-												placeholder="Joining Date"> <span
-												class="validation-invalid-label" id="error_joiningDate"
-												style="display: none;">This field is required.</span>
-										</div>
-									</div>
- 
-
-								 
-  
 
 
 									<div class="form-group row mb-0">
@@ -343,8 +278,45 @@
 
 	</div>
 	<!-- /page content -->
-	 
-	 
+
+	<script type="text/javascript">
+		function setDate(value) {
+			///alert("Value " +value)
+			if (value == 1) {
+				//alert(value)
+				//document.getElementById("relDate").removeAttribute("required");
+				document.getElementById("abc").style.display = "none";
+				document.getElementById("xyz").style.display = "none";
+
+				//alert(value)
+			} else {
+				//alert(value)
+				//document.getElementById("relDate").setAttribute("required","true");
+				document.getElementById("abc").style.display = "block";
+				document.getElementById("xyz").style.display = "block";
+
+				//alert(value)
+
+			}
+
+		}
+	</script>
+	<script>
+		function checkAdd() {
+
+			if (document.getElementById("checkSameAdd").checked == true) {
+
+				document.getElementById("permntAdd").value = document
+						.getElementById("tempAdd").value;
+
+			} else {
+
+				document.getElementById("permntAdd").value = "";
+			}
+
+		}
+	</script>
+
 	<script>
 		function trim(el) {
 			el.value = el.value.replace(/(^\s*)|(\s*$)/gi, ""). // removes leading and trailing spaces
@@ -366,7 +338,354 @@
 			return true;
 
 		}
-	
+		function validateMobile(mobile) {
+			var mob = /^[1-9]{1}[0-9]{9}$/;
+
+			if (mob.test($.trim(mobile)) == false) {
+
+				//alert("Please enter a valid email address .");
+				return false;
+
+			}
+			return true;
+
+		}
+
+		$(document)
+				.ready(
+						function($) {
+
+							$("#submitInsertEmp")
+									.submit(
+											function(e) {
+												var isError = false;
+												var errMsg = "";
+
+												if (!$("#empCode").val()) {
+
+													isError = true;
+
+													$("#error_empCode").show()
+													//return false;
+												} else {
+													$("#error_empCode").hide()
+												}
+
+												if (!$("#fname").val()) {
+
+													isError = true;
+
+													$("#error_fname").show()
+
+												} else {
+													$("#error_fname").hide()
+												}
+
+												if (!$("#mname").val()) {
+
+													isError = true;
+
+													$("#error_mname").show()
+
+												} else {
+													$("#error_mname").hide()
+												}
+
+												if (!$("#sname").val()) {
+
+													isError = true;
+
+													$("#error_sname").show()
+
+												} else {
+													$("#error_sname").hide()
+												}
+
+												if ($("#locId2").val() == "") {
+
+													isError = true;
+
+													$("#error_locId2").show()
+
+												} else {
+													$("#error_locId2").hide()
+												}
+
+												if (!$("#locId").val()) {
+
+													isError = true;
+
+													$("#error_locId").show()
+
+												} else {
+													$("#error_locId").hide()
+												}
+
+												if (!$("#catId").val()) {
+
+													isError = true;
+
+													$("#error_catId").show()
+
+												} else {
+													$("#error_catId").hide()
+												}
+												if (!$("#typeId").val()) {
+
+													isError = true;
+
+													$("#error_typeId").show()
+
+												} else {
+													$("#error_typeId").hide()
+												}
+												if (!$("#deptId").val()) {
+
+													isError = true;
+
+													$("#error_deptId").show()
+
+												} else {
+													$("#error_deptId").hide()
+												}
+												if (!$("#permntAdd").val()) {
+
+													isError = true;
+
+													$("#error_permntAdd")
+															.show()
+
+												} else {
+													$("#error_permntAdd")
+															.hide()
+												}
+
+												if (!$("#bloodGrp").val()) {
+
+													isError = true;
+
+													$("#error_bloodGrp").show()
+
+												} else {
+													$("#error_bloodGrp").hide()
+												}
+
+												if (!$("#tempAdd").val()) {
+
+													isError = true;
+
+													$("#error_tempAdd").show()
+
+												} else {
+													$("#error_tempAdd").hide()
+												}
+
+												if (!$("#emgContPrsn1").val()) {
+
+													isError = true;
+
+													$("#error_emgContPrsn1")
+															.show()
+
+												} else {
+													$("#error_emgContPrsn1")
+															.hide()
+												}
+
+												/* if (!$("#emgContPrsn2").val()) {
+
+													isError = true;
+
+													$("#error_emgContPrsn2")
+															.show()
+
+												} else {
+													$("#error_emgContPrsn2")
+															.hide()
+												} */
+
+												if (!$("#ratePerHr").val()) {
+
+													isError = true;
+
+													$("#error_ratePerHr")
+															.show()
+
+												} else {
+													$("#error_ratePerHr")
+															.hide()
+												}
+
+												if (!$("#prevsExpYr").val()) {
+
+													isError = true;
+
+													$("#error_prevsExpYr")
+															.show()
+
+												} else {
+													$("#error_prevsExpYr")
+															.hide()
+												}
+
+												if (!$("#prevsExpMn").val()) {
+
+													isError = true;
+
+													$("#error_prevsExpMn")
+															.show()
+
+												} else {
+													$("#error_prevsExpMn")
+															.hide()
+												}
+
+												if (!$("#mobile1").val()
+														|| !validateMobile($(
+																"#mobile1")
+																.val())) {
+
+													isError = true;
+
+													if (!$("#mobile1").val()) {
+														document
+																.getElementById("error_mobile1").innerHTML = "This field is required.";
+													} else {
+														document
+																.getElementById("error_mobile1").innerHTML = "Enter valid Mobile No.";
+													}
+
+													$("#error_mobile1").show()
+
+												} else {
+
+													if ($("#mobile1Exist")
+															.val() == 1) {
+
+														$("#error_mobile1")
+																.show()
+													} else {
+														$("#error_mobile1")
+																.hide()
+													}
+
+												}
+
+												if (!$("#emgContNo1").val()
+														|| !validateMobile($(
+																"#emgContNo1")
+																.val())) {
+
+													isError = true;
+
+													if (!$("#emgContNo1").val()) {
+														document
+																.getElementById("error_emgContNo1").innerHTML = "This field is required.";
+													} else {
+														document
+																.getElementById("error_emgContNo1").innerHTML = "Enter valid Mobile No.";
+													}
+
+													$("#error_emgContNo1")
+															.show()
+
+												} else {
+													$("#error_emgContNo1")
+															.hide()
+												}
+
+												if ($("#emgContNo2").val() != ""
+														&& !validateMobile($(
+																"#emgContNo2")
+																.val())) {
+													isError = true;
+													document
+															.getElementById("error_emgContNo2").innerHTML = "Enter valid Mobile No.";
+													$("#error_emgContNo2")
+															.show()
+												} else {
+													$("#error_emgContNo2")
+															.hide()
+												}
+
+												//for alternate contact no.
+
+												if ($("#mobile2").val() != ""
+														&& !validateMobile($(
+																"#mobile2")
+																.val())) {
+													isError = true;
+													document
+															.getElementById("error_emgContNo2_alt").innerHTML = "Enter valid Mobile No.";
+													$("#error_emgContNo2_alt")
+															.show()
+												} else {
+													$("#error_emgContNo2_alt")
+															.hide()
+												}
+
+												if (!$("#email").val()
+														|| !validateEmail($(
+																"#email").val())) {
+
+													isError = true;
+
+													if (!$("#email").val()) {
+														document
+																.getElementById("error_email").innerHTML = "This field is required.";
+													} else {
+														document
+																.getElementById("error_email").innerHTML = "Enter valid email.";
+													}
+
+													$("#error_email").show()
+
+												} else {
+
+													if ($("#emailExist").val() == 1) {
+
+														$("#error_email")
+																.show()
+													} else {
+														$("#error_email")
+																.hide()
+													}
+
+												}
+
+												if (!$("#uname").val()) {
+
+													isError = true;
+
+													$("#error_uname").show()
+
+												} else {
+													$("#error_uname").hide()
+												}
+												if (!$("#upass").val()) {
+
+													isError = true;
+
+													$("#error_upass").show()
+
+												} else {
+													$("#error_upass").hide()
+												}
+												if (!isError) {
+
+													var x = true;
+													if (x == true) {
+
+														document
+																.getElementById("submtbtn").disabled = true;
+														return true;
+													}
+													//end ajax send this to php page
+												}
+												return false;
+											});
+						});
+		//
 	</script>
 	<script type="text/javascript">
 		// Single picker
@@ -458,9 +777,119 @@
 		});
 	</script>
 
+	<script type="text/javascript">
+		function checkUnique(inputValue, valueType) {
+			//alert("hi");
+
+			document.getElementById("submtbtn").disabled = false;
+
+			var valid = false;
+			if (valueType == 1) {
+				//alert("Its Mob no");
+				if (inputValue.length == 10) {
+					valid = true;
+					//alert("Len 10")
+				} else {
+					//alert("Not 10");
+				}
+			} else if (valueType == 2) {
+				//alert("Its Email " );
+
+				var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+				if (inputValue.match(mailformat)) {
+					valid = true;
+					//alert("Valid Email Id");
+				} else {
+					valid = false;
+					//alert("InValid Email Id");
+				}
+			}
+			if (valid == true) {
+				$
+						.getJSON(
+								'${getUserInfo}',
+								{
+									inputValue : inputValue,
+									valueType : valueType,
+									ajax : 'true',
+
+								},
+								function(data) {
+
+									if (valueType == 2) {
+
+										if (data.empId == 0) {
+
+											$("#error_email").hide();
+											document
+													.getElementById("emailExist").value = 0;
+
+										} else {
+											$("#error_email").show();
+											/* document.getElementById("email").value = ""; */
+											document
+													.getElementById("emailExist").value = 1;
+											document
+													.getElementById("error_email").innerHTML = "This Email is already exist.";
+										}
+
+									} else {
+
+										if (data.empId == 0) {
+
+											$("#error_mobile1").hide();
+											document
+													.getElementById("mobile1Exist").value = 0;
+
+										} else {
+											$("#error_mobile1").show()
+											/* document.getElementById("mobile1").value = ""; */
+											document
+													.getElementById("mobile1Exist").value = 1;
+											document
+													.getElementById("error_mobile1").innerHTML = "This Mobile No. is already exist.";
+										}
+
+									}
+
+								});
+				document.getElementById("uname").value = document
+						.getElementById("email").value;
+			}
+		}
+	</script>
+
+	<!-- <script type="text/javascript">
+	$('#submtbtn').on('click', function() {
+        swalInit({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'No, cancel!',
+            confirmButtonClass: 'btn btn-success',
+            cancelButtonClass: 'btn btn-danger',
+            buttonsStyling: false
+        }).then(function(result) {
+            if(result.value) {
+                swalInit(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                );
+            }
+            else if(result.dismiss === swal.DismissReason.cancel) {
+                swalInit(
+                    'Cancelled',
+                    'Your imaginary file is safe :)',
+                    'error'
+                );
+            }
+        });
+    });
 	
- 
+	</script> -->
 
 </body>
 </html>
- 
