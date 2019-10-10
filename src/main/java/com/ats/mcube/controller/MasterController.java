@@ -164,4 +164,16 @@ public class MasterController {
 		return mav;
 	}
 	
+	
+	@RequestMapping(value = "/showIncomingReqList", method = RequestMethod.GET)
+	public ModelAndView showIncomingReqList(Locale locale, Model model,HttpSession session) {
+
+		 
+ 			ModelAndView mav = new ModelAndView("Master/incomingReqList");
+	 
+	 
+	 
+		return mav;
+	}
+	
 }

@@ -75,6 +75,10 @@
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showDeclineItemCodeReqList"
 							class="nav-link"><i class="icon-x" style="font-size:30px"></i><span>Decline Item Code Request</span></a></li>
+							
+							<li class="nav-item"><a
+							href="${pageContext.request.contextPath}/showIncomingReqList"
+							class="nav-link"><i class="icon-list-unordered " style="font-size:30px"></i><span>Incoming Request List</span></a></li>
 
 
 

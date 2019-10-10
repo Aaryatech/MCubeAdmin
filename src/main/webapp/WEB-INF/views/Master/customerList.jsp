@@ -41,13 +41,13 @@
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i
 							class="icon-more"></i></a>
-0
+
 
 
 					</div>
 
 
-				 
+
 
 				</div>
 			</div>
@@ -61,36 +61,38 @@
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-					<%-- <h5 class="card-title"><i class="icon-users4 "
+						<%-- <h5 class="card-title"><i class="icon-users4 "
 											style="color: black;"></i>&nbsp;&nbsp;User List</h5>
 								<h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5> --%>
-							
-							
-							<table width="100%">
+
+
+						<table width="100%">
 							<tr width="100%">
-								<td width="60%"><h2 class="card-title"><i class="icon-users4 "
-											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Customer List</h2></td>
-								 
-									<td width="40%" align="right"><a
-										href="${pageContext.request.contextPath}/addCustomer"
-										class="breadcrumb-elements-item">
-											<button type="button" class="btn btn-primary">Add
-												Customer</button>
-									</a></td>
-							 
+								<td width="60%"><h2 class="card-title">
+										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Customer
+										List
+									</h2></td>
+
+								<td width="40%" align="right"><a
+									href="${pageContext.request.contextPath}/addCustomer"
+									class="breadcrumb-elements-item">
+										<button type="button" class="btn btn-primary">Add
+											Customer</button>
+								</a></td>
+
 							</tr>
 						</table>
-						 
+
 					</div>
-					
-				 
-					
-						 
-				 
+
+
+
+
+
 					<div class="card-body">
-					
-					<!-- <div class="form-group row">
+
+						<!-- <div class="form-group row">
 						<label class="col-form-label col-lg-2" for="locId"> Access
 							Right:
 						</label>
@@ -120,69 +122,66 @@
 								<tr class="bg-blue">
 									<th width="5%">Sr.no</th>
 
-									 
+
 									<th width="30%">Client Name</th>
- 									<th class="text-center" width="10%">Actions</th>
+									<th class="text-center" width="10%">Actions</th>
 								</tr>
 							</thead>
 							<tbody>
 
 								<tr>
 									<td>1</td>
-									 
-									<td>Nikhil Salunkhe</td>
-									 
 
-									<td class="text-center">
-									
-									<a
+									<td>Nikhil Salunkhe</td>
+
+
+									<td class="text-center"><a
 										href="${pageContext.request.contextPath}/showAddTemplate"
 										title="Add Template"><i class="icon-add "
-											style="color: black; font-size:20px;"></i> </a>
-									<a
+											style="color: black; font-size: 20px;"></i> </a> <a
 										href="${pageContext.request.contextPath}/showImpMasterCat"
-										title="Import Master Categorization"><i class="icon-import  "
-											style="color: black; font-size:20px;"></i> </a>
-									
-									<a
+										title="Import Master Categorization"><i
+											class="icon-import  " style="color: black; font-size: 20px;"></i>
+									</a> <a
 										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
-
-										<a
+										title="Edit"><i class="icon-pencil7"
+											style="color: black; font-size: 20px;"></i></a> <a
+										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										title="Block"><i class="icon-user-block "
+											style="color: black; font-size: 20px;"></i> </a> <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a> </td>
+										title="Delete"><i class="icon-trash"
+											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
 
 
 								<tr>
 									<td>2</td>
-									 
+
 									<td>Priti Seth</td>
-									 
 
 
 
-									<td class="text-center">
-									
-									<a
+
+									<td class="text-center"><a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										title="Add Template"><i class="icon-add "
-											style="color: black; font-size:20px;"></i> </a>
-									<a
+											style="color: black; font-size: 20px;"></i> </a> <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										title="Import Master Categorization"><i class="icon-import  "
-											style="color: black; font-size:20px;"></i> </a>
-									<a
+										title="Import Master Categorization"><i
+											class="icon-import  " style="color: black; font-size: 20px;"></i>
+									</a> <a
 										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
-
-										<a
+										title="Edit"><i class="icon-pencil7"
+											style="color: black; font-size: 20px;"></i></a> <a
+										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										title="Block"><i class="icon-user-block "
+											style="color: black; font-size: 20px;"></i> </a> <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px;"></i>
-									</a> </td>
+										title="Delete"><i class="icon-trash"
+											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
 
 
