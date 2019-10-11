@@ -194,13 +194,14 @@ td {
 									</td>
 									
 									<td class="text-center">
-									 <a
-										href="#"
-										title="Block"><i class="icon-user-block "
-											style="color: black; font-size:16px;"></i> </a>
 									<a
 										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
+									
+									 <a
+										href="#"
+										title="Block"><i class="icon-user-block "
+											style="color: green; font-size:16px;"></i> </a>
 
 										<a
 										href="#"
@@ -226,11 +227,12 @@ td {
 									<td class="text-center">
 									 <a
 										href="#"
-										title="Block"><i class="icon-user-block "
-											style="color: black; font-size:16px;"></i> </a>
-									<a
-										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
+									
+									 <a
+										href="#"
+										title="Unblock"><i class="icon-user-block "
+											style="color: red; font-size:16px;"></i> </a>
 
 										<a
 										href="#"
@@ -255,13 +257,14 @@ td {
 									</td>
 
 									<td class="text-center">
-									 <a
-										href="#"
-										title="Block"><i class="icon-user-block "
-											style="color: black; font-size:16px;"></i> </a>
 									<a
 										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
+									
+									 <a
+										href="#"
+										title="Block"><i class="icon-user-block "
+											style="color: green; font-size:16px;"></i> </a>
 
 										<a
 										href="#"
