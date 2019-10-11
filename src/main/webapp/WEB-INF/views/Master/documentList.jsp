@@ -257,12 +257,12 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Basic modal</h5>
+					<h5 class="modal-title">View Document Pages</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 
 				<div class="modal-body">
-				 <div class = "scroll" style="overflow: auto;height: 85%; width: auto;">
+				 <div class = "scroll" style="overflow: auto;height: 85%; width: 40%;">
 					<table class="table table-striped media-library">
 						<thead>
 							<tr>
