@@ -23,10 +23,9 @@
 	</div>
 
 	<div class="collapse navbar-collapse" id="navbar-mobile">
-	
+
 		<ul class="navbar-nav ">
-			<li class="nav-item">
-			<a href="#"
+			<li class="nav-item"><a href="#"
 				class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
 					<i class="icon-paragraph-justify3"></i>
 			</a></li>
@@ -36,24 +35,29 @@
 				<span class="badge badge-mark border-orange-300 mr-2"></span>
 				Morning, Victoria!
 			</span> -->
-			
-			
 
 		<ul class="navbar-nav ml-md-auto">
+
+			<li class="nav-item dropdown dropdown-user "><a href="#" title="Line Code Request"
+				class="navbar-nav-link d-flex align-items-center"
+				data-toggle="dropdown"> <i class="icon-bell2" style="font-size: 1.5rem; margin-top: 7px;"></i>
+			</a>
+				</li>
+
 			<li class="nav-item dropdown dropdown-user"><a href="#"
 				class="navbar-nav-link d-flex align-items-center dropdown-toggle"
 				data-toggle="dropdown"> <img
 					src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
 					class="rounded-circle mr-2" height="40" width="40" alt=""> <span>User</span>
 			</a>
-			<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
-						
-						<div class="dropdown-divider"></div>
-						<a href="${pageContext.request.contextPath}/" class="dropdown-item" ><i class="icon-switch2"></i> Logout</a>
-					</div>
-			
-			</li>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a href="#" class="dropdown-item"><i class="icon-user-plus"></i>
+						My profile</a>
+
+					<div class="dropdown-divider"></div>
+					<a href="${pageContext.request.contextPath}/" class="dropdown-item"><i
+						class="icon-switch2"></i> Logout</a>
+				</div></li>
 		</ul>
 
 
