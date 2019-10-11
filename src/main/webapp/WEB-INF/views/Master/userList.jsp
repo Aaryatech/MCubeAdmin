@@ -179,16 +179,11 @@
 
 
 
-									<td class="text-center"><a
-										href="#"
-										title="Edit"><i class="icon-pencil7"
-											style="color: black; font-size: 20px;"></i></a> <a
-										href="#"
-										title="Block"><i class="icon-user-block "
-											style="color: green; font-size: 20px;"></i> </a> <a
-										href="#"
-										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash"
+									<td class="text-center"><a href="#" title="Edit"><i
+											class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
+										<a href="#" title="Block"><i class="icon-user-block "
+											style="color: green; font-size: 20px;"></i> </a> <a href="#"
+										onClick="delForm()" title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
 
@@ -197,25 +192,20 @@
 									<td>2</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-										class="rounded-circle mr-2" height="40" width="50"  alt=""></td>
+										class="rounded-circle mr-2" height="40" width="50" alt=""></td>
 									<td>Amit Chavan</td>
 									<td>Admin</td>
 									<td>7845121323</td>
 									<td>amitchavan12@gmail.com</td>
-										<!-- <td>amitchavan12@gmail.com</td> -->
+									<!-- <td>amitchavan12@gmail.com</td> -->
 
 
 
-									<td class="text-center"><a
-										href="#"
-										title="Edit"><i class="icon-pencil7"
-											style="color: black; font-size: 20px;"></i></a> <a
-										href="#"
-										title="Unblock"><i class="icon-user-block "
-											style="color: red; font-size: 20px;"></i> </a> <a
-										href="#"
-										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash"
+									<td class="text-center"><a href="#" title="Edit"><i
+											class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
+										<a href="#" title="Unblock"><i class="icon-user-block "
+											style="color: red; font-size: 20px;"></i> </a> <a href="#"
+										onClick="delForm()" title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
 
@@ -241,18 +231,39 @@
 
 	</div>
 	<!-- /page content -->
+	<script>
+		function submitForm() {
+			$('#modal_scrollable').modal('hide');
+		 
+			document.getElementById("submitInsertCompany").submit();
 
-
-	<script type="text/javascript">
-	
-	
-	function clearSelected(){
-		var checkedElements = document.getElementById("empId2").options;
-	    //alert("hii"+elements);
- 
-​for(var i = 0, length = checkedElements.length; i < length; i++) {
-    checkedElements[i].selected = false;
-}​
+		}
 	</script>
+	<script>
+		function delForm() {
+			$('#modal_scrollable').modal('show');
+		}
+	</script>
+
+	<div id="modal_scrollable" class="modal fade" data-backdrop="false"
+		tabindex="-1">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header pb-3">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body py-0">
+					<h5 class="modal-title">Are You Sure You Want to Delete This
+						Record</h5>
+					<br>
+				</div>
+				<div class="modal-footer pt-3">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary"
+						onclick="submitForm()">Delete</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

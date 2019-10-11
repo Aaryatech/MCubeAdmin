@@ -124,8 +124,8 @@
 
 
 									<th width="30%">Client Name</th>
-									<th width="15%">Add Template</th>
-									<th width="15%"> Master Categorization</th>
+									<th  class="text-center" width="15%">Add Template</th>
+									<th   class="text-center" width="15%"> Master Categorization</th>
 									
 									<th class="text-center" width="10%">Actions</th>
 								</tr>
@@ -141,11 +141,11 @@
 									<td class="text-center"><a
 										href="${pageContext.request.contextPath}/showAddTemplate"
 										title="Add Template"><i class="icon-add "
-											style="color: black; font-size: 20px;"></i> </a></td><td> <a
+											style="color: black; font-size: 20px;"></i> </a></td><td class="text-center"> <a
 										href="${pageContext.request.contextPath}/showImpMasterCat"
 										title="Import Master Categorization"><i
 											class="icon-import  " style="color: black; font-size: 20px;"></i>
-									</a></td><td> <a
+									</a></td><td class="text-center"> <a
 										href="#"
 										title="Edit"><i class="icon-pencil7"
 											style="color: black; font-size: 20px;"></i></a> <a
@@ -153,7 +153,7 @@
 										title="Block"><i class="icon-user-block "
 											style="color: green; font-size: 20px;"></i> </a> <a
 										href="#"
-										onClick="return confirm('Are you sure want to delete this record');"
+										onClick="delForm()"
 										title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
@@ -170,11 +170,11 @@
 									<td class="text-center"><a
 										href="${pageContext.request.contextPath}/showAddTemplate"
 										title="Add Template"><i class="icon-add "
-											style="color: black; font-size: 20px;"></i> </a></td><td> <a
+											style="color: black; font-size: 20px;"></i> </a></td><td  class="text-center"> <a
 										href="${pageContext.request.contextPath}/showImpMasterCat"
 										title="Import Master Categorization"><i
 											class="icon-import  " style="color: black; font-size: 20px;"></i>
-									</a></td><td> <a
+									</a></td><td  class="text-center"> <a
 										href="#"
 										title="Edit"><i class="icon-pencil7"
 											style="color: black; font-size: 20px;"></i></a> <a
@@ -182,7 +182,7 @@
 										title="Unblock"><i class="icon-user-block "
 											style="color: red; font-size: 20px;"></i> </a> <a
 										href="#"
-										onClick="return confirm('Are you sure want to delete this record');"
+										onClick="delForm()"
 										title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
@@ -209,6 +209,39 @@
 
 	</div>
 	<!-- /page content -->
+	<script>
+		function submitForm() {
+			$('#modal_scrollable').modal('hide');
+		 
+			document.getElementById("submitInsertCompany").submit();
 
+		}
+	</script>
+	<script>
+		function delForm() {
+			$('#modal_scrollable').modal('show');
+		}
+	</script>
+
+	<div id="modal_scrollable" class="modal fade" data-backdrop="false"
+		tabindex="-1">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header pb-3">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body py-0">
+					<h5 class="modal-title">Are You Sure You Want to Delete This
+						Record</h5>
+					<br>
+				</div>
+				<div class="modal-footer pt-3">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary"
+						onclick="submitForm()">Delete</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

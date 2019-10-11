@@ -195,16 +195,16 @@ td {
 									
 									<td class="text-center">
 									 <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Block"><i class="icon-user-block "
 											style="color: black; font-size:16px;"></i> </a>
 									<a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
 
 										<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										onClick="return confirm('Are you sure want to delete this record');"
+										href="#"
+										onClick="delForm()"
 										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
 									</a></td>
 								</tr>
@@ -225,16 +225,16 @@ td {
 									</td>
 									<td class="text-center">
 									 <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Block"><i class="icon-user-block "
 											style="color: black; font-size:16px;"></i> </a>
 									<a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
 
 										<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										onClick="return confirm('Are you sure want to delete this record');"
+										href="#"
+										onClick="delForm()"
 										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
 									</a></td>
 								</tr>
@@ -256,16 +256,16 @@ td {
 
 									<td class="text-center">
 									 <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Block"><i class="icon-user-block "
 											style="color: black; font-size:16px;"></i> </a>
 									<a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
 
 										<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										onClick="return confirm('Are you sure want to delete this record');"
+										href="#"
+										onClick="delForm()"
 										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
 									</a></td>
 							
@@ -293,6 +293,39 @@ td {
 
 	</div>
 	<!-- /page content -->
+<script>
+		function submitForm() {
+			$('#modal_scrollable').modal('hide');
+		 
+			document.getElementById("submitInsertCompany").submit();
 
+		}
+	</script>
+	<script>
+		function delForm() {
+			$('#modal_scrollable').modal('show');
+		}
+	</script>
+
+	<div id="modal_scrollable" class="modal fade" data-backdrop="false"
+		tabindex="-1">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header pb-3">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body py-0">
+					<h5 class="modal-title">Are You Sure You Want to Delete This
+						Record</h5>
+					<br>
+				</div>
+				<div class="modal-footer pt-3">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary"
+						onclick="submitForm()">Delete</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
