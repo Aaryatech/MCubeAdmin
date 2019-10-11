@@ -6,7 +6,54 @@
 <head>
 
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
-</head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="${pageContext.request.contextPath}/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+
+
+<script src="${pageContext.request.contextPath}/global_assets/js/main/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="${pageContext.request.contextPath}/global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="${pageContext.request.contextPath}/global_assets/js/plugins/ui/ripple.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="${pageContext.request.contextPath}/global_assets/js/plugins/media/fancybox.min.js"></script>
+	<script src="${pageContext.request.contextPath}/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="${pageContext.request.contextPath}/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="${pageContext.request.contextPath}/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="${pageContext.request.contextPath}/global_assets/js/demo_pages/gallery_library.js"></script>
+	<style>
+.modal-content {
+	position: fixed !important;
+	bottom: auto !important;
+	top: 20% !important;
+	right: 20% !important;
+	left:  25% !important;
+	margin: 0px !important;
+ 
+	
+	width:50% !important;
+	height: 60%;
+}
+
+/* .scroll
+		{
+			min-height: 67.5%;
+			width: 26.5%;
+			position: absolute;
+			top: 162%;
+			overflow: scroll;
+		} */
+</style>
+ </head>
 
 <body>
 
@@ -27,7 +74,7 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-		<!-- 	<div class="page-header page-header-light">
+			<!-- 	<div class="page-header page-header-light">
 
 
 				<div
@@ -61,13 +108,15 @@
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title"><i class="far fa-list-alt mr-3 fa-2x"
-											style="color: black;"></i>&nbsp;&nbsp;Document List</h5>
-								<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
+						<h5 class="card-title">
+							<i class="far fa-list-alt mr-3 fa-2x" style="color: black;"></i>&nbsp;&nbsp;Document
+							List
+						</h5>
+						<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5> --%>
 
 
-					<%-- 	<table width="100%">
+						<%-- 	<table width="100%">
 							<tr width="100%">
 								<td width="60%"><h2 class="card-title">
 										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;User
@@ -134,14 +183,15 @@
 
 								<tr>
 									<td>1</td>
-									<td><a href="#modal_default" data-toggle="modal" data-target="#modal_default">D4</a></td>
+									<td><a href="#modal_default" data-toggle="modal"
+										data-target="#modal_default">D4</a></td>
 									<td>Loan NOCs</td>
-									 <td><img
+									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/excel-sm.png"
 										class="mr-2" height="34" alt="" title="excel"></td>
 									<td>Sashi Kumar</td>
 									<td>02-02-2019</td>
-								
+
 									<%-- <td class="text-center"><a
 										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
 										title="Edit"><i class="icon-pencil7"
@@ -160,12 +210,12 @@
 									<td>2</td>
 									<td>F66</td>
 									<td>Finance Docs</td>
-									 <td><img
+									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf-sm.png"
 										class="mr-2" height="34" alt="" title="pdf"></td>
 									<td>Pakaj Mishra</td>
 									<td>20-06-2019</td>
-								
+
 									<%-- <td class="text-center"><a
 										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
 										title="Edit"><i class="icon-pencil7"
@@ -201,35 +251,70 @@
 
 	</div>
 	<!-- /page content -->
-<!--***************************Model***********************  -->
- <!-- Basic modal -->
-				<div id="modal_default" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Basic modal</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<h6 class="font-weight-semibold">Text in a modal</h6>
-								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-								<hr>
-
-								<h6 class="font-weight-semibold">Another paragraph</h6>
-								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
+	<!--***************************Model***********************  -->
+	<!-- Basic modal -->
+	<div id="modal_default" class="modal fade" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Basic modal</h5>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
-<!--***************************Model End**********************  -->
+
+				<div class="modal-body">
+				 <div class = "scroll" style="overflow: auto;height: 85%; width: auto;">
+					<table class="table table-striped media-library">
+						<thead>
+							<tr>
+ 								<th width="10%">Pages</th>
+								 
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								 
+								<td width="10%"><a
+									href="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
+									data-popup="lightbox"> <img
+										src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
+										alt="" class="img-preview rounded">
+								</a></td>
+								 
+							</tr>
+							<tr>
+								 
+								<td width="10%"><a
+									href="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
+									data-popup="lightbox"> <img
+										src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
+										alt="" class="img-preview rounded">
+								</a></td>
+								 
+							</tr>
+							<tr>
+								 
+								<td width="10%"><a
+									href="${pageContext.request.contextPath}/resources/assets/images/1.png"
+									data-popup="lightbox"> <img
+										src="${pageContext.request.contextPath}/resources/assets/images/1.png"
+										alt="" class="img-preview rounded">
+								</a></td>
+								 
+							</tr>
+						</tbody>
+					</table>
+					 </div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+					<button type="button" class="btn bg-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--***************************Model End**********************  -->
 
 </body>
 </html>
