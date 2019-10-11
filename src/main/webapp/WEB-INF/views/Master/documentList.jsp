@@ -322,7 +322,7 @@
 						<tbody>
 							<tr>
 								 
-								<td width="10%"> <img
+								<td width="10%"> <input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
@@ -330,7 +330,7 @@
 							</tr>
 							<tr>
 								 
-								<td width="10%"><img
+								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
@@ -338,7 +338,7 @@
 							</tr>
 							<tr>
 								 
-								<td width="10%"><img
+								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
@@ -392,7 +392,7 @@
 						<tbody>
 							<tr>
 								 
-								<td width="10%"> <img
+								<td width="10%"> <input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
 								</td>
@@ -400,7 +400,7 @@
 							</tr>
 							<tr>
 								 
-								<td width="10%"><img
+								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
 								</td>
@@ -408,7 +408,7 @@
 							</tr>
 							<tr>
 								 
-								<td width="10%"><img
+								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
 								</td>
