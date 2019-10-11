@@ -106,7 +106,7 @@ td {
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-					<h5 class="card-title"><i class="icon-list3"
+					<h5 class="card-title"><i class="icon-menu4"
 						style="color: black;"></i>&nbsp;&nbsp;Declined Line Item
 						 Code Request</h5>
 					
