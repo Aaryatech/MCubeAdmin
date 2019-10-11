@@ -40,7 +40,7 @@
 				</a></li>
 				 --%>
 				<li class="nav-item"><a
-					href="${pageContext.request.contextPath}/dashboard1"
+					href="${pageContext.request.contextPath}/dash"
 					class="nav-link active" onclick="selectSubMod(0,0)"> <i
 						class="icon-grid3 "></i> <span> Dashboard </span>
 				</a></li>
