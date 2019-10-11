@@ -72,6 +72,16 @@ public class HomeController {
 		return mav;
 	}
 	
+	@RequestMapping(value = "/associateDash", method = RequestMethod.GET)
+	public ModelAndView associateDash(Locale locale, Model model,HttpSession session) {
+
+		
+		ModelAndView mav = new ModelAndView("associateDashboard");
+		 
+
+		return mav;
+	}
+	
 
 	@RequestMapping(value = "/welcomePage", method = RequestMethod.GET)
 	public ModelAndView welcomePage(Locale locale, Model model,HttpSession session) {
