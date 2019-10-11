@@ -11,17 +11,6 @@
 <script
 	src="${pageContext.request.contextPath}/resources/global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
 
-<%-- <script
-	src="${pageContext.request.contextPath}/resources/global_assets/js/demo_pages/charts/echarts/bars_tornados.js"></script> --%>
-<!-- /theme JS files -->
-
-<!-- Theme JS files -->
-<%-- <script
-	src="${pageContext.request.contextPath}/resources/global_assets/js/demo_pages/charts/echarts/pies_donuts.js"></script> --%>
-<!-- /theme JS files -->
-
-
-
 <!-- Theme JS files -->
 <script
 	src="${pageContext.request.contextPath}/resources/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
@@ -239,14 +228,6 @@ body {
 												Filter
 											</button>
 
-											<button type="button" class="btn btn-primary"
-												data-toggle="modal" data-target="#modal_default">
-												<span class="glyphicon glyphicon-cog"></span> Assign To
-												Associate
-
-											</button>
-
-
 											<div id="tabs-basic-1">
 
 												<div class="table-responsive">
@@ -270,9 +251,7 @@ body {
 
 															<tr>
 																<td><div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 1
+																		<label class="form-check-label">  1
 																		</label>
 																	</div></td>
 																<td><div class="d-flex align-items-center">
@@ -291,7 +270,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -302,9 +281,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 2
+																		<label class="form-check-label">  2
 																		</label>
 																	</div>
 
@@ -326,7 +303,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -336,9 +313,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 3
+																		<label class="form-check-label"> 3
 																		</label>
 																	</div>
 
@@ -360,7 +335,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -393,7 +368,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-danger">Assigned</span></td>
+																<td><span class="badge bg-success">Done</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -425,7 +400,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-danger">Assigned</span></td>
+																<td><span class="badge bg-danger">Rejected</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -487,7 +462,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-danger">Assigned</span></td>
+																<td><span class="badge bg-danger">Rejected</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -498,9 +473,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 2
+																		<label class="form-check-label"> 2
 																		</label>
 																	</div>
 
@@ -522,7 +495,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -554,7 +527,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-danger">Assigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -615,7 +588,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-danger">Assigned</span></td>
+																<td><span class="badge bg-danger">Rejected</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -626,9 +599,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 2
+																		<label class="form-check-label">  2
 																		</label>
 																	</div>
 
@@ -650,7 +621,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td> <span class="badge bg-grey-400">Unassigned</span></td>
+																<td> <span class="badge bg-success">Done</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -660,9 +631,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 3
+																		<label class="form-check-label">  3
 																		</label>
 																	</div>
 
@@ -684,208 +653,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td> <span class="badge bg-grey-400">Unassigned</span></td>
-																<td>ABC</td>
-																<td>10/10/2019</td>
-
-															</tr>
-
-
-															<tr>
-																<td>
-
-																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 4
-																		</label>
-																	</div>
-
-
-																</td>
-																<td><div class="d-flex align-items-center">
-																		<div class="mr-3">
-																			<a href="#"> <img
-																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																				class="rounded-circle mr-2" height="34" alt="">
-																			</a>
-																		</div>
-																		<div>
-																			<a href="#" class="text-default font-weight-semibold">Brett
-																				Castellano</a>
-
-																		</div>
-																	</div></td>
-
-																<td>Hotel</td>
-																<td>Abc Deal</td>
-																<td> <span class="badge bg-grey-400">Unassigned</span></td>
-																<td>ABC</td>
-																<td>10/10/2019</td>
-
-															</tr>
-
-															<tr>
-																<td>
-
-																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 5
-																		</label>
-																	</div>
-
-
-																</td>
-																<td><div class="d-flex align-items-center">
-																		<div class="mr-3">
-																			<a href="#"> <img
-																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																				class="rounded-circle mr-2" height="34" alt="">
-																			</a>
-																		</div>
-																		<div>
-																			<a href="#" class="text-default font-weight-semibold">Roxanne
-																				Forbes</a>
-
-																		</div>
-																	</div></td>
-
-																<td>Hotel</td>
-																<td>Abc Deal</td>
-																<td> <span class="badge bg-grey-400">Unassigned</span></td>
-																<td>ABC</td>
-																<td>10/10/2019</td>
-
-															</tr>
-
-
-														</tbody>
-													</table>
-												</div>
-
-
-											</div>
-
-
-
-											<div id="tabs-basic-4">
-
-												<div class="table-responsive">
-													<table
-														class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
-														id="printtable1">
-														<thead>
-															<tr class="bg-blue">
-																<th>Request ID</th>
-																<th class="text-center">Client</th>
-																<th>Property Type</th>
-																<th>Deal Name</th>
-																<th>Request Status</th>
-																<th>Received From/th>
-																<th>Date</th>
-
-															</tr>
-														</thead>
-														<tbody>
-
-															<tr>
-																<td>
-
-																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 1
-																		</label>
-																	</div>
-
-
-																</td>
-																<td><div class="d-flex align-items-center">
-																		<div class="mr-3">
-																			<a href="#"> <img
-																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																				class="rounded-circle mr-2" height="34" alt="">
-																			</a>
-																		</div>
-																		<div>
-																			<a href="#" class="text-default font-weight-semibold">Alan
-																				Macedo</a>
-
-																		</div>
-																	</div></td>
-
-																<td>Hotel</td>
-																<td>Abc Deal</td>
-																<td> <span class="badge bg-grey-400">Unassigned</span></td>
-																<td>ABC</td>
-																<td>10/10/2019</td>
-
-															</tr>
-
-
-															<tr>
-																<td>
-
-																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 2
-																		</label>
-																	</div>
-
-
-																</td>
-																<td><div class="d-flex align-items-center">
-																		<div class="mr-3">
-																			<a href="#"> <img
-																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																				class="rounded-circle mr-2" height="34" alt="">
-																			</a>
-																		</div>
-																		<div>
-																			<a href="#" class="text-default font-weight-semibold">Robert
-																				Hauber</a>
-
-																		</div>
-																	</div></td>
-
-																<td>Hotel</td>
-																<td>Abc Deal</td>
-																<td> <span class="badge bg-grey-400">Unassigned</span></td>
-																<td>ABC</td>
-																<td>10/10/2019</td>
-
-															</tr>
-
-															<tr>
-																<td>
-
-																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 3
-																		</label>
-																	</div>
-
-																</td>
-																<td><div class="d-flex align-items-center">
-																		<div class="mr-3">
-																			<a href="#"> <img
-																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																				class="rounded-circle mr-2" height="34" alt="">
-																			</a>
-																		</div>
-																		<div>
-																			<a href="#" class="text-default font-weight-semibold">Chris
-																				Macintyre</a>
-
-																		</div>
-																	</div></td>
-
-																<td>Hotel</td>
-																<td>Abc Deal</td>
-																<td> <span class="badge bg-grey-400">Unassigned</span></td>
+																<td> <span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -918,7 +686,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-danger">Assigned</span></td>
+																<td> <span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -928,9 +696,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 5
+																		<label class="form-check-label"> 5
 																		</label>
 																	</div>
 
@@ -952,7 +718,198 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td> <span class="badge bg-blue">Pending</span></td>
+																<td>ABC</td>
+																<td>10/10/2019</td>
+
+															</tr>
+
+
+														</tbody>
+													</table>
+												</div>
+
+
+											</div>
+
+
+
+											<div id="tabs-basic-4">
+
+												<div class="table-responsive">
+													<table
+														class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
+														id="printtable1">
+														<thead>
+															<tr class="bg-blue">
+																<th>Request ID</th>
+																<th class="text-center">Client</th>
+																<th>Property Type</th>
+																<th>Deal Name</th>
+																<th>Request Status</th>
+																<th>Received From</th>
+																<th>Date</th>
+
+															</tr>
+														</thead>
+														<tbody>
+
+															<tr>
+																<td>
+
+																	<div class="form-check">
+																		<label class="form-check-label">  1
+																		</label>
+																	</div>
+
+
+																</td>
+																<td><div class="d-flex align-items-center">
+																		<div class="mr-3">
+																			<a href="#"> <img
+																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																				class="rounded-circle mr-2" height="34" alt="">
+																			</a>
+																		</div>
+																		<div>
+																			<a href="#" class="text-default font-weight-semibold">Alan
+																				Macedo</a>
+
+																		</div>
+																	</div></td>
+
+																<td>Hotel</td>
+																<td>Abc Deal</td>
+																<td> <span class="badge bg-blue">Pending</span></td>
+																<td>ABC</td>
+																<td>10/10/2019</td>
+
+															</tr>
+
+
+															<tr>
+																<td>
+
+																	<div class="form-check">
+																		<label class="form-check-label">  2
+																		</label>
+																	</div>
+
+
+																</td>
+																<td><div class="d-flex align-items-center">
+																		<div class="mr-3">
+																			<a href="#"> <img
+																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																				class="rounded-circle mr-2" height="34" alt="">
+																			</a>
+																		</div>
+																		<div>
+																			<a href="#" class="text-default font-weight-semibold">Robert
+																				Hauber</a>
+
+																		</div>
+																	</div></td>
+
+																<td>Hotel</td>
+																<td>Abc Deal</td>
+																<td> <span class="badge bg-success">Done</span></td>
+																<td>ABC</td>
+																<td>10/10/2019</td>
+
+															</tr>
+
+															<tr>
+																<td>
+
+																	<div class="form-check">
+																		<label class="form-check-label">  3
+																		</label>
+																	</div>
+
+																</td>
+																<td><div class="d-flex align-items-center">
+																		<div class="mr-3">
+																			<a href="#"> <img
+																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																				class="rounded-circle mr-2" height="34" alt="">
+																			</a>
+																		</div>
+																		<div>
+																			<a href="#" class="text-default font-weight-semibold">Chris
+																				Macintyre</a>
+
+																		</div>
+																	</div></td>
+
+																<td>Hotel</td>
+																<td>Abc Deal</td>
+																<td> <span class="badge bg-blue">Pending</span></td>
+																<td>ABC</td>
+																<td>10/10/2019</td>
+
+															</tr>
+
+
+															<tr>
+																<td>
+
+																	<div class="form-check">
+																		<label class="form-check-label">  4
+																		</label>
+																	</div>
+
+
+																</td>
+																<td><div class="d-flex align-items-center">
+																		<div class="mr-3">
+																			<a href="#"> <img
+																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																				class="rounded-circle mr-2" height="34" alt="">
+																			</a>
+																		</div>
+																		<div>
+																			<a href="#" class="text-default font-weight-semibold">Brett
+																				Castellano</a>
+
+																		</div>
+																	</div></td>
+
+																<td>Hotel</td>
+																<td>Abc Deal</td>
+																<td><span class="badge bg-danger">Rejected</span></td>
+																<td>ABC</td>
+																<td>10/10/2019</td>
+
+															</tr>
+
+															<tr>
+																<td>
+
+																	<div class="form-check">
+																		<label class="form-check-label"> 5
+																		</label>
+																	</div>
+
+
+																</td>
+																<td><div class="d-flex align-items-center">
+																		<div class="mr-3">
+																			<a href="#"> <img
+																				src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																				class="rounded-circle mr-2" height="34" alt="">
+																			</a>
+																		</div>
+																		<div>
+																			<a href="#" class="text-default font-weight-semibold">Roxanne
+																				Forbes</a>
+
+																		</div>
+																	</div></td>
+
+																<td>Hotel</td>
+																<td>Abc Deal</td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -992,9 +949,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 1
+																		<label class="form-check-label">  1
 																		</label>
 																	</div>
 
@@ -1016,7 +971,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -1027,9 +982,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 2
+																		<label class="form-check-label">  2
 																		</label>
 																	</div>
 
@@ -1051,7 +1004,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -1061,9 +1014,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 3
+																		<label class="form-check-label">  3
 																		</label>
 																	</div>
 
@@ -1085,7 +1036,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -1096,9 +1047,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 4
+																		<label class="form-check-label">  4
 																		</label>
 																	</div>
 
@@ -1120,7 +1069,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -1130,9 +1079,7 @@ body {
 																<td>
 
 																	<div class="form-check">
-																		<label class="form-check-label"> <input
-																			type="checkbox" class="form-check-input-styled"
-																			data-fouc> 5
+																		<label class="form-check-label">  5
 																		</label>
 																	</div>
 
@@ -1154,7 +1101,7 @@ body {
 
 																<td>Hotel</td>
 																<td>Abc Deal</td>
-																<td><span class="badge bg-grey-400">Unassigned</span></td>
+																<td><span class="badge bg-blue">Pending</span></td>
 																<td>ABC</td>
 																<td>10/10/2019</td>
 
@@ -1169,42 +1116,6 @@ body {
 
 										</div>
 									</div>
-
-
-									<!-- Basic modal -->
-									<div id="modal_default" class="modal fade" tabindex="-1">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title">Assign Associate</h5>
-													<button type="button" class="close" data-dismiss="modal">&times;</button>
-												</div>
-
-												<div class="modal-body">
-
-													<div class="form-group">
-														<label class="d-block">Associate</label> <select
-															class="form-control select" data-fouc>
-															<option value="AZ">Alan Macedo</option>
-															<option value="CO">Robert Hauber</option>
-															<option value="ID">Chris Macintyre</option>
-															<option value="WY">Brett Castellano</option>
-															<option value="WY">Roxanne Forbes</option>
-														</select>
-													</div>
-
-												</div>
-
-												<div class="modal-footer">
-													<button type="button" class="btn btn-link"
-														data-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Assign
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /basic modal -->
 
 
 
@@ -1421,9 +1332,9 @@ body {
 					// Vertical axis
 					yAxis : [ {
 						type : 'category',
-						data : [ 'Alan Macedo', 'Robert Hauber',
-								'Chris Macintyre', 'Brett Castellano',
-								'Roxanne Forbes' ],
+						data : [ 'May', 'April',
+								'March', 'February',
+								'January' ],
 						axisLabel : {
 							color : '#333'
 						},
