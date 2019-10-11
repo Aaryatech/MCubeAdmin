@@ -124,6 +124,9 @@
 
 
 									<th width="30%">Client Name</th>
+									<th width="15%">Add Template</th>
+									<th width="15%"> Master Categorization</th>
+									
 									<th class="text-center" width="10%">Actions</th>
 								</tr>
 							</thead>
@@ -138,18 +141,18 @@
 									<td class="text-center"><a
 										href="${pageContext.request.contextPath}/showAddTemplate"
 										title="Add Template"><i class="icon-add "
-											style="color: black; font-size: 20px;"></i> </a> <a
+											style="color: black; font-size: 20px;"></i> </a></td><td> <a
 										href="${pageContext.request.contextPath}/showImpMasterCat"
 										title="Import Master Categorization"><i
 											class="icon-import  " style="color: black; font-size: 20px;"></i>
-									</a> <a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+									</a></td><td> <a
+										href="#"
 										title="Edit"><i class="icon-pencil7"
 											style="color: black; font-size: 20px;"></i></a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Block"><i class="icon-user-block "
-											style="color: black; font-size: 20px;"></i> </a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+											style="color: green; font-size: 20px;"></i> </a> <a
+										href="#"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>
@@ -165,20 +168,20 @@
 
 
 									<td class="text-center"><a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="${pageContext.request.contextPath}/showAddTemplate"
 										title="Add Template"><i class="icon-add "
-											style="color: black; font-size: 20px;"></i> </a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+											style="color: black; font-size: 20px;"></i> </a></td><td> <a
+										href="${pageContext.request.contextPath}/showImpMasterCat"
 										title="Import Master Categorization"><i
 											class="icon-import  " style="color: black; font-size: 20px;"></i>
-									</a> <a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+									</a></td><td> <a
+										href="#"
 										title="Edit"><i class="icon-pencil7"
 											style="color: black; font-size: 20px;"></i></a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										title="Block"><i class="icon-user-block "
-											style="color: black; font-size: 20px;"></i> </a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
+										title="Unblock"><i class="icon-user-block "
+											style="color: red; font-size: 20px;"></i> </a> <a
+										href="#"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>

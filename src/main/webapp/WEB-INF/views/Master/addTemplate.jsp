@@ -37,7 +37,7 @@
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i
+							<a href="#" class="breadcrumb-item"><i
 								class="icon-home2 mr-2"></i> Home</a> <span
 								class="breadcrumb-item active">Dashboard</span>
 						</div>
@@ -220,11 +220,11 @@
 
 
 									<td class="text-center"><a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
 
 										<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
 									</a> </td>
@@ -238,11 +238,11 @@
  									<td>L2</td>
  
 									<td class="text-center"><a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
 
 										<a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
 									</a> </td>

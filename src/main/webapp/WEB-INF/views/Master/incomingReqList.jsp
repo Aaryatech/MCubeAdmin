@@ -93,12 +93,7 @@
 												<tr>
 													<td>1</td>
 													<td><div class="d-flex align-items-center">
-															<div class="mr-3">
-																<a href="#"> <img
-																	src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																	class="rounded-circle mr-2" height="34" alt="">
-																</a>
-															</div>
+															
 															<div>
 																<a href="#" class="text-default font-weight-semibold">Shree Kapadnis</a>
 
@@ -116,12 +111,7 @@
 												<tr>
 													<td>2</td>
 													<td><div class="d-flex align-items-center">
-															<div class="mr-3">
-																<a href="#"> <img
-																	src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																	class="rounded-circle mr-2" height="34" alt="">
-																</a>
-															</div>
+															
 															<div>
 																<a href="#" class="text-default font-weight-semibold">Rahul Desale</a>
 

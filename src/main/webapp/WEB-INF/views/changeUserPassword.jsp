@@ -62,7 +62,7 @@
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i
+							<a href="#" class="breadcrumb-item"><i
 								class="icon-home2 mr-2"></i> Home</a> <span
 								class="breadcrumb-item active">Dashboard</span>
 						</div>
@@ -97,9 +97,10 @@
 						<!-- /title -->
 
 
-						<div class="card">
+						<div class="card"> 
 							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Change Password</h6>
+								<h2 class="card-title"><i class="icon-pencil3"
+											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Change Password</h2>
 								<!-- <div class="header-elements">
 									<div class="list-icons">
 										<a class="list-icons-item" data-action="collapse"></a>
@@ -224,7 +225,7 @@
 									<div class="form-group row mb-0">
 										<div class="col-lg-10 ml-lg-auto">
 											<!-- <button type="reset" class="btn btn-light legitRipple">Reset</button> -->
-											<button type="submit" class="btn bg-blue ml-3 legitRipple"
+											<button type="submit" class="btn btn-primary"
 												id="submtbtn">
 												Submit <i class="icon-paperplane ml-2"></i>
 											</button>
@@ -238,8 +239,7 @@
 										</div>
 									</div>
 								</form>
-									<p class="desc text-danger fontsize11">Notice : * Fields
-										are mandatory.</p>
+									
 							</div>
 						</div>
 

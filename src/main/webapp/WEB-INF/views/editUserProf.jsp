@@ -37,7 +37,7 @@
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i
+							<a href="#" class="breadcrumb-item"><i
 								class="icon-home2 mr-2"></i> Home</a> <span
 								class="breadcrumb-item active">Dashboard</span>
 						</div>
@@ -134,7 +134,7 @@
 
 												<img
 													src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-													class="rounded-circle mr-2" height="34" alt="">
+													class="rounded-circle mr-2" height="60" width="60" alt="">
 												<!-- image-preview-clear button -->
 												<button type="button" title="Clear selected files"
 													class="btn btn-default btn-secondary fileinput-remove fileinput-remove-button legitRipple image-preview-clear image-preview-clear1"

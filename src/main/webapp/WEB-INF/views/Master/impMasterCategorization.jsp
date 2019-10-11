@@ -37,7 +37,7 @@
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i
+							<a href="#" class="breadcrumb-item"><i
 								class="icon-home2 mr-2"></i> Home</a> <span
 								class="breadcrumb-item active">Dashboard</span>
 						</div>
@@ -157,7 +157,7 @@
 										<div class="col-lg-10 ml-lg-auto">
 											<!-- <button type="reset" class="btn btn-light legitRipple">Reset</button> -->
 											<button type="submit" class="btn btn-primary" id="submtbtn">
-												Submit <i class="icon-paperplane ml-2"></i>
+												Generate Template <i class="icon-paperplane ml-2"></i>
 											</button>
 											<a href="${pageContext.request.contextPath}/customerList"><button
 													type="button" class="btn btn-primary">
@@ -190,13 +190,13 @@
 											<td>Home Loan</td>
 											<td>X</td>
 											<td>-</td>
-											<td>L1</td>
+											<td><a href="#">L1</a></td>
 
 											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+												href="#"
 												title="Edit"><i class="icon-pencil7"
 													style="color: black; font-size: 20px;"></i></a> <a
-												href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+												href="#"
 												onClick="return confirm('Are you sure want to delete this record');"
 												title="Delete"><i class="icon-trash"
 													style="color: black; font-size: 20px;"></i> </a></td>
@@ -208,13 +208,12 @@
 											<td>Car Loan</td>
 											<td>Y</td>
 											<td>-</td>
-											<td>L2</td>
-
+											<td><a href="#">L2</a></td>
 											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+												href="#"
 												title="Edit"><i class="icon-pencil7"
 													style="color: black; font-size: 20px;"></i></a> <a
-												href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+												href="#"
 												onClick="return confirm('Are you sure want to delete this record');"
 												title="Delete"><i class="icon-trash"
 													style="color: black; font-size: 20px;"></i> </a></td>

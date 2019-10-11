@@ -114,7 +114,40 @@
 						</div>
 					 
 					</div>
+					
+					
  -->
+
+						<div class="form-group row">
+
+							<label class="col-form-label col-lg-2" for="locId2">
+								Access Rights : </label>
+							<div class="col-lg-4">
+
+								<select multiple="multiple" data-placeholder="Select "
+									name="empId2" id="empId2"
+									class="form-control form-control-sm select"
+									data-container-css-class="select-sm" data-fouc>
+
+									<option value="">Select</option>
+
+									<option value="1">All</option>
+									<option value="1">Master Admin</option>
+
+									<option value="1">Admin</option>
+
+									<option value="1">Associate</option>
+
+								</select>
+							</div>
+
+							<div style="text-align: center;">
+								<input type="submit" class="btn btn-primary" value="Clear All"
+									onclick="clearSelected()" id="deleteId"
+									style="align-content: center; width: 113px; margin-left: 40px;">
+							</div>
+
+						</div>
 						<table
 							class="table table-bordered table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
 							id="printtable1">
@@ -138,7 +171,7 @@
 									<td>1</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-										class="rounded-circle mr-2" height="34" alt=""></td>
+										class="rounded-circle mr-2" height="40" width="50"></td>
 									<td>Satish Patil</td>
 									<td>Master Admin</td>
 									<td>8956232323</td>
@@ -147,13 +180,13 @@
 
 
 									<td class="text-center"><a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Edit"><i class="icon-pencil7"
 											style="color: black; font-size: 20px;"></i></a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Block"><i class="icon-user-block "
-											style="color: black; font-size: 20px;"></i> </a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+											style="color: green; font-size: 20px;"></i> </a> <a
+										href="#"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>
@@ -164,7 +197,7 @@
 									<td>2</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-										class="rounded-circle mr-2" height="34" alt=""></td>
+										class="rounded-circle mr-2" height="40" width="50"  alt=""></td>
 									<td>Amit Chavan</td>
 									<td>Admin</td>
 									<td>7845121323</td>
@@ -173,13 +206,13 @@
 
 
 									<td class="text-center"><a
-										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
+										href="#"
 										title="Edit"><i class="icon-pencil7"
 											style="color: black; font-size: 20px;"></i></a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
-										title="Block"><i class="icon-user-block "
-											style="color: black; font-size: 20px;"></i> </a> <a
-										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
+										href="#"
+										title="Unblock"><i class="icon-user-block "
+											style="color: red; font-size: 20px;"></i> </a> <a
+										href="#"
 										onClick="return confirm('Are you sure want to delete this record');"
 										title="Delete"><i class="icon-trash"
 											style="color: black; font-size: 20px;"></i> </a></td>
@@ -208,5 +241,17 @@
 	</div>
 	<!-- /page content -->
 
+
+	<script type="text/javascript">
+	
+	
+	function clearSelected(){
+		var checkedElements = document.getElementById("empId2").options;
+	    //alert("hii"+elements);
+ 
+​for(var i = 0, length = checkedElements.length; i < length; i++) {
+    checkedElements[i].selected = false;
+}​
+	</script>
 </body>
 </html>
