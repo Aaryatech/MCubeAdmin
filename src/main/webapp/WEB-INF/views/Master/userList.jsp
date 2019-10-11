@@ -231,6 +231,18 @@
 
 	</div>
 	<!-- /page content -->
+	
+	<script type="text/javascript">
+	function clearSelected()
+    {
+		//alert("hii");
+	    var elements = document.getElementById("empId2").options;
+    for(var i = 0; i < elements.length; i++){
+      if(elements[i].selected)
+	    elements[i].selected = false;
+    }
+}
+	</script>
 	<script>
 		function submitForm() {
 			$('#modal_scrollable').modal('hide');

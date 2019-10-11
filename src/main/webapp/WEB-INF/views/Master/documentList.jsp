@@ -35,15 +35,16 @@
 	
 	bottom: auto !important;
 	top: 20% !important;
-	right: 50% !important;
-	left:  20%!important;
+	right:40% !important;
+	//left:  5%!important;
 	margin: 0px !important;
- 
-	
-	width:150% !important;
+   
+	width:190% !important;
 	height: 60%;
 }
 
+
+ 
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
@@ -73,6 +74,9 @@
 .container {
   position: relative;
   display: none;
+  width:160% !important;
+	height: 60%;
+	right:40% !important;
 }
 
 /* Expanding image text */
@@ -225,7 +229,7 @@
 								<tr>
 									<td>1</td>
 									<td><a href="#modal_default" data-toggle="modal"
-										data-target="#modal_default">D4</a></td>
+										data-target="#modal_default">D766R33</a></td>
 									<td>Loan NOCs</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/excel-sm.png"
@@ -249,7 +253,8 @@
 
 								<tr>
 									<td>2</td>
-									<td>F66</td>
+									<td><a href="#modal_default1" data-toggle="modal"
+										data-target="#modal_default1">D433H22</a></td>
 									<td>Finance Docs</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf-sm.png"
@@ -305,7 +310,7 @@
 				<div class="modal-body">
 				<div class="form-group row">
 				<div class="col-md-6">
-				 <div class = "table-responsive" style="overflow: auto; height: 85%; width: 100%;">
+				 <div class = "table-responsive" style="overflow: auto; height: 105%; width:60%;">
 					<table class="table table-striped media-library">
 						<thead>
 							<tr>
@@ -318,7 +323,7 @@
 							<tr>
 								 
 								<td width="10%"> <img
-										src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
 								 
@@ -326,7 +331,7 @@
 							<tr>
 								 
 								<td width="10%"><img
-										src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
 								 
@@ -334,36 +339,22 @@
 							<tr>
 								 
 								<td width="10%"><img
-										src="${pageContext.request.contextPath}/resources/assets/images/1.png"
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
 								 
 							</tr>
 							
-							<tr>
-								 
-								<td width="10%"><img
-										src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
-										alt="" class="img-preview rounded" onclick="myFunction(this);">
-								</td>
-								 
-							</tr>
-							<tr>
-								 
-								<td width="10%"><img
-										src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
-										alt="" class="img-preview rounded" onclick="myFunction(this);">
-								</td>
-								 
-							</tr>
+							 
+							 
 						</tbody>
 					</table>
 					 </div>
 					 </div>
 					 <div class="col-md-6">
 					 	<div class="container">
-						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-							  <img id="expandedImg" style="width:100%">
+						  <span onclick="this.parentElement.style.display='none'" >&times;</span>
+							  <img id="expandedImg" style="width:80%;">
 							  <div id="imgtext"></div>
 						</div>
 					 </div>
@@ -372,7 +363,77 @@
 
 				<div class="modal-footer">
 					<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-					<button type="button" class="btn bg-primary">Save changes</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="modal_default1" class="modal fade" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">View Document Pages</h5>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+				<div class="form-group row">
+				<div class="col-md-6">
+				 <div class = "table-responsive" style="overflow: auto; height: 105%; width:60%;">
+					<table class="table table-striped media-library">
+						<thead>
+							<tr>
+ 								<th width="10%">Pages</th>
+								 
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								 
+								<td width="10%"> <img
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
+										alt="" class="img-preview rounded" onclick="myFunction1(this);">
+								</td>
+								 
+							</tr>
+							<tr>
+								 
+								<td width="10%"><img
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
+										alt="" class="img-preview rounded" onclick="myFunction1(this);">
+								</td>
+								 
+							</tr>
+							<tr>
+								 
+								<td width="10%"><img
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
+										alt="" class="img-preview rounded" onclick="myFunction1(this);">
+								</td>
+								 
+							</tr>
+							
+							 
+							 
+						</tbody>
+					</table>
+					 </div>
+					 </div>
+					 <div class="col-md-6">
+					 	<div class="container">
+						  <span onclick="this.parentElement.style.display='none'" >&times;</span>
+							  <img id="expandedImg1" style="width:80%;">
+							  <div id="imgtext1"></div>
+						</div>
+					 </div>
+					 </div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
 		</div>
@@ -386,6 +447,18 @@ function myFunction(imgs) {
   imgText.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = "block";
 }
+
+</script>
+
+<script>
+function myFunction1(imgs) {
+  var expandImg = document.getElementById("expandedImg1");
+  var imgText = document.getElementById("imgtext1");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
 </script>
 </body>
 </html>
