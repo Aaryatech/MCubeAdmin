@@ -7,7 +7,29 @@
 <title>Line Item Code Request</title>
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
 <style type="text/css">
-table {
+th,
+td {
+  padding: 4px 15px !important;
+  vertical-align: middle !important;
+}
+
+th{
+  text-align: left !important;
+}
+
+td {
+  text-align: center;
+}
+.bot-date,.asso-date{
+
+ font-size: 15px;
+  text-align: center;
+}
+.text-offset {  	
+  font-size: 14px;
+  color: #7c7c80;
+} 
+/* table {
   font: 14px/1.4  'Muli', sans-serif; !important;
 }
 th,
@@ -27,7 +49,7 @@ td {
 .text-offset {
   color: #7c7c80;
   font-size: 12px;
-}
+} */
 </style>
 </head>
 
@@ -175,15 +197,15 @@ td {
 									 <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										title="Block"><i class="icon-user-block "
-											style="color: black; font-size:13px;"></i> </a>
+											style="color: black; font-size:16px;"></i> </a>
 									<a
 										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:13px;"></i></a>
+										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
 
 										<a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:13px; "></i>
+										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
 									</a></td>
 								</tr>
 
@@ -205,15 +227,15 @@ td {
 									 <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										title="Block"><i class="icon-user-block "
-											style="color: black; font-size:13px;"></i> </a>
+											style="color: black; font-size:16px;"></i> </a>
 									<a
 										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:13px;"></i></a>
+										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
 
 										<a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:13px; "></i>
+										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
 									</a></td>
 								</tr>
 								
@@ -236,15 +258,15 @@ td {
 									 <a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										title="Block"><i class="icon-user-block "
-											style="color: black; font-size:13px;"></i> </a>
+											style="color: black; font-size:16px;"></i> </a>
 									<a
 										href="${pageContext.request.contextPath}/editCustomer?custId=${cust.exVar1}"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:13px;"></i></a>
+										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
 
 										<a
 										href="${pageContext.request.contextPath}/deleteCustomer?custId=${cust.exVar1}"
 										onClick="return confirm('Are you sure want to delete this record');"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:13px; "></i>
+										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
 									</a></td>
 							
 								</tr>
