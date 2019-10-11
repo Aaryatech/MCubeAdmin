@@ -423,7 +423,7 @@
 					 </div>
 					 <div class="col-md-6">
 					 	<div class="container">
-						  <span onclick="this.parentElement.style.display='none'" >&times;</span>
+						 <!--  <span onclick="this.parentElement.style.display='none'" >&times;</span> -->
 							  <img id="expandedImg1" style="width:80%;">
 							  <div id="imgtext1"></div>
 						</div>
