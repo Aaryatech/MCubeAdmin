@@ -62,6 +62,15 @@ public class HomeController {
 		return mav;
 	}
 	
+	@RequestMapping(value = "/dash", method = RequestMethod.GET)
+	public ModelAndView dashboard(Locale locale, Model model,HttpSession session) {
+
+		
+		ModelAndView mav = new ModelAndView("adminDashboard");
+		 
+
+		return mav;
+	}
 	
 
 	@RequestMapping(value = "/welcomePage", method = RequestMethod.GET)
