@@ -32,15 +32,15 @@
 	<script src="${pageContext.request.contextPath}/global_assets/js/demo_pages/gallery_library.js"></script>
 	<style>
 .modal-content {
-	position: fixed !important;
+	
 	bottom: auto !important;
 	top: 20% !important;
-	right: 20% !important;
-	left:  25% !important;
+	right: 50% !important;
+	left:  20%!important;
 	margin: 0px !important;
  
 	
-	width:50% !important;
+	width:150% !important;
 	height: 60%;
 }
 
@@ -262,7 +262,7 @@
 				</div>
 
 				<div class="modal-body">
-				 <div class = "scroll" style="overflow: auto;height: 85%; width: 40%;">
+				 <div class = "table-responsive" style="overflow: auto;height: 85%; width: 40%;">
 					<table class="table table-striped media-library">
 						<thead>
 							<tr>
