@@ -68,27 +68,25 @@
 							href="${pageContext.request.contextPath}/userList"
 							class="nav-link"><i class="icon-user " style="font-size:30px"></i><span>User Master</span></a></li>
 							
-						<li class="nav-item"><a
-							href="${pageContext.request.contextPath}/showLineItemCodeReqList"
-							class="nav-link"><i class="icon-list-unordered " style="font-size:30px"></i><span>Line Item Code Request</span></a></li>
-							
-						<li class="nav-item"><a
-							href="${pageContext.request.contextPath}/showDeclineItemCodeReqList"
-							class="nav-link"><i class="icon-x" style="font-size:30px"></i><span>Decline Item Code Request</span></a></li>
-							
 							<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showIncomingReqList"
 							class="nav-link"><i class="icon-list-unordered " style="font-size:30px"></i><span>Incoming Request List</span></a></li>
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showLineItemCodeReqList"
-							class="nav-link"><i class="icon-list3"></i><span>Line Item Code Request</span></a></li>
+							class="nav-link"><i class="icon-list3" style="font-size:30px"></i><span>Line Item Code Request</span></a></li>
 							
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showDeclineItemCodeReqList"
-							class="nav-link"><i class="icon-list3"></i><span>Decline Item Code Request</span></a></li>
+							class="nav-link"><i class="icon-list3" style="font-size:30px"></i><span>Decline Item Code Request</span></a></li>
+							
+						<li class="nav-item"><a
+							href="${pageContext.request.contextPath}/showDocumentList"
+							class="nav-link"><i class="far fa-list-alt mr-3 fa-2x"></i><span>Document List</span></a></li>
 
 					</ul></li>
+					
+					
 
 
 

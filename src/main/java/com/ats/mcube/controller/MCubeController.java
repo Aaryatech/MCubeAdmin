@@ -120,4 +120,18 @@ public class MCubeController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value = "/showDocumentList", method=RequestMethod.GET)
+	public String showDocumentList(HttpServletRequest request, HttpServletResponse response, Model model) {
+		String mav = "Master/documentList";
+		try {
+			
+			
+		}catch (Exception e) {
+			System.err.println("Exception in showDiclineItemCodeReqList:"+e.getMessage());
+			e.printStackTrace();
+		}
+		
+		return mav;
+	}
 }
