@@ -97,6 +97,16 @@
   font-size: 35px;
   cursor: pointer;
 }
+.img-preview:hover
+    {
+      /* - width:350px;height:200px; */
+      border: solid 1px #555;
+      background-color: #eed;
+      box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+      -moz-box-shadow: 0 0 10px  5px rgba(0,0,0,0.6);
+      -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+      -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+    }
 </style>
  </head>
 
