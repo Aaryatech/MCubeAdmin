@@ -59,6 +59,12 @@
 						class="icon-switch2"></i> Logout</a>
 				</div></li>
 		</ul>
+<div style="display: none;">
+								<button
+									class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block"
+									id="hiddenButton"></button>
+							</div>
+
 
 
 		<%-- <ul class="navbar-nav ml-md-auto">
@@ -70,3 +76,9 @@
 		</ul> --%>
 	</div>
 </div>
+<script type="text/javascript">
+		$(document).ready(function() {
+			var button = document.getElementById('hiddenButton');
+			button.click();
+		});
+	</script>

@@ -484,12 +484,12 @@ body {
 								</table>
 							</div>
 
-							<div style="display: none;">
+							<!-- <div style="display: none;">
 								<button
 									class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block"
 									id="hiddenButton"></button>
 							</div>
-
+ -->
 						</div>
 
 					</div>
@@ -912,13 +912,13 @@ body {
 	</script>
 
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(document).ready(function() {
 			var button = document.getElementById('hiddenButton');
 			button.click();
 		});
 	</script>
-
+ -->
 
 
 
