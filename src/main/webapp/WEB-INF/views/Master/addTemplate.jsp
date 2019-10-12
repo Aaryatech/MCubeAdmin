@@ -122,17 +122,23 @@
 
  
 
+									
 									<div class="form-group row">
-										<label class="col-form-label col-lg-2" for="fname">
-											Client Name <span style="color: red">* </span>:
+										 
+												 
+												<label class="col-form-label col-lg-2" for="locId">
+											Customer Name :
 										</label>
-										<div class="col-lg-5">
-											<input type="text" class="form-control  "
-												placeholder="First Name" id="fname" name="fname" Value="Nikhil Salunkhe" readonly="readonly"
-												autocomplete="off" onchange="trim(this)">  
-										</div>
+												<img
+										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+										class="rounded-circle mr-2" height="50" width="50">
+													<button type="button" class="btn bg-brown"
+														data-toggle="modal" data-target="#modal_brown_header">
 
- 
+														Nikhil Salunkhe</button>
+											
+											 
+									 
 									</div>
 
 									<div class="form-group row">
