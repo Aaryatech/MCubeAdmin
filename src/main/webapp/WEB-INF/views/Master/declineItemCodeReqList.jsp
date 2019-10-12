@@ -4,14 +4,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Line Item Code Request</title>
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
 <style type="text/css">
-th,
+/* th,
 td {
-  padding: 4px 15px !important;
+  padding: 4px 15px 0px 15px!important;
   vertical-align: middle !important;
-}
+} */
 
 th{
   text-align: left !important;
@@ -106,9 +105,9 @@ td {
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-					<h5 class="card-title"><i class="icon-menu4"
-						style="color: black;"></i>&nbsp;&nbsp;Declined Line Item
-						 Code Request</h5>
+					<h2 class="card-title"><i class="icon-menu4"
+						style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Declined Line Item
+						 Code Request</h2>
 					
 					<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5>  --%>
@@ -170,10 +169,8 @@ td {
 									<th scope="col">Client Name</th>
 									<th scope="col">Request Id</th>
 									<th scope="col">Line Item</th>
-									<th scope="col">Proposed by BOT</th>
-									<th scope="col">Proposed by Associate</th>
-									<th scope="col">BOT Date</th>
-									<th scope="col">Associate Date </th>
+									<th scope="col">Decline by Associate</th>
+									<th scope="col">Decline Date </th>
 									<th scope="col">Actions</th>
 								</tr>
 							</thead>
@@ -184,23 +181,12 @@ td {
 									<td class="client-name">Satish Patil</td>
 									<td class="req-id">123 </td>
 									<td class="line_item">ABC</td>
-									<td class="code-bot">TT200</td>
-									<td class="associate">Mahesh G</td>
-									<td class="bot-date">16-03-2019 <br>
-										<span class="text-offset">03:45</span>
-									</td>
+									<td class="associate">Mahesh G</td>									
 									<td class="asso-date">16-03-2019 <br>
 										<span class="text-offset">03:45</span>
 									</td>
 									
 									<td class="text-center">
-									<a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
-									 <a
-										href="#"
-										title="Unblock"><i class="icon-user-block "
-											style="color: red; font-size:16px;"></i> </a>
 										<a
 										href="#"
 										onClick="delForm()"
@@ -214,22 +200,11 @@ td {
 									<td class="client-name">Kabir Singh</td>
 									<td class="req-id">456</td>
 									<td class="line_item">DEF</td>
-									<td class="code-bot">KK21</td>
 									<td class="associate">Yogest T</td>
-									<td class="bot-date">01-06-2019 <br>									
-										<span class="text-offset">01:05</span>
-									</td>
 									<td class="asso-date">01-06-2019 <br>									
 										<span class="text-offset">01:05</span>
 									</td>
-									<td class="text-center">
-									<a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
-									 <a
-										href="#"
-										title="Block"><i class="icon-user-block "
-											style="color: green; font-size:16px;"></i> </a>
+									<td class="text-center">									
 										<a
 										href="#"
 										onClick="delForm()"
@@ -243,23 +218,12 @@ td {
 									<td class="client-name">Suresh Jha</td>
 									<td class="req-id">789 </td>
 									<td class="line_item">HIJ</td>
-									<td class="code-bot">SS10</td>
-									<td class="associate">Priya G</td>
-									<td class="bot-date">20-10-2019  <br>									
-										<span class="text-offset">12:40</span>
-									</td>
+									<td class="associate">Priya G</td>									
 									<td class="asso-date">20-10-2019  <br>									
 										<span class="text-offset">12:40</span>
 									</td>
 
 									<td class="text-center">
-									<a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
-									 <a
-										href="#"
-										title="Unblock"><i class="icon-user-block "
-											style="color: red; font-size:16px;"></i> </a>
 										<a
 										href="#"
 										onClick="delForm()"

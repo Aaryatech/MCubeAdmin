@@ -4,15 +4,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Line Item Code Request</title>
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
 <style type="text/css">
-th,
+/* th,
 td {
   padding: 4px 15px !important;
   vertical-align: middle !important;
 }
-
+ */
 th{
   text-align: left !important;
 }
@@ -106,9 +105,9 @@ td {
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-					<h5 class="card-title"><i class="icon-list3"
-						style="color: black;"></i>&nbsp;&nbsp;Line Item
-						 Code Request</h5>
+					<h2 class="card-title"><i class="icon-list3"
+						style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Line Item
+						 Code Request</h2>
 					
 					<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5>  --%>
@@ -200,8 +199,8 @@ td {
 									
 									 <a
 										href="#"
-										title="Block"><i class="icon-user-block "
-											style="color: green; font-size:16px;"></i> </a>
+										title="Approve"><i class="icon-checkmark3"
+											style="color: black; font-size:16px;"></i> </a>
 
 										<a
 										href="#"
@@ -231,8 +230,8 @@ td {
 									
 									 <a
 										href="#"
-										title="Unblock"><i class="icon-user-block "
-											style="color: red; font-size:16px;"></i> </a>
+										title="Unblock"><i class="icon-checkmark3"
+											style="color: black; font-size:16px;"></i> </a>
 
 										<a
 										href="#"
@@ -263,8 +262,8 @@ td {
 									
 									 <a
 										href="#"
-										title="Block"><i class="icon-user-block "
-											style="color: green; font-size:16px;"></i> </a>
+										title="Block"><i class="icon-checkmark3"
+											style="color: black; font-size:16px;"></i> </a>
 
 										<a
 										href="#"
