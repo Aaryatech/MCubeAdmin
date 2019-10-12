@@ -190,7 +190,7 @@ td {
 										<a
 										href="#"
 										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
+										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
 									</a></td>
 								</tr>
 
@@ -208,7 +208,7 @@ td {
 										<a
 										href="#"
 										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
+										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
 									</a></td>
 								</tr>
 								
@@ -227,7 +227,7 @@ td {
 										<a
 										href="#"
 										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
+										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
 									</a></td>
 							
 								</tr>
