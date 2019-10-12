@@ -120,7 +120,7 @@ AUTOMATION</h2>
 	                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-red px-4" type="button">Cancel</button></a>
 	                  </div> 
 	                  
-	                  	<div class="col-10 rule password_hint"><h6>Password Hint</h6>
+	                  	<div class="col-10 rule password_hint"><h6>Password Rules</h6>
 			                 <span class="rules">Standard password Rules
 								  <ul>
 									  <li>14 Character Password</li>

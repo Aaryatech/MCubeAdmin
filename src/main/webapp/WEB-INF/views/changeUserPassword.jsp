@@ -193,7 +193,7 @@
 										</div>
 										
 										<div class="col-lg-3">
-											<div class="col-6 rule password_hint"><h6>Password Hint</h6>
+											<div class="col-6 rule password_hint"><h6>Password Rules</h6>
 								                 <span class="rules">Standard password Rules
 													  <ul>
 														  <li>14 Character Password</li>
