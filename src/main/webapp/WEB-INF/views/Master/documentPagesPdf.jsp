@@ -313,7 +313,7 @@
 							</tr>							 
 						</tbody>
 					</table>
-					<a href="${pageContext.request.contextPath}/showOCRoutputvalidation"><button type="button" class="btn btn-primary">Submit</button></a>
+					<a href="${pageContext.request.contextPath}/showOCR"><button type="button" class="btn btn-primary">Submit</button></a>
 					 </div>
 					 </div>
 					 <div class="col-md-6">
