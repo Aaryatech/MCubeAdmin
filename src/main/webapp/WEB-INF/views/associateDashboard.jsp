@@ -56,6 +56,9 @@ body {
 .form-control {
 	font-size: 0.9rem;
 }
+.bg-indigo {
+	background-color: #3F51B5 !important;
+}
 </style>
 
 
@@ -81,7 +84,7 @@ body {
 
 				<div class="row">
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="1" onclick="dashMenuShow(1)">
 						<div class="card card-body bg-blue-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -94,9 +97,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-info"
+							style="width: 100%; display: none;" id="1pro">HOTEL</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="2" onclick="dashMenuShow(2)">
 						<div class="card card-body bg-danger-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -109,9 +114,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-danger"
+							style="width: 100%; display: none;" id="2pro">FAMILY</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="3" onclick="dashMenuShow(3)">
 						<div class="card card-body bg-success-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -124,9 +131,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-success"
+							style="width: 100%; display: none;" id="3pro">RETAIL</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="4" onclick="dashMenuShow(4)">
 						<div class="card card-body bg-indigo-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -139,9 +148,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-indigo"
+							style="width: 100%; display: none;" id="4pro">INDUSTRIAL</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="5" onclick="dashMenuShow(5)">
 						<div class="card card-body bg-orange-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -154,9 +165,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-orange"
+							style="width: 100%; display: none;" id="5pro">OFFICE</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="6" onclick="dashMenuShow(6)">
 						<div class="card card-body bg-pink-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -169,10 +182,13 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-pink"
+							style="width: 100%; display: none;" id="6pro">OTHER</div>
 					</div>
 
 
 				</div>
+
 
 
 
@@ -210,7 +226,7 @@ body {
 															<label class="d-block">Property Type</label> <select
 																multiple="multiple" class="form-control select"
 																data-fouc>
-																																<option value="AZ" selected>All</option>
+																<option value="AZ" selected>All</option>
 																<option value="CO">Hotel</option>
 																<option value="ID">Family</option>
 																<option value="WY">Retail</option>
@@ -257,12 +273,14 @@ body {
 													<div class="col-md-3">
 														<div class="form-group">
 
-															<button type="button" class="btn btn-primary">
+															<button type="button" class="btn btn-primary"
+																data-toggle="collapse" data-target="#filter-panel">
 																<span class="glyphicon glyphicon-cog"></span> Apply
 
 															</button>
 															&nbsp;
-															<button type="button" class="btn btn-dark">
+															<button type="button" class="btn btn-dark"
+																data-toggle="collapse" data-target="#filter-panel">
 																<span class="glyphicon glyphicon-cog"></span> Clear
 
 															</button>
@@ -285,7 +303,7 @@ body {
 
 							<div class="table-responsive">
 								<table
-									class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
+									class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1 table-hover"
 									id="printtable1">
 									<thead>
 										<tr class="bg-blue">
@@ -294,16 +312,15 @@ body {
 											<th class="text-center">Client</th>
 											<th>Property Type</th>
 											<th>Deal Name</th>
-											<th>Request Status</th>
 											<th>Received From</th>
 											<th>Date</th>
-											<th>Document</th>
+											<th>Request Status</th>
 
 										</tr>
 									</thead>
 									<tbody>
 
-										<tr>
+										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td><div class="form-check">
 													<label class="form-check-label"> 1 </label>
 												</div></td>
@@ -323,18 +340,15 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-blue">Pending</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
+											<td><span class="badge bg-blue">Pending</span></td>
+											
 
 										</tr>
 
 
-										<tr>
+										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -359,18 +373,15 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-blue">Pending</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
+											<td><span class="badge bg-blue">Pending</span></td>
+											
 
 
 										</tr>
 
-										<tr>
+										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -395,19 +406,15 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-blue">Pending</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
-
+											<td><span class="badge bg-blue">Pending</span></td>
+											
 
 										</tr>
 
 
-										<tr>
+										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -432,18 +439,15 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-success">Done</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
+											<td><span class="badge bg-success">Done</span></td>
+											
 
 
 										</tr>
 
-										<tr>
+										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -468,13 +472,9 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-danger">Rejected</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
+											<td><span class="badge bg-danger">Rejected</span></td>
 
 
 										</tr>
@@ -920,7 +920,28 @@ body {
 	</script>
  -->
 
+	<script type="text/javascript">
+		function dashMenuShow(value, clr) {
 
+			document.getElementById("1pro").style.display = "none";
+			document.getElementById("2pro").style.display = "none";
+			document.getElementById("3pro").style.display = "none";
+			document.getElementById("4pro").style.display = "none";
+			document.getElementById("5pro").style.display = "none";
+			document.getElementById("6pro").style.display = "none";
+
+			document.getElementById(value + "pro").style.display = "block";
+
+		}
+		
+		
+		jQuery(document).ready(function($) {
+		    $(".clickable-row").click(function() {
+		        window.location = $(this).data("href");
+		    });
+		});
+		
+	</script>
 
 
 

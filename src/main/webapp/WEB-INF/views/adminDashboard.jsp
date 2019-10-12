@@ -53,7 +53,6 @@
 
 
 
-
 </head>
 <body>
 
@@ -64,6 +63,10 @@ body {
 
 .form-control {
 	font-size: 0.9rem;
+}
+
+.bg-indigo {
+	background-color: #3F51B5 !important;
 }
 </style>
 
@@ -89,103 +92,11 @@ body {
 			<div class="content">
 
 
-				<div class="row" style="display: none;">
 
-					<div class="col-sm-6 col-xl-2">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">16</h3>
-									<span class="text-uppercase font-size-sm text-muted">HOTEL</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-bed2 icon-2x text-danger-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-2">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">256</h3>
-									<span class="text-uppercase font-size-sm text-muted">FAMILY</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-users icon-2x text-danger-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-2">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">83</h3>
-									<span class="text-uppercase font-size-sm text-muted">RETAIL</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-store icon-2x text-danger-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-2">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">183</h3>
-									<span class="text-uppercase font-size-sm text-muted">INDUSTRIAL</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-office icon-2x text-danger-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-sm-6 col-xl-2">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">803</h3>
-									<span class="text-uppercase font-size-sm text-muted">OFFICE</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-briefcase icon-2x text-danger-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-2">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">100</h3>
-									<span class="text-uppercase font-size-sm text-muted">OTHER</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-clippy icon-2x text-danger-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
 				<div class="row">
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="1" onclick="dashMenuShow(1)">
 						<div class="card card-body bg-blue-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -198,9 +109,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-info"
+							style="width: 100%; display: none;" id="1pro">HOTEL</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="2" onclick="dashMenuShow(2)">
 						<div class="card card-body bg-danger-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -213,9 +126,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-danger"
+							style="width: 100%; display: none;" id="2pro">FAMILY</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="3" onclick="dashMenuShow(3)">
 						<div class="card card-body bg-success-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -228,9 +143,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-success"
+							style="width: 100%; display: none;" id="3pro">RETAIL</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="4" onclick="dashMenuShow(4)">
 						<div class="card card-body bg-indigo-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -243,9 +160,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-indigo"
+							style="width: 100%; display: none;" id="4pro">INDUSTRIAL</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="5" onclick="dashMenuShow(5)">
 						<div class="card card-body bg-orange-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -258,9 +177,11 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-orange"
+							style="width: 100%; display: none;" id="5pro">OFFICE</div>
 					</div>
 
-					<div class="col-sm-6 col-xl-2">
+					<div class="col-sm-6 col-xl-2" id="6" onclick="dashMenuShow(6)">
 						<div class="card card-body bg-pink-400 has-bg-image">
 							<div class="media">
 								<div class="media-body">
@@ -273,6 +194,8 @@ body {
 								</div>
 							</div>
 						</div>
+						<div class="progress-bar bg-pink"
+							style="width: 100%; display: none;" id="6pro">OTHER</div>
 					</div>
 
 
@@ -360,12 +283,14 @@ body {
 													<div class="col-md-3">
 														<div class="form-group">
 
-															<button type="button" class="btn btn-primary">
+															<button type="button" class="btn btn-primary"
+																data-toggle="collapse" data-target="#filter-panel">
 																<span class="glyphicon glyphicon-cog"></span> Apply
 
 															</button>
 															&nbsp;
-															<button type="button" class="btn btn-dark">
+															<button type="button" class="btn btn-dark"
+																data-toggle="collapse" data-target="#filter-panel">
 																<span class="glyphicon glyphicon-cog"></span> Clear
 
 															</button>
@@ -395,7 +320,7 @@ body {
 
 							<div class="table-responsive">
 								<table
-									class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
+									class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1 table-hover"
 									id="printtable1">
 									<thead>
 										<tr class="bg-blue">
@@ -404,9 +329,9 @@ body {
 											<th class="text-center">Client</th>
 											<th>Property Type</th>
 											<th>Deal Name</th>
-											<th>Request Status</th>
 											<th>Received From</th>
 											<th>Date</th>
+											<th>Request Status</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -434,10 +359,10 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-grey-400">Unassigned</span></td>
+
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											
+											<td><span class="badge bg-grey-400">Unassigned</span></td>
 
 
 										</tr>
@@ -471,10 +396,10 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-grey-400">Unassigned</span></td>
+
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											
+											<td><span class="badge bg-grey-400">Unassigned</span></td>
 
 
 										</tr>
@@ -507,10 +432,10 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-grey-400">Unassigned</span></td>
+
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											
+											<td><span class="badge bg-grey-400">Unassigned</span></td>
 
 
 										</tr>
@@ -541,10 +466,11 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-danger">Assigned</span></td>
+
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											
+											<td><span class="badge bg-danger">Assigned</span></td>
+
 										</tr>
 
 										<tr>
@@ -572,10 +498,11 @@ body {
 
 											<td>Hotel</td>
 											<td>Abc Deal</td>
-											<td><span class="badge bg-danger">Assigned</span></td>
+
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											
+											<td><span class="badge bg-danger">Assigned</span></td>
+
 										</tr>
 
 
@@ -595,7 +522,7 @@ body {
 
 							<!-- Basic modal -->
 							<div id="modal_default" class="modal fade" tabindex="-1">
-								<div class="modal-dialog">
+								<div class="modal-dialog modal-full">
 									<div class="modal-content">
 										<div class="modal-header">
 											<h5 class="modal-title">Assign Associate</h5>
@@ -605,23 +532,104 @@ body {
 										<div class="modal-body">
 
 											<div class="form-group">
-												<label class="d-block">Associate</label> <select
-													class="form-control select" data-fouc>
-													<option value="AZ">Alan Macedo</option>
-													<option value="CO">Robert Hauber</option>
-													<option value="ID">Chris Macintyre</option>
-													<option value="WY">Brett Castellano</option>
-													<option value="WY">Roxanne Forbes</option>
-												</select>
+												<div class="row">
+													<div class="col-md-2"></div>
+													<div class="col-md-3" style="align-self: flex-end;">
+														<label class="d-block" style="text-align: right;">Associate
+															Name : </label>
+													</div>
+													<div class="col-md-4">
+														<select class="form-control select" data-fouc>
+															<option value="AZ">Alan Macedo</option>
+															<option value="CO">Robert Hauber</option>
+															<option value="ID">Chris Macintyre</option>
+															<option value="WY">Brett Castellano</option>
+															<option value="WY">Roxanne Forbes</option>
+														</select>
+													</div>
+													<div class="col-md-3"></div>
+												</div>
 											</div>
+
+
+											<div class="table-responsive">
+												<table
+													class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
+													id="printtable1">
+													<thead>
+														<tr class="bg-blue">
+
+															<th>Request ID</th>
+															<th class="text-center">Client</th>
+															<th>Property Type</th>
+															<th>Deal Name</th>
+															<th>Received From</th>
+															<th>Date</th>
+														</tr>
+													</thead>
+													<tbody>
+
+														<tr>
+															<td><div class="form-check">
+																	<label class="form-check-label"> 1 </label>
+																</div></td>
+															<td><div class="d-flex align-items-center">
+																	<div class="mr-3">
+																		<a href="#"> <img
+																			src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																			class="rounded-circle mr-2" height="34" alt="">
+																		</a>
+																	</div>
+																	<div>
+																		<a href="#" class="text-default font-weight-semibold">Alan
+																			Macedo</a>
+
+																	</div>
+																</div></td>
+
+															<td>Hotel</td>
+															<td>Abc Deal</td>
+															<td>ABC</td>
+															<td>10/10/2019</td>
+														</tr>
+
+														<tr>
+															<td>
+																<div class="form-check">
+																	<label class="form-check-label"> 2 </label>
+																</div>
+															</td>
+															<td><div class="d-flex align-items-center">
+																	<div class="mr-3">
+																		<a href="#"> <img
+																			src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																			class="rounded-circle mr-2" height="34" alt="">
+																		</a>
+																	</div>
+																	<div>
+																		<a href="#" class="text-default font-weight-semibold">Robert
+																			Hauber</a>
+																	</div>
+																</div></td>
+															<td>Hotel</td>
+															<td>Abc Deal</td>
+															<td>ABC</td>
+															<td>10/10/2019</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</div>
+
+
 
 										</div>
 
 										<div class="modal-footer">
 											<button type="button" class="btn btn-link"
 												data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Assign
-											</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Assign</button>
 										</div>
 									</div>
 								</div>
@@ -1060,6 +1068,21 @@ body {
 		});
 	</script> -->
 
+
+	<script type="text/javascript">
+		function dashMenuShow(value, clr) {
+
+			document.getElementById("1pro").style.display = "none";
+			document.getElementById("2pro").style.display = "none";
+			document.getElementById("3pro").style.display = "none";
+			document.getElementById("4pro").style.display = "none";
+			document.getElementById("5pro").style.display = "none";
+			document.getElementById("6pro").style.display = "none";
+
+			document.getElementById(value + "pro").style.display = "block";
+
+		}
+	</script>
 
 
 </body>
