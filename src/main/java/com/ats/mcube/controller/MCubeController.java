@@ -48,7 +48,7 @@ public class MCubeController {
 		String mav = "redirect:/";
 		try {
 			HttpSession session = request.getSession();
-			session.setAttribute("msg", "Password Changed Sucessfully");
+			//session.setAttribute("msg", "Password Changed Sucessfully");
 			
 		}catch (Exception e) {
 			System.err.println("Exception in changePasswordProcess:"+e.getMessage());
