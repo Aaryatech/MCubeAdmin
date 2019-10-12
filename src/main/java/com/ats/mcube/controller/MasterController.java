@@ -186,5 +186,27 @@ public class MasterController {
 	}
 	
 	
+	@RequestMapping(value = "/showExcelToexcel", method = RequestMethod.GET)
+	public ModelAndView showExcelToexcel(Locale locale, Model model,HttpSession session) {
+
+		 
+ 			ModelAndView mav = new ModelAndView("Master/exceltoexcel");
+	  
+		return mav;
+	}
+	
+	
+	
+
+	@RequestMapping(value = "/showOCR", method = RequestMethod.GET)
+	public ModelAndView showOCR(Locale locale, Model model,HttpSession session) {
+
+		 
+ 			ModelAndView mav = new ModelAndView("Master/ocr");
+	  
+		return mav;
+	}
+	
+	
 	
 }
