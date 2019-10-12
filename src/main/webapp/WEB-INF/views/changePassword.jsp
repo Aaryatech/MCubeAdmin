@@ -58,7 +58,7 @@
 .password_hint:hover .rules {
   visibility: visible;
 }
-  </style>
+</style>
   </head>
   <body >
 	  <section class="login-background">
@@ -83,8 +83,8 @@ AUTOMATION</h2>
             </div>
 			   <div class="card p-4">
               <div class="card-body ">
-				  <div class="title-head text-center">
-				 <h2>CHANGE PASSWORD</h2>
+				  <div class="text-center">
+				 <h2 style="color: #ac1d24;">Change Password</h2>
 					  </div>
               <!--  <h1>Login</h1>-->
                <!-- <p class="text-muted">Sign In to your account</p>-->
@@ -111,27 +111,28 @@ AUTOMATION</h2>
                   <input class="form-control password" type="password" name="confirm_password" maxlength="14"
                   placeholder="Confirm Password" onblur="validatePassword()" id="confirm_password" value="@Qwerty123456">
                 </div>
-                <div class="row">
-                  <div class="col-6">
-                    <button class="btn btn-red px-4" type="submit">Submit</button>
-                  </div>
-                   <div class="col-6 text-right">
-                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-red px-4" type="button">Cancel</button></a>
-                  </div> 
-                  
-                  <div class="col-6 rule password_hint"><h6>Password Hint</h6>
-                 <span class="rules">Standard password Rules
-					  <ul>
-						  <li>14 Character Password</li>
-						   <li>Min 8 and Max 14 characters necessary</li>
-							<li>Min 1 Capital Letter(A-Z)</li>
-							<li>Min 1 Small Letter(a-z)</li>
-							<li>Min 1 Number(0-9)</li>
-							<li>Min 1 Special Character</li>
-					</ul>
-				</span>
-                </div>
-                </div>
+	                <div class="row">
+	                  <div class="col-3">
+	                    <button class="btn btn-red px-4" type="submit">Submit</button>
+	                  </div>
+	                  
+	                  <div class="col-1 text-right">
+	                    <a href="${pageContext.request.contextPath}/"><button class="btn btn-red px-4" type="button">Cancel</button></a>
+	                  </div> 
+	                  
+	                  	<div class="col-10 rule password_hint"><h6>Password Hint</h6>
+			                 <span class="rules">Standard password Rules
+								  <ul>
+									  <li>14 Character Password</li>
+									   <li>Min 8 and Max 14 characters necessary</li>
+										<li>Min 1 Capital Letter(A-Z)</li>
+										<li>Min 1 Small Letter(a-z)</li>
+										<li>Min 1 Number(0-9)</li>
+										<li>Min 1 Special Character</li>
+								</ul>
+							</span>
+	              	  </div>
+	                </div>
                 </form>
               </div>
             </div>

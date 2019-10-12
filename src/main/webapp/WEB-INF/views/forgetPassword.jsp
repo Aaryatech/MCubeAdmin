@@ -29,7 +29,7 @@
     <!-- By ats -->
    
    <script 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <style>
+<style>
   .card-group {
     box-shadow:none;
 }
@@ -58,8 +58,8 @@ AUTOMATION</h2>
             </div>
 			   <div class="card p-4">
               <div class="card-body ">
-				  <div class="title-head text-center">
-				 <h2>FORGOT PASSWORD</h2>
+				  <div class="text-center">
+						 <h2 style="color: #ac1d24;">Forgot Password</h2>
 					  </div>
               <!--  <h1>Login</h1>-->
                <!-- <p class="text-muted">Sign In to your account</p>-->
@@ -103,11 +103,11 @@ AUTOMATION</h2>
                 </div>
                 
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-3">
                     <button class="btn btn-red px-4" type="submit">Submit</button>
                   </div>
                  
-                   <div class="col-6 text-right">
+                   <div class="col-1 text-right">
                     <a href="${pageContext.request.contextPath}/"><button class="btn btn-red px-4" type="button">Cancel</button></a>
                   </div> 
                 </div>
