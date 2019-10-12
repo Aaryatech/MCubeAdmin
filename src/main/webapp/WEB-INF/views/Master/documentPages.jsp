@@ -199,14 +199,21 @@
 					
  -->
 
-						<div class="form-group row">
+						<div class="form-group row" style="background-color: #ffeead; width: 80%;"align="center">
 
 							<label class="col-md-6" for="reqId">
 								Request Id : 1</label>
 							
 							
+								<label class="col-md-6" for="clntName">
+										Client Name : Alan Macedo</label>	
+										
 								<label class="col-md-6" for="reqId">
-										Client Name : 1</label>	
+										Property Type : Hotel</label>	
+										
+								<label class="col-md-6" for="reqId">
+										Document No. : D766R33/Loan NOCs</label>	
+								
 
 						</div>
 						
@@ -216,9 +223,7 @@
 					<table class="table table-striped media-library">
 						<thead>
 							<tr>
- 								<th width="10%">Pages</th>
-								 
-
+ 								<th width="10%">Pages</th>	
 							</tr>
 						</thead>
 						<tbody>
