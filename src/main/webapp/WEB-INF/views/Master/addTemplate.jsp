@@ -73,9 +73,12 @@
 
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h2 class="card-title"><i class="icon-file-plus "
-											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add Template</h2>
-								 
+								<h2 class="card-title">
+									<i class="icon-file-plus "
+										style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Add
+									Template
+								</h2>
+
 							</div>
 
 							<div class="card-body">
@@ -120,25 +123,16 @@
 									action="${pageContext.request.contextPath}/submitInsertTemp"
 									id="submitInsertEmp" method="get" enctype="multipart/form-data">
 
- 
 
-									
+
+
 									<div class="form-group row">
-										 
-												 
-												<label class="col-form-label col-lg-2" for="locId">
-											Customer Name :
-										</label>
-												<img
-										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-										class="rounded-circle mr-2" height="50" width="50">
-													<button type="button" class="btn bg-brown"
-														data-toggle="modal" data-target="#modal_brown_header">
 
-														Nikhil Salunkhe</button>
-											
-											 
-									 
+
+										<label class="col-form-label col-lg-2" for="locId">
+											Customer Name : </label> <label class="col-form-label col-lg-2"
+											for="locId"> Nikhil Salunkhe </label>
+ 
 									</div>
 
 									<div class="form-group row">
@@ -149,114 +143,108 @@
 											<select name="locId" data-placeholder="Select" id="locId"
 												class="form-control form-control-select2 select2-hidden-accessible"
 												data-fouc="" aria-hidden="true">
- 												<option value="">Select</option>
- 												<option value="1">Home Loan</option>
- 												<option value="1">Car Loan</option>
- 
+												<option value="">Select</option>
+												<option value="1">Home Loan</option>
+												<option value="1">Car Loan</option>
+
 											</select>
 										</div>
 									</div>
 
-									 <div class="form-group row">
+									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
 											Template Name <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-5">
 											<input type="text" class="form-control  "
-												placeholder="Template Name" id="fname" name="fname"s
-												autocomplete="off" onchange="trim(this)">  
+												placeholder="Template Name" id="fname" name="fname" s
+												autocomplete="off" onchange="trim(this)">
 										</div>
 
- 
+
 									</div>
-									
+
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
 											Import File <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-5">
 											<input type="file" class="form-control  "
-												placeholder="First Name" id="fname" name="fname" Value="Nikhil Salunkhe" readonly="readonly"
-												autocomplete="off" onchange="trim(this)"> 
+												placeholder="First Name" id="fname" name="fname"
+												Value="Nikhil Salunkhe" readonly="readonly"
+												autocomplete="off" onchange="trim(this)">
 										</div>
 
- 
+
 									</div>
 
 									<div class="form-group row mb-0">
 										<div class="col-lg-10 ml-lg-auto">
 											<!-- <button type="reset" class="btn btn-light legitRipple">Reset</button> -->
-											<button type="submit" class="btn btn-primary"
-												id="submtbtn">
+											<button type="submit" class="btn btn-primary" id="submtbtn">
 												Submit <i class="icon-paperplane ml-2"></i>
 											</button>
 											<a href="${pageContext.request.contextPath}/customerList"><button
 													type="button" class="btn btn-primary">
 													<i class="${sessionScope.cancelIcon}" aria-hidden="true"></i>&nbsp;&nbsp;
 													Cancel
-												</button></a>  
+												</button></a>
 										</div>
 									</div>
 								</form>
-								
-								
+
+
 								<table
-							class="table table-bordered table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
-							id="printtable1">
-							<thead>
-								<tr class="bg-blue">
-									<th width="5%">Sr.no</th>
-									<th>Property Type</th>
-									<th>Template Name</th>
-									<th>Link</th>
-									 
-									<th class="text-center" width="10%">Actions</th>
-								</tr>
-							</thead>
-							<tbody>
+									class="table table-bordered table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
+									id="printtable1">
+									<thead>
+										<tr class="bg-blue">
+											<th width="5%">Sr.no</th>
+											<th>Property Type</th>
+											<th>Template Name</th>
+											<th>Link</th>
 
-								<tr>
-									<td>1</td>
-								 	<td>Home Loan </td>
-									<td>Template 1</td>
-								 
-								
-								<td><a href="#">L1</a></td>
+											<th class="text-center" width="10%">Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr>
+											<td>1</td>
+											<td>Home Loan</td>
+											<td>Template 1</td>
 
 
-
-									<td class="text-center"><a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
-
-										<a
-										href="#"
-										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a> </td>
-								</tr>
+											<td><a href="#">L1</a></td>
 
 
-							<tr>
-									<td>1</td>
-								 	<td>Car Loan</td>
-									<td>Template 2</td>
- 									<td><a href="#">L2</a></td>
- 
-									<td class="text-center"><a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:20px;"></i></a>
 
-										<a
-										href="#"
-										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a> </td>
-								</tr>
+											<td class="text-center"><a href="#" title="Edit"><i
+													class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
 
-							</tbody>
-						</table>
-								
+												<a href="#" onClick="delForm()" title="Delete"><i
+													class="icon-trash" style="color: black; font-size: 20px;"></i>
+											</a></td>
+										</tr>
+
+
+										<tr>
+											<td>1</td>
+											<td>Car Loan</td>
+											<td>Template 2</td>
+											<td><a href="#">L2</a></td>
+
+											<td class="text-center"><a href="#" title="Edit"><i
+													class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
+
+												<a href="#" onClick="delForm()" title="Delete"><i
+													class="icon-trash" style="color: black; font-size: 20px;"></i>
+											</a></td>
+										</tr>
+
+									</tbody>
+								</table>
+
 							</div>
 						</div>
 
@@ -280,7 +268,7 @@
 	<script>
 		function submitForm() {
 			$('#modal_scrollable').modal('hide');
-		 
+
 			document.getElementById("submitInsertCompany").submit();
 
 		}
@@ -311,7 +299,7 @@
 			</div>
 		</div>
 	</div>
-	 
+
 
 	<script type="text/javascript">
 		function setDate(value) {
@@ -385,31 +373,25 @@
 
 		}
 
-		$(document)
-				.ready(
-						function($) {
+		$(document).ready(function($) {
 
-							$("#submitInsertEmp")
-									.submit(
-											function(e) {
-												var isError = false;
-												var errMsg = "";
+			$("#submitInsertEmp").submit(function(e) {
+				var isError = false;
+				var errMsg = "";
 
-												
-												if (!isError) {
+				if (!isError) {
 
-													var x = true;
-													if (x == true) {
+					var x = true;
+					if (x == true) {
 
-														document
-																.getElementById("submtbtn").disabled = true;
-														return true;
-													}
-													//end ajax send this to php page
-												}
-												return false;
-											});
-						});
+						document.getElementById("submtbtn").disabled = true;
+						return true;
+					}
+					//end ajax send this to php page
+				}
+				return false;
+			});
+		});
 		//
 	</script>
 	<script type="text/javascript">

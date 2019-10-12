@@ -176,4 +176,15 @@ public class MasterController {
 		return mav;
 	}
 	
+	@RequestMapping(value = "/showOCRoutputvalidation", method = RequestMethod.GET)
+	public ModelAndView showOCRoutputvalidation(Locale locale, Model model,HttpSession session) {
+
+		 
+ 			ModelAndView mav = new ModelAndView("Master/OCRoutputvalidation");
+	  
+		return mav;
+	}
+	
+	
+	
 }

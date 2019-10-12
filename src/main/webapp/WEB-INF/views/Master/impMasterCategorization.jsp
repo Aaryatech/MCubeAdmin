@@ -33,7 +33,7 @@
 			<div class="page-header page-header-light">
 
 
-			<!-- 	<div
+				<!-- 	<div
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
@@ -151,25 +151,13 @@
 
 
 									</div>
- -->
-
-								
+ --> 
 									<div class="form-group row">
-										 
-												 
-												<label class="col-form-label col-lg-2" for="locId">
-											Customer Name :
-										</label>
-												<img
-										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-										class="rounded-circle mr-2" height="50" width="50">
-													<button type="button" class="btn bg-brown"
-														data-toggle="modal" data-target="#modal_brown_header">
-
-														Nikhil Salunkhe</button>
-											
-											 
-									 
+ 
+										<label class="col-form-label col-lg-2" for="locId">
+											Customer Name : </label> <label class="col-form-label col-lg-3"
+											for="locId"> Nikhil Salunkhe </label>
+  
 									</div>
 
 
