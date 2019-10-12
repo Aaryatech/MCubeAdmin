@@ -407,8 +407,6 @@ body {
 											<th>Request Status</th>
 											<th>Received From</th>
 											<th>Date</th>
-											<th>Document</th>
-
 										</tr>
 									</thead>
 									<tbody>
@@ -439,10 +437,7 @@ body {
 											<td><span class="badge bg-grey-400">Unassigned</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
+											
 
 
 										</tr>
@@ -479,10 +474,7 @@ body {
 											<td><span class="badge bg-grey-400">Unassigned</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
+											
 
 
 										</tr>
@@ -518,10 +510,7 @@ body {
 											<td><span class="badge bg-grey-400">Unassigned</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
+											
 
 
 										</tr>
@@ -555,12 +544,7 @@ body {
 											<td><span class="badge bg-danger">Assigned</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
-
-
+											
 										</tr>
 
 										<tr>
@@ -591,12 +575,7 @@ body {
 											<td><span class="badge bg-danger">Assigned</span></td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
-											<td class="text-center"><a
-												href="${pageContext.request.contextPath}/showDocumentList"
-												title="view"><i class="icon-file-spreadsheet2 "
-													style="color: black; font-size: 20px;"></i></a></td>
-
-
+											
 										</tr>
 
 
