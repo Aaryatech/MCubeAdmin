@@ -305,19 +305,15 @@
 								</td>
 								 
 							</tr>
-							<tr>
-								 
+							<tr>								 
 								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/formImg.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
-								</td>
-								 
-							</tr>
-							
-							 
-							 
+								</td>								 
+							</tr>							 
 						</tbody>
 					</table>
+					<a href="${pageContext.request.contextPath}/showOCRoutputvalidation"><button type="button" class="btn btn-primary">Submit</button></a>
 					 </div>
 					 </div>
 					 <div class="col-md-6">
@@ -328,12 +324,8 @@
 						</div>
 					 </div>
 					 </div>
-				</div>
-
-					 
-					 
-
 					</div>
+				</div>
 
 				</div>
 				<!-- /highlighting rows and columns -->
