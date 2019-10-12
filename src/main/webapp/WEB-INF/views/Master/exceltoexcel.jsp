@@ -114,7 +114,7 @@
 					
 <div class="row">
 <div class="col-md-6">
-<a href="${pageContext.request.contextPath}/showOCRoutvalidation"><button
+<a href="${pageContext.request.contextPath}/showOCRoutputvalidation"><button
 													type="button" class="btn btn-primary">
 													<i class="${sessionScope.cancelIcon}" aria-hidden="true"></i>&nbsp;&nbsp;
 													Submit
