@@ -99,7 +99,7 @@ public class HomeController {
 		String mav = null;
 		try {
  
-				mav = "welcome";
+				mav = "adminDashboard";
 			 
 		} catch (Exception e) {
 			mav = "loginDemo";

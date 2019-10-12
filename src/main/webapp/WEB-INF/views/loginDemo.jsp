@@ -9,7 +9,10 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>Mcube Financials</title>
+    <title>MCube Underwriting Automation System</title>
+    <link rel="shortcut icon"
+	href="${pageContext.request.contextPath}/resources/assets/images/logoTop.jpg"
+	type="image/x-icon" />
 <!--	  
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">-->
 	   <link href="${pageContext.request.contextPath}/resources/assets/css/bootstrap_limitless.min.css" rel="stylesheet">
@@ -35,7 +38,12 @@
   .card-group {
     box-shadow:none;
 }
+
+
+
   </style>
+  
+  
   </head>
   <body >
 	  <section class="login-background">
