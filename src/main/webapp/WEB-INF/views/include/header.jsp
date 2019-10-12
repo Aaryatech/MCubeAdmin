@@ -58,7 +58,7 @@
 					<a href="${pageContext.request.contextPath}/" class="dropdown-item"><i
 						class="icon-switch2"></i> Logout</a>
 				</div></li> 
-		</ul>
+		</ul> 
 <div style="display: none;">
 								<button
 									class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block"
