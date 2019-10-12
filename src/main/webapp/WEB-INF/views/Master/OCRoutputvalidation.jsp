@@ -163,7 +163,7 @@
 									</h2></td> -->
 
 								<td width="40%" align="right"><a
-									href="${pageContext.request.contextPath}/addCustomer"
+									href=""
 									class="breadcrumb-elements-item">
 										<button type="button" class="btn btn-primary">Export
 											</button>
