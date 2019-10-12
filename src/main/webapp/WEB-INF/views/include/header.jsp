@@ -57,7 +57,7 @@
 					<div class="dropdown-divider"></div>
 					<a href="${pageContext.request.contextPath}/" class="dropdown-item"><i
 						class="icon-switch2"></i> Logout</a>
-				</div></li>
+				</div></li> 
 		</ul>
 <div style="display: none;">
 								<button
