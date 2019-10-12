@@ -51,12 +51,12 @@
 						class="icon-grid3 "></i> <span> Associate Dashboard </span>
 				</a></li>
 
-				<li class="nav-item"><a
+			<%-- 	<li class="nav-item"><a
 					href="${pageContext.request.contextPath}/welcomePage"
 					class="nav-link" onclick="selectSubMod(0,0)"> <i
 						class="icon-home4"></i> <span> Home </span>
 				</a></li>
-
+ --%>
 
 
 
@@ -99,7 +99,7 @@
 				<li class="nav-item nav-item-submenu"><a href="#"
 					class="nav-link"><i class="icon-users2 "></i><span>User</span></a>
 
-					<ul class="nav nav-group-sub" data-submenu-title="Master">
+					<ul class="nav nav-group-sub" data-submenu-title="User">
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showEditUser"
@@ -113,7 +113,10 @@
 
 				<li class="nav-item"><a class="nav-link"
 					href="${pageContext.request.contextPath}/"><i
-						class="icon-switch2"></i> <span>Logout</span></a></li>
+						class="icon-switch2"></i> <span>Logout</span></a>
+					 
+						
+						</li>
 				<!-- /main -->
 
 

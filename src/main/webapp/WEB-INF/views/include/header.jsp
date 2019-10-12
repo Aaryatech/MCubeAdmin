@@ -3,7 +3,7 @@
 
 <div class="navbar navbar-expand-md navbar-light">
 	<div class="navbar-brand">
-		<a href="${pageContext.request.contextPath}/dashboard"
+		<a href="${pageContext.request.contextPath}/dash"
 			class="d-inline-block"> <%-- <img src="${pageContext.request.contextPath}/resources/global_assets/images/logo_light.png" alt=""> --%>
 			<img
 			src="${pageContext.request.contextPath}/resources/assets/images/logo.jpg"
