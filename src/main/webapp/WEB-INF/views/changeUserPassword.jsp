@@ -55,7 +55,7 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-			<div class="page-header page-header-light">
+			<%-- <div class="page-header page-header-light">
 
 
 				<div
@@ -71,15 +71,15 @@
 							class="icon-more"></i></a>
 					</div>
 
-					<%-- <div class="breadcrumb justify-content-center">
+					<div class="breadcrumb justify-content-center">
 						<a href="${pageContext.request.contextPath}/userList"
 							class="breadcrumb-elements-item">User List</a>
 
-					</div> --%>
+					</div>
 
 
 				</div>
-			</div>
+			</div> --%>
 			<!-- /page header -->
 
 
