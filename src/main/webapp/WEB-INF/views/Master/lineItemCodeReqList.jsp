@@ -230,7 +230,7 @@ td {
 									
 									 <a
 										href="#"
-										title="Unblock"><i class="icon-checkmark3"
+										title="Approve"><i class="icon-checkmark3"
 											style="color: black; font-size:16px;"></i> </a>
 
 										<a
@@ -262,7 +262,7 @@ td {
 									
 									 <a
 										href="#"
-										title="Block"><i class="icon-checkmark3"
+										title="Approve"><i class="icon-checkmark3"
 											style="color: black; font-size:16px;"></i> </a>
 
 										<a
