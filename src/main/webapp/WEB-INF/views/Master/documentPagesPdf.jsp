@@ -299,14 +299,14 @@
 							</tr>
 							<tr>
 								 
-								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
+								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" checked>&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
 								</td>
 								 
 							</tr>
 							<tr>								 
-								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
+								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" checked>&nbsp;<img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/formImg.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
 								</td>								 
