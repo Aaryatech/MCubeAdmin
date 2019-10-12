@@ -202,23 +202,23 @@
 						<div class="form-group row" style="background-color: #ffeead; width: 80%;">
 
 							<label class="col-md-6" for="reqId">
-								Request Id : 1</label>
+								Request Id : 2</label>
 							
 							
 								<label class="col-md-6" for="clntName">
-										Client Name : Alan Macedo</label>	
+										Client Name : Robert Hauber</label>	
 										
 								<label class="col-md-6" for="reqId">
 										Property Type : Hotel</label>	
 										
 								<label class="col-md-6" for="reqId">
-										Document No. : D766R33/Loan NOCs</label>	
+										Document No. : D433H22/Finance Docs</label>	
 								
 
 						</div>
 	
 
-				<div class="modal-body">
+				<%-- <div class="modal-body">
 				<div class="form-group row">
 				<div class="col-md-6">
 				 <div class = "table-responsive" style="overflow: auto; height: 105%; width:60%;">
@@ -265,18 +265,18 @@
 					 <div class="col-md-6">
 					 	<div class="container">
 						 <!--  <span onclick="this.parentElement.style.display='none'" >&times;</span> -->
-							  <img id="expandedImg" style="width:80%; border: solid;">
+							  <img id="expandedImg" style="width:80%;">
 							  <div id="imgtext"></div>
 						</div>
 					 </div>
 					 </div>
-				</div>
+				</div> --%>
 
 				
 	
 	
 
-			<%-- 	<div class="modal-body">
+				<div class="modal-body">
 				<div class="form-group row">
 				<div class="col-md-6">
 				 <div class = "table-responsive" style="overflow: auto; height: 105%; width:60%;">
@@ -323,12 +323,12 @@
 					 <div class="col-md-6">
 					 	<div class="container">
 						 <!--  <span onclick="this.parentElement.style.display='none'" >&times;</span> -->
-							  <img id="expandedImg1" style="width:80%;">
+							  <img id="expandedImg1" style="width:80%; border: solid;">
 							  <div id="imgtext1"></div>
 						</div>
 					 </div>
 					 </div>
-				</div> --%>
+				</div>
 
 					 
 					 
