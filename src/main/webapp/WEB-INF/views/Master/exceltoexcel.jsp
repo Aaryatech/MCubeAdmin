@@ -81,7 +81,22 @@
 									alt="" onclick="myFunction1(this);">
 							</div>
 						</div>
+<table width="100%">
+							<tr width="100%">
+								<!-- <td width="60%"><h2 class="card-title">
+										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Customer
+										List
+									</h2></td> -->
 
+								<td width="40%" align="right"><a
+									href="${pageContext.request.contextPath}/showOCRoutputvalidation"
+									class="breadcrumb-elements-item">
+										<button type="button" class="btn btn-primary"> Submit
+											 </button>
+								</a></td>
+
+							</tr>
+						</table>
 
 						<%-- 	
 						
@@ -112,13 +127,13 @@
 
 					</div>
 					
-<div class="row">
+<%-- <div class="row">
 <div class="col-md-6">
 <a href="${pageContext.request.contextPath}/showOCRoutputvalidation"><button
 													type="button" class="btn btn-primary">
 													<i class="${sessionScope.cancelIcon}" aria-hidden="true"></i>&nbsp;&nbsp;
 													Submit
-												</button></a></div></div>
+												</button></a></div></div> --%>
 
 
 
