@@ -166,7 +166,7 @@
 									
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
-											Template <span style="color: red">* </span>:
+											Import File <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-5">
 											<input type="file" class="form-control  "

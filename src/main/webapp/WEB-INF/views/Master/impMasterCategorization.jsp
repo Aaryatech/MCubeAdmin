@@ -70,11 +70,27 @@
 
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h2 class="card-title">
-									<i class="icon-download10 "
-										style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Import
-									Master Categorization
-								</h2>
+
+
+
+
+								<table width="100%">
+									<tr width="100%">
+										<td width="60%"><h2 class="card-title">
+												<i class="icon-download10 "
+													style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Import
+												Master Categorization
+											</h2></td>
+
+										<td width="40%" align="right"><a href="#"
+											class="breadcrumb-elements-item">
+												<button type="button" class="btn btn-primary">
+													Generate Template</button>
+										</a></td>
+
+									</tr>
+								</table>
+
 
 							</div>
 
@@ -121,7 +137,7 @@
 									id="submitInsertEmp" method="get" enctype="multipart/form-data">
 
 
-
+									<!-- 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
 											Client Name <span style="color: red">* </span>:
@@ -135,13 +151,31 @@
 
 
 									</div>
+ -->
 
+								
+									<div class="form-group row">
+										 
+												 
+												<label class="col-form-label col-lg-2" for="locId">
+											Customer Name :
+										</label>
+												<img
+										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+										class="rounded-circle mr-2" height="50" width="50">
+													<button type="button" class="btn bg-brown"
+														data-toggle="modal" data-target="#modal_brown_header">
 
+														Nikhil Salunkhe</button>
+											
+											 
+									 
+									</div>
 
 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
-											Template <span style="color: red">* </span>:
+											Import File <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-3">
 											<input type="file" class="form-control  "
@@ -157,7 +191,7 @@
 										<div class="col-lg-10 ml-lg-auto">
 											<!-- <button type="reset" class="btn btn-light legitRipple">Reset</button> -->
 											<button type="submit" class="btn btn-primary" id="submtbtn">
-												Generate Template <i class="icon-paperplane ml-2"></i>
+												Import <i class="icon-paperplane ml-2"></i>
 											</button>
 											<a href="${pageContext.request.contextPath}/customerList"><button
 													type="button" class="btn btn-primary">
@@ -192,14 +226,11 @@
 											<td>-</td>
 											<td><a href="#">L1</a></td>
 
-											<td class="text-center"><a
-												href="#"
-												title="Edit"><i class="icon-pencil7"
-													style="color: black; font-size: 20px;"></i></a> <a
-												href="#"
-												onClick="delForm()"
-												title="Delete"><i class="icon-trash"
-													style="color: black; font-size: 20px;"></i> </a></td>
+											<td class="text-center"><a href="#" title="Edit"><i
+													class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
+												<a href="#" onClick="delForm()" title="Delete"><i
+													class="icon-trash" style="color: black; font-size: 20px;"></i>
+											</a></td>
 										</tr>
 
 
@@ -209,14 +240,11 @@
 											<td>Y</td>
 											<td>-</td>
 											<td><a href="#">L2</a></td>
-											<td class="text-center"><a
-												href="#"
-												title="Edit"><i class="icon-pencil7"
-													style="color: black; font-size: 20px;"></i></a> <a
-												href="#"
-												onClick="delForm()"
-												title="Delete"><i class="icon-trash"
-													style="color: black; font-size: 20px;"></i> </a></td>
+											<td class="text-center"><a href="#" title="Edit"><i
+													class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
+												<a href="#" onClick="delForm()" title="Delete"><i
+													class="icon-trash" style="color: black; font-size: 20px;"></i>
+											</a></td>
 										</tr>
 
 									</tbody>
@@ -246,7 +274,7 @@
 	<script>
 		function submitForm() {
 			$('#modal_scrollable').modal('hide');
-			 
+
 			document.getElementById("submitInsertCompany").submit();
 
 		}

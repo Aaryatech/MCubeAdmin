@@ -183,7 +183,7 @@
 										<label class="col-form-label col-lg-2" for="locId">
 											Access Right <span style="color: red">* </span>:
 										</label>
-										<div class="col-lg-10">
+										<div class="col-lg-5">
 											<select name="locId" data-placeholder="Select" id="locId"
 												class="form-control form-control-select2 select2-hidden-accessible"
 												data-fouc="" aria-hidden="true">

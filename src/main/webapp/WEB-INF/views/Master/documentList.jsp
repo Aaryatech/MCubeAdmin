@@ -303,7 +303,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">View Document Pages</h5>
+					<h5 class="modal-title" >View Document Pages</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 
@@ -314,7 +314,7 @@
 					<table class="table table-striped media-library">
 						<thead>
 							<tr>
- 								<th width="10%">Pages</th>
+ 								<th width="10%" style="color: white;">Pages</th>
 								 
 
 							</tr>
@@ -323,7 +323,7 @@
 							<tr>
 								 
 								<td width="10%"> <input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/ex1.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
 								 
@@ -339,7 +339,7 @@
 							<tr>
 								 
 								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png" style="width:90%;
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/filled.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction(this);">
 								</td>
 								 
@@ -353,7 +353,7 @@
 					 </div>
 					 <div class="col-md-6">
 					 	<div class="container">
-						  <span onclick="this.parentElement.style.display='none'" >&times;</span>
+						 <!--  <span onclick="this.parentElement.style.display='none'" >&times;</span> -->
 							  <img id="expandedImg" style="width:80%;">
 							  <div id="imgtext"></div>
 						</div>
@@ -393,7 +393,7 @@
 							<tr>
 								 
 								<td width="10%"> <input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/pan-pdf.PNG" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
 								</td>
 								 
@@ -409,7 +409,7 @@
 							<tr>
 								 
 								<td width="10%"><input type="checkbox"	name="TaskId" class="select_all" >&nbsp;<img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf_form.jpg" style="width:90%;
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/formImg.png" style="width:90%;
 										alt="" class="img-preview rounded" onclick="myFunction1(this);">
 								</td>
 								 

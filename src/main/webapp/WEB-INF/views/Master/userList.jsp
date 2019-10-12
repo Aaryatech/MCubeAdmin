@@ -121,28 +121,28 @@
 						<div class="form-group row">
 
 							<label class="col-form-label col-lg-2" for="locId2">
-								Access Rights : </label>
+								Filter : </label>
 							<div class="col-lg-4">
 
 								<select multiple="multiple" data-placeholder="Select "
-									name="empId2" id="empId2"
+									name="accessType" id="accessType"
 									class="form-control form-control-sm select"
 									data-container-css-class="select-sm" data-fouc>
 
 									<option value="">Select</option>
 
 									<option value="1">All</option>
-									<option value="1">Master Admin</option>
+									<option value="2">Master Admin</option>
 
-									<option value="1">Admin</option>
+									<option value="3">Admin</option>
 
-									<option value="1">Associate</option>
+									<option value="4">Associate</option>
 
 								</select>
 							</div>
 
 							<div style="text-align: center;">
-								<input type="submit" class="btn btn-primary" value="Clear All"
+								<input type="button" class="btn btn-primary" value="Clear All"
 									onclick="clearSelected()" id="deleteId"
 									style="align-content: center; width: 113px; margin-left: 40px;">
 							</div>
@@ -171,7 +171,7 @@
 									<td>1</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-										class="rounded-circle mr-2" height="40" width="50"></td>
+										class="rounded-circle mr-2" height="45" width="50"></td>
 									<td>Satish Patil</td>
 									<td>Master Admin</td>
 									<td>8956232323</td>
@@ -192,7 +192,7 @@
 									<td>2</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-										class="rounded-circle mr-2" height="40" width="50" alt=""></td>
+										class="rounded-circle mr-2" height="45" width="50" alt=""></td>
 									<td>Amit Chavan</td>
 									<td>Admin</td>
 									<td>7845121323</td>
@@ -231,22 +231,21 @@
 
 	</div>
 	<!-- /page content -->
-	
+
 	<script type="text/javascript">
-	function clearSelected()
-    {
-		//alert("hii");
-	    var elements = document.getElementById("empId2").options;
-    for(var i = 0; i < elements.length; i++){
-      if(elements[i].selected)
-	    elements[i].selected = false;
-    }
-}
+		function clearSelected() {
+			alert("hii");
+			  var elements = document.getElementById("accessType").options;
+
+			    for(var i = 0; i < elements.length; i++){
+			      elements[i].selected = false;
+			    }​
+		}
 	</script>
 	<script>
 		function submitForm() {
 			$('#modal_scrollable').modal('hide');
-		 
+
 			document.getElementById("submitInsertCompany").submit();
 
 		}
