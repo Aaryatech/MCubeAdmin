@@ -105,6 +105,10 @@ a:hover {
 .round {
 	border-radius: 50%;
 }
+.mr-3{
+    color: black;
+}
+
 </style>
 </head>
 
@@ -329,6 +333,8 @@ a:hover {
 									<%-- 	<a href="${pageContext.request.contextPath}/showDocumentList"><button
 											type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp; --%>
 
+									<a href="${pageContext.request.contextPath}/showDocumentList"
+										class="icon-backward mr-3 icon-2x"></a>
 
 
 									<a href="${pageContext.request.contextPath}/showOCR"><button
@@ -338,12 +344,11 @@ a:hover {
 											type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
 											 --%>
 
-									<a href="${pageContext.request.contextPath}/showDocumentList"
-										class="previous round">&#8249;&nbsp;Prev</a>
-									<div align="right">
-										<a href="${pageContext.request.contextPath}/showOCR"
-											class="next round">&#8250;&nbsp;Next</a>
-									</div>
+								
+									
+									<a href="${pageContext.request.contextPath}/showOCR"
+											class="icon-forward2 mr-3 icon-2x"></a>
+									
 								</div>
 							</div>
 
