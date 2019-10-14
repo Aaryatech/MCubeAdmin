@@ -33,6 +33,15 @@
   .card-group {
     box-shadow:none;
 }
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0px !important;
+}
+h2{
+margin-bottom: 23px !important;
+}
   </style>
   </head>
   <body >

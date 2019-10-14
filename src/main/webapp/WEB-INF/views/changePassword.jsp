@@ -35,12 +35,19 @@
     box-shadow:none;
 }
 
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0px !important;
+}
+h2{
+margin-bottom: 23px !important;
+}
 .password_hint {
   padding-top:10px;
   position: relative;
   display: inline-block;
 }
-
 .password_hint .rules {
   visibility: hidden;
   width: 438px;
