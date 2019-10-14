@@ -120,14 +120,7 @@ AUTOMATION</h2>
     </div>
 		 </section>
 	  
-	    
-    <footer class="app-footer-v2">
-      <div>
-       
-        <span>&copy; 2019 Mcube Financials. All rights reserved.</span>
-      </div>
-    
-    </footer>
+	 
     <!-- CoreUI and necessary plugins-->
    
      
