@@ -36,20 +36,33 @@
 				Morning, Victoria!
 			</span> -->
 
+
+		<style type="text/css">
+.badge {
+	font-size: 65%;
+}
+
+.badge-pill {
+    padding-right: .5375rem;
+    padding-left: .5375rem;
+}
+</style>
+
 		<ul class="navbar-nav ml-md-auto">
 
-			<li class="nav-item dropdown dropdown-user "><a href="${pageContext.request.contextPath}/showLineItemCodeReqList"
-				title="Line Code Request"
-				class="navbar-nav-link d-flex align-items-center"
-				data-toggle="dropdown"> <i class="icon-stack-text "
-					style="font-size: 1.5rem; margin-top: 7px;"></i><span class="badge badge-pill bg-blue-400 ml-auto ml-md-0">5</span>
+			<li class="nav-item dropdown dropdown-user "><a
+				href="${pageContext.request.contextPath}/showLineItemCodeReqList"
+				title="Line Item Code Request"
+				class="navbar-nav-link d-flex align-items-center"> <i
+					class="icon-envelope" style="font-size: 1.8rem; margin-top: 7px;"></i><span
+					class="badge badge-pill bg-blue-400 ml-auto ml-md-0">5</span>
 			</a></li>
 
 			<li class="nav-item dropdown dropdown-user "><a href="#"
 				title="Notification"
-				class="navbar-nav-link d-flex align-items-center"
-				> <i class="icon-bell2"
-					style="font-size: 1.5rem; margin-top: 7px;"></i><span class="badge badge-pill bg-danger-400 ml-auto ml-md-0">2</span>
+				class="navbar-nav-link d-flex align-items-center"> <i
+					class="icon-bell2" style="font-size: 1.8rem; margin-top: 7px;"></i><span
+					class="badge badge-pill bg-danger-400 ml-auto ml-md-0">2</span>
 			</a></li>
 
 			<li class="nav-item dropdown dropdown-user"><a href="#"
@@ -65,13 +78,13 @@
 					<div class="dropdown-divider"></div>
 					<a href="${pageContext.request.contextPath}/" class="dropdown-item"><i
 						class="icon-switch2"></i> Logout</a>
-				</div></li> 
-		</ul> 
-<div style="display: none;">
-								<button
-									class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block"
-									id="hiddenButton"></button>
-							</div>
+				</div></li>
+		</ul>
+		<div style="display: none;">
+			<button
+				class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block"
+				id="hiddenButton"></button>
+		</div>
 
 
 
@@ -85,8 +98,8 @@
 	</div>
 </div>
 <script type="text/javascript">
-		$(document).ready(function() {
-			var button = document.getElementById('hiddenButton');
-			button.click();
-		});
-	</script>
+	$(document).ready(function() {
+		var button = document.getElementById('hiddenButton');
+		button.click();
+	});
+</script>

@@ -152,10 +152,10 @@ body {
 								</div>
 							</div>
 						</div>
-						
+
 						<hr id="3pro"
 							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #4CAF50; border-width: medium;">
-						
+
 						<!-- <div class="progress-bar bg-success"
 							style="width: 100%; display: none;" id="3pro">RETAIL</div> -->
 					</div>
@@ -174,10 +174,10 @@ body {
 								</div>
 							</div>
 						</div>
-						
-							<hr id="4pro"
+
+						<hr id="4pro"
 							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #3F51B5; border-width: medium;">
-						
+
 						<!-- <div class="progress-bar bg-indigo"
 							style="width: 100%; display: none;" id="4pro">INDUSTRIAL</div> -->
 					</div>
@@ -196,10 +196,10 @@ body {
 								</div>
 							</div>
 						</div>
-						
+
 						<hr id="5pro"
 							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #FF9800; border-width: medium;">
-						
+
 						<!-- <div class="progress-bar bg-orange"
 							style="width: 100%; display: none;" id="5pro">OFFICE</div> -->
 					</div>
@@ -218,10 +218,10 @@ body {
 								</div>
 							</div>
 						</div>
-						
+
 						<hr id="6pro"
 							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #E91E63; border-width: medium;">
-						
+
 						<!-- <div class="progress-bar bg-pink"
 							style="width: 100%; display: none;" id="6pro">OTHER</div> -->
 					</div>
@@ -342,32 +342,34 @@ body {
 									</button>
 								</div>
 
+								<div id="div1" style="margin-left: 10px;">
+									<div class="row">
+										<div class="form-group" style="margin: 10px;">
+											<button type="button" class="btn btn-primary"
+												data-toggle="modal" data-target="#modal_default"
+												id="assign1">
+												<span class="glyphicon glyphicon-cog"></span> Assign To
+												Associate
+											</button>
+										</div>
+
+										<div class="form-group" style="margin: 10px; ">
+											<button type="button" class="btn btn-primary" id="reassign"
+												onclick="reassign()">
+												<span class="glyphicon glyphicon-cog"></span> Re-Assign
+												Associate
+											</button>
+										</div>
+									</div>
+								</div>
+
 								<div class="form-group" style="margin: 10px;">
 									<button type="button" class="btn btn-primary"
-										data-toggle="modal" data-target="#modal_default" id="assign1">
+										data-toggle="modal" data-target="#modal_default2" id="assign2" style="display: none;">
 										<span class="glyphicon glyphicon-cog"></span> Assign To
 										Associate
 									</button>
 								</div>
-
-								<div class="form-group" style="margin: 10px;">
-									<button type="button" class="btn btn-primary" id="reassign"
-										onclick="reassign()" style="display: none;">
-										<span class="glyphicon glyphicon-cog"></span> Re-Assign
-										Associate
-									</button>
-								</div>
-
-								<div class="form-group" style="margin: 10px;">
-									<button type="button" class="btn btn-primary"
-										data-toggle="modal" data-target="#modal_default2" id="assign2"
-										style="display: none;">
-										<span class="glyphicon glyphicon-cog"></span> Assign To
-										Associate
-									</button>
-								</div>
-
-
 
 								<div class="form-group" style="margin: 10px;">
 									<button type="button" class="btn btn-primary" id="unassign"
@@ -375,6 +377,7 @@ body {
 										<span class="glyphicon glyphicon-cog"></span> Unassigned List
 									</button>
 								</div>
+
 
 							</div>
 
@@ -1445,10 +1448,12 @@ body {
 		function reassign() {
 			document.getElementById("table1").style.display = "none";
 			document.getElementById("table2").style.display = "block";
-			document.getElementById("reassign").style.display = "none";
+			//document.getElementById("reassign").style.display = "none";
 			document.getElementById("unassign").style.display = "block";
-			document.getElementById("assign1").style.display = "none";
+			//document.getElementById("assign1").style.display = "none";
 			document.getElementById("assign2").style.display = "block";
+			document.getElementById("div1").style.display = "none";
+
 		}
 	</script>
 
@@ -1456,10 +1461,11 @@ body {
 		function unassign() {
 			document.getElementById("table1").style.display = "block";
 			document.getElementById("table2").style.display = "none";
-			document.getElementById("reassign").style.display = "block";
+			//document.getElementById("reassign").style.display = "block";
 			document.getElementById("unassign").style.display = "none";
-			document.getElementById("assign1").style.display = "block";
+			//document.getElementById("assign1").style.display = "block";
 			document.getElementById("assign2").style.display = "none";
+			document.getElementById("div1").style.display = "block";
 		}
 	</script>
 </body>

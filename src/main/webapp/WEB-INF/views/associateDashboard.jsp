@@ -56,6 +56,7 @@ body {
 .form-control {
 	font-size: 0.9rem;
 }
+
 .bg-indigo {
 	background-color: #3F51B5 !important;
 }
@@ -80,12 +81,13 @@ body {
 
 
 			<!-- Content area -->
-			<div class="content">
+			<div class="content" style="padding: 0.7rem 0.7rem;">
 
 				<div class="row">
 
 					<div class="col-sm-6 col-xl-2" id="1" onclick="dashMenuShow(1)">
-						<div class="card card-body bg-blue-400 has-bg-image">
+						<div class="card card-body bg-blue-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">16</h3>
@@ -97,12 +99,15 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-info"
-							style="width: 100%; display: none;" id="1pro">HOTEL</div>
+						<hr id="1pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #00BCD4; border-width: medium;">
+						<!-- <div class="card"
+							style="width: 100%; display: none;" id="1pro">a</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="2" onclick="dashMenuShow(2)">
-						<div class="card card-body bg-danger-400 has-bg-image">
+						<div class="card card-body bg-danger-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">256</h3>
@@ -114,12 +119,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-danger"
-							style="width: 100%; display: none;" id="2pro">FAMILY</div>
+
+						<hr id="2pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #F44336; border-width: medium;">
+
+						<!-- <div class="progress-bar bg-danger"
+							style="width: 100%; display: none;" id="2pro">FAMILY</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="3" onclick="dashMenuShow(3)">
-						<div class="card card-body bg-success-400 has-bg-image">
+						<div class="card card-body bg-success-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">83</h3>
@@ -131,12 +141,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-success"
-							style="width: 100%; display: none;" id="3pro">RETAIL</div>
+
+						<hr id="3pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #4CAF50; border-width: medium;">
+
+						<!-- <div class="progress-bar bg-success"
+							style="width: 100%; display: none;" id="3pro">RETAIL</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="4" onclick="dashMenuShow(4)">
-						<div class="card card-body bg-indigo-400 has-bg-image">
+						<div class="card card-body bg-indigo-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">183</h3>
@@ -148,12 +163,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-indigo"
-							style="width: 100%; display: none;" id="4pro">INDUSTRIAL</div>
+
+						<hr id="4pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #3F51B5; border-width: medium;">
+
+						<!-- <div class="progress-bar bg-indigo"
+							style="width: 100%; display: none;" id="4pro">INDUSTRIAL</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="5" onclick="dashMenuShow(5)">
-						<div class="card card-body bg-orange-400 has-bg-image">
+						<div class="card card-body bg-orange-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">803</h3>
@@ -165,12 +185,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-orange"
-							style="width: 100%; display: none;" id="5pro">OFFICE</div>
+
+						<hr id="5pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #FF9800; border-width: medium;">
+
+						<!-- <div class="progress-bar bg-orange"
+							style="width: 100%; display: none;" id="5pro">OFFICE</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="6" onclick="dashMenuShow(6)">
-						<div class="card card-body bg-pink-400 has-bg-image">
+						<div class="card card-body bg-pink-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">100</h3>
@@ -182,8 +207,12 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-pink"
-							style="width: 100%; display: none;" id="6pro">OTHER</div>
+
+						<hr id="6pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #E91E63; border-width: medium;">
+
+						<!-- <div class="progress-bar bg-pink"
+							style="width: 100%; display: none;" id="6pro">OTHER</div> -->
 					</div>
 
 
@@ -309,46 +338,46 @@ body {
 										<tr class="bg-blue">
 
 											<th>Request ID</th>
-											<th class="text-center">Client</th>
+											<th class="text-center">Assigned To</th>
 											<th>Property Type</th>
+											<th>Client</th>
 											<th>Deal Name</th>
 											<th>Received From</th>
 											<th>Date</th>
+											<th>Assigned Date</th>
 											<th>Request Status</th>
 
 										</tr>
 									</thead>
 									<tbody>
 
-										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
+										<tr class="clickable-row"
+											data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td><div class="form-check">
 													<label class="form-check-label"> 1 </label>
 												</div></td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Alan
-															Macedo</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Ashish Pawar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2 " height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Alan Macedo</td>
 											<td>Abc Deal</td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
+											<td>10/10/2019</td>
 											<td><span class="badge bg-blue">Pending</span></td>
-											
+
 
 										</tr>
 
 
-										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
+										<tr class="clickable-row"
+											data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -357,31 +386,28 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Robert
-															Hauber</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Ashish Pawar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2 " height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Robert Hauber</td>
 											<td>Abc Deal</td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
+											<td>10/10/2019</td>
 											<td><span class="badge bg-blue">Pending</span></td>
-											
+
 
 
 										</tr>
 
-										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
+										<tr class="clickable-row"
+											data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -390,31 +416,28 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Chris
-															Macintyre</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Ashish Pawar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2 " height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Chris Macintyre</td>
 											<td>Abc Deal</td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
+											<td>10/10/2019</td>
 											<td><span class="badge bg-blue">Pending</span></td>
-											
+
 
 										</tr>
 
 
-										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
+										<tr class="clickable-row"
+											data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -423,31 +446,28 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Brett
-															Castellano</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Ashish Pawar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2 " height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Brett Castellano</td>
 											<td>Abc Deal</td>
 											<td>ABC</td>
 											<td>10/10/2019</td>
+											<td>10/10/2019</td>
 											<td><span class="badge bg-success">Done</span></td>
-											
+
 
 
 										</tr>
 
-										<tr class="clickable-row" data-href="${pageContext.request.contextPath}/showDocumentList">
+										<tr class="clickable-row"
+											data-href="${pageContext.request.contextPath}/showDocumentList">
 											<td>
 
 												<div class="form-check">
@@ -456,23 +476,19 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Roxanne
-															Forbes</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Ashish Pawar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2 " height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Roxanne Forbes</td>
 											<td>Abc Deal</td>
 											<td>ABC</td>
+											<td>10/10/2019</td>
 											<td>10/10/2019</td>
 											<td><span class="badge bg-danger">Rejected</span></td>
 
@@ -484,12 +500,7 @@ body {
 								</table>
 							</div>
 
-							<!-- <div style="display: none;">
-								<button
-									class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block"
-									id="hiddenButton"></button>
-							</div>
- -->
+
 						</div>
 
 					</div>
@@ -567,7 +578,7 @@ body {
 						<!-- Basic pie -->
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Work Status</h5>
+								<h5 class="card-title">Total Work Status</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 										<a class="list-icons-item" data-action="collapse"></a> <a
@@ -840,7 +851,7 @@ body {
 
 											// Add title
 											title : {
-												text : 'Work Status',
+												text : 'Total Work Status',
 												subtext : 'Date - 01/10/2019 to 31/10/2019',
 												left : 'center',
 												textStyle : {
@@ -933,14 +944,12 @@ body {
 			document.getElementById(value + "pro").style.display = "block";
 
 		}
-		
-		
+
 		jQuery(document).ready(function($) {
-		    $(".clickable-row").click(function() {
-		        window.location = $(this).data("href");
-		    });
+			$(".clickable-row").click(function() {
+				window.location = $(this).data("href");
+			});
 		});
-		
 	</script>
 
 
