@@ -61,28 +61,34 @@
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					
-<div class="card-header header-elements-inline">
-						<%-- <h5 class="card-title"><i class="icon-users4 "
-											style="color: black;"></i>&nbsp;&nbsp;User List</h5>
-								<h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
-							> Add User </a></h5> --%>
+				<div class="card-header header-elements-inline">
+						<h2 class="card-title">Client Proprietary
+										 Model Selection Screen</h2>
+						
+						<div class="card-title">  
+						
+     					 
+     					 <i class="icon-search4">
+     					 <input type="text" placeholder="Search" />
+     					 </i>
+						</div> 
 
 
-						<table width="100%">
+						<%-- <table width="100%">
 							<tr width="100%">
 								 <td width="60%"><h2 class="card-title">
 										Client Proprietary
 										 Model Selection Screen</h2></td>
 
-								<%-- <td width="40%" align="right"><a
+								<td width="40%" align="right"><a
 									href="${pageContext.request.contextPath}/addCustomer"
 									class="breadcrumb-elements-item">
 										<button type="button" class="btn btn-primary">Add
 											Customer</button>
-								</a></td>  --%>
+								</a></td> 
 
 							</tr>
-						</table>
+						</table> --%>
 
 					</div>
 
@@ -94,6 +100,7 @@
 						<table
 							class="table table- table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
 							id="printtable1">
+							
 
 							<tbody>
 
@@ -190,39 +197,23 @@
 
 	</div>
 	<!-- /page content -->
-	<script>
-		function submitForm() {
-			$('#modal_scrollable').modal('hide');
+	<!-- <script>
+	function filterTable(event) {
+	    var filter = event.target.value.toUpperCase();
+	    var rows = document.querySelector("#printtable1 tbody").rows;
+	    
+	    for (var i = 0; i < rows.length; i++) {
+	        var firstCol = rows[i].cells[0].textContent.toUpperCase();
+	        var secondCol = rows[i].cells[1].textContent.toUpperCase();
+	        if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
+	            rows[i].style.display = "";
+	        } else {
+	            rows[i].style.display = "none";
+	        }      
+	    }
+	}
 
-			document.getElementById("submitInsertCompany").submit();
-
-		}
+	document.querySelector('#myInput').addEventListener('keyup', filterTable, false); -->
 	</script>
-	<script>
-		function delForm() {
-			$('#modal_scrollable').modal('show');
-		}
-	</script>
-
-	<div id="modal_scrollable" class="modal fade" data-backdrop="false"
-		tabindex="-1">
-		<div class="modal-dialog modal-dialog-scrollable">
-			<div class="modal-content">
-				<div class="modal-header pb-3">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-				<div class="modal-body py-0">
-					<h5 class="modal-title">Are You Sure You Want to Delete This
-						Record</h5>
-					<br>
-				</div>
-				<div class="modal-footer pt-3">
-					<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-					<button type="button" class="btn btn-primary"
-						onclick="submitForm()">Delete</button>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
 </html>
