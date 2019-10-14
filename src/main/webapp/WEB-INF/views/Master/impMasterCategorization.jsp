@@ -84,7 +84,7 @@
 												Master Categorization
 											</h2></td>
 
-										<td width="40%" align="right"><a href="#"
+										<td width="40%" align="right"><a href="https://img.chandoo.org/templates/agenda-template.xlsx"
 											class="breadcrumb-elements-item">
 												<button type="button" class="btn btn-primary">
 													Generate Template</button>

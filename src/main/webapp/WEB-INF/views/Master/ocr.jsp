@@ -89,10 +89,10 @@
 						<div class="modal-body">
 
 							<div class="form-group row">
-								<label class="col-form-label col-lg-1" for="locId">
+								<label class="col-form-label col-lg-2" for="locId">
 									Property <span style="color: red"> </span>:
 								</label>
-								<div class="col-lg-3">
+								<div class="col-lg-2">
 									<select name="locId" data-placeholder="Select" id="locId"
 										class="form-control form-control-select2 select2-hidden-accessible"
 										data-fouc="" aria-hidden="true">
