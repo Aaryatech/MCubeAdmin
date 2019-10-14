@@ -139,6 +139,8 @@ public class MCubeController {
 	public String documentList(HttpServletRequest request, HttpServletResponse response, Model model) {
 		String mav = "Master/documentPages";
 		try {
+			//String val=request.getParameter("value");
+			//model.addAttribute("val",Integer.parseInt(val));
 			
 			
 		}catch (Exception e) {

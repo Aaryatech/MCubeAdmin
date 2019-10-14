@@ -6,11 +6,109 @@
 <head>
 
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
-<style CSS>
-/* show border around full height container */
-.h-100 {
-	border: 0px;
+
+<style>
+.modal-content {
+	bottom: auto !important;
+	top: 20% !important;
+	right: 40% !important; //
+	left: 5% !important;
+	margin: 0px !important;
+	width: 190% !important;
+	height: 60%;
 }
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* The expanding image container */
+.container {
+	position: relative;
+	display: none;
+	width: 160% !important;
+	height: 60%;
+	right: 40% !important;
+}
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.img-preview:hover {
+	/* - width:350px;height:200px; */
+	border: solid 1px #555;
+	background-color: #eed;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	-o-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.previous {
+	background-color: #f1f1f1;
+	color: black;
+	left: 0px !important;
+}
+
+.next {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.round {
+	border-radius: 50%;
+}
+.mr-3{
+    color: black;
+}
+
 </style>
 </head>
 
@@ -63,9 +161,17 @@
 
 					<div class="card-body">
 
+<div class="form-group row" style="padding-left: 44%;">
+							<span class="badge badge-secondary badge-pill mr-2	">1</span> <span
+								class="badge badge-primary badge-pill  mr-2 	">2</span> <span
+								class="badge badge-secondary badge-pill mr-2  ">3</span> <span
+								class="badge badge-secondary badge-pill mr-2">4</span>
+
+
+						</div>
 
 						<div class="form-group row"
-							style="background-color: #ffeead; width: 80%;">
+							style="background-color: #ffeead; width: 92%;">
 
 							<label class="col-md-6" for="reqId"> Request Id : 1</label> <label
 								class="col-md-6" for="clntName"> Client Name : Alan
@@ -101,45 +207,20 @@
 								</div>
 							</div>
 
-							<div class="form-group row" style="padding-left: 40%;">
-								<a href="#"><button type="button" disabled="disabled"
-										class="btn btn-primary">1</button></a>&nbsp;&nbsp; <a href="#"><button
-										type="button" class="btn btn-primary">2</button></a>&nbsp;&nbsp; <a
-									href="#"><button type="button" disabled="disabled"
-										class="btn btn-primary">3</button></a>&nbsp;&nbsp; <a href="#"><button
-										type="button" disabled="disabled" class="btn btn-primary">4</button></a>&nbsp;&nbsp;
-							</div>
-							<div style="padding-left: 40%;">
-								<div class="col-md-2 text-center mt-2"
-									style="align-self: center;">
-
-									<label class="d-block"
-										style="text-align: center; font-size: x-medium;">Convert
-										to Excel</label>
-									<div class="progress-bar bg-success"
-										style="width: 100%; font-size: x-medium;" id="3pro">100%</div>
-
-									<ul class="fab-menu">
-										<li><a href="#"> <i class="icon-sync "
-												style="color: black; font-size: 40px;"></i> <i
-												class="fab-icon-close icon-cross2"></i>
-										</a></li>
-									</ul>
-
-								</div>
-							</div>
-							<div class="form-group row"></div>
 
 							<div class="form-group row">
-
-								<div class="col-lg-5 ">
-									<h3>Source File</h3>
-								</div>
-								<div class="col-lg-1"></div>
-
-								<div class="col-lg-5">
-									<h3>Converted Excel</h3>
-								</div>
+ 
+								
+								<label class="col-form-label col-lg-3" for="fname">
+										Source File
+										</label>
+										<label class="col-form-label col-lg-2" for="fname">
+										Convert to Excel  <i class="icon-sync " style="color: black; font-size:40px;"> </i>
+										</label>
+										 	<label class="col-form-label col-lg-1" for="fname"></label>
+											<label class="col-form-label col-lg-5" for="fname">
+										Converted Excel
+										</label>
 							</div>
 
 							<div class="form-group row">
@@ -163,16 +244,19 @@
 
 								<div class="form-group row" style="padding-left: 39%;">
 
-									<a href="${pageContext.request.contextPath}/documentList"><button
-											type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp;
+									 
 
+									<a href="${pageContext.request.contextPath}/documentList"
+										class="icon-backward mr-3 icon-2x"></a>
 
 
 									<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
 											type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
 
-									<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
-											type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
+								 
+												
+									<a href="${pageContext.request.contextPath}/showExcelToexcel"
+											class="icon-forward2 mr-3 icon-2x"></a>
 								</div>
 							</div>
 
