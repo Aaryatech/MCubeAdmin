@@ -98,8 +98,8 @@ AUTOMATION</h2>
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control password" type="password" name="new_password" onchange="passwordChanged()" maxlength="14" value="@Qwerty123456"
-                    id="new_password" placeholder="New Password" pattern="(?=^.{8,14}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$">
+                  <input class="form-control password" type="password" name="new_password" onchange="passwordChanged()" maxlength="8" value="@Qwerty1"
+                    id="new_password" placeholder="New Password" pattern="(?=^.{8}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$">
                     
                 </div>
                 <div class="input-group mb-4">
@@ -108,8 +108,8 @@ AUTOMATION</h2>
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control password" type="password" name="confirm_password" maxlength="14"
-                  placeholder="Confirm Password" onblur="validatePassword()" id="confirm_password" value="@Qwerty123456">
+                  <input class="form-control password" type="password" name="confirm_password" maxlength="8"
+                  placeholder="Confirm Password" onblur="validatePassword()" id="confirm_password" value="@Qwerty1">
                 </div>
 	                <div class="row">
 	                  <div class="col-3">
@@ -121,10 +121,9 @@ AUTOMATION</h2>
 	                  </div> 
 	                  
 	                  	<div class="col-10 rule password_hint"><h6>Password Rules</h6>
-			                 <span class="rules">Standard password Rules
+			                 <span class="rules">Standard Password Rules
 								  <ul>
-									  <li>14 Character Password</li>
-									   <li>Min 8 and Max 14 characters necessary</li>
+									    <li>8 Characters Necessary</li>
 										<li>Min 1 Capital Letter(A-Z)</li>
 										<li>Min 1 Small Letter(a-z)</li>
 										<li>Min 1 Number(0-9)</li>
@@ -186,10 +185,10 @@ AUTOMATION</h2>
 			var strength = document.getElementById("strength");
 			$("#error_password").hide();
 			var strongRegex = new RegExp(
-					"^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])([$&+,:;=?@#|'<>.^*()%!-](?=.*\\W).*$",
+					"^(?=.{8})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])([$&+,:;=?@#|'<>.^*()%!-](?=.*\\W).*$",
 					"g");
 			var mediumRegex = new RegExp(
-					"^(?=.{6,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$",
+					"^(?=.{6})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$",
 					"g");
 			var enoughRegex = new RegExp("(?=.{6,}).*", "g");
 			var pwd = document.getElementById("new_password").value;

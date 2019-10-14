@@ -181,23 +181,20 @@
 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="new_password">New
-											Password <span style="color: red">* </span>:
+											Password<span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-4">
-											<input type="password" class="form-control password" value="@Qwerty!2"
-												placeholder="New Password" id="new_password" name="new_password"
-												autocomplete="off" onchange="passwordChanged()" maxlength="14"
-												pattern="(?=^.{8,14}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$">
+											 <input class="form-control password" type="password" name="new_password" onchange="passwordChanged()" maxlength="8" value="@Qwerty1"
+                    id="new_password" placeholder="New Password" pattern="(?=^.{8}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$">
 											<span class="validation-invalid-label" id="error_new_password"
 												style="display: none;">Please enter new password.</span> 
 										</div>
 										
 										<div class="col-lg-3">
 											<div class="col-6 rule password_hint"><h6>Password Rules</h6>
-								                 <span class="rules">Standard password Rules
-													  <ul>
-														  <li>14 Character Password</li>
-														   <li>Min 8 and Max 14 characters necessary</li>
+								                 <span class="rules">Standard Password Rules
+													<ul>
+														    <li>8 Characters Necessary</li>
 															<li>Min 1 Capital Letter(A-Z)</li>
 															<li>Min 1 Small Letter(a-z)</li>
 															<li>Min 1 Number(0-9)</li>
@@ -215,8 +212,8 @@
 											Password<span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-4">
-											<input type="password" class="form-control password" placeholder="Confirm Password" value="@Qwerty!2"
-											 id="confirm_password" name="confirm_password" autocomplete="off"  maxlength="14" onblur="validatePassword()">
+											<input type="password" class="form-control password" placeholder="Confirm Password" value="@Qwerty"
+											 id="confirm_password" name="confirm_password" autocomplete="off"  maxlength="8" onblur="validatePassword()">
 											<span class="validation-invalid-label" id="error_confirm_password"
 												style="display: none;">Please enter confirm password.</span> 
 										</div>										
@@ -344,10 +341,10 @@
 			var strength = document.getElementById("strength");
 			$("#error_password").hide();
 			var strongRegex = new RegExp(
-					"^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])([$&+,:;=?@#|'<>.^*()%!-](?=.*\\W).*$",
+					"^(?=.{8})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])([$&+,:;=?@#|'<>.^*()%!-](?=.*\\W).*$",
 					"g");
 			var mediumRegex = new RegExp(
-					"^(?=.{6,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$",
+					"^(?=.{6})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$",
 					"g");
 			var enoughRegex = new RegExp("(?=.{6,}).*", "g");
 			var pwd = document.getElementById("new_password").value;
