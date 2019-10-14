@@ -68,15 +68,15 @@
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/customerList"
-							class="nav-link"><i class="icon-file-media " 	style="font-size:30px"></i><span>Customer Master</span></a></li>
+							class="nav-link"><i class="icon-file-media " 	style="font-size:30px"></i><span>Client Master</span></a></li>
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/userList"
 							class="nav-link"><i class="icon-user " style="font-size:30px"></i><span>User Master</span></a></li>
-							
+					<%-- 		
 							<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showIncomingReqList"
-							class="nav-link"><i class="icon-list-unordered " style="font-size:30px"></i><span>Incoming Request List</span></a></li>
+							class="nav-link"><i class="icon-list-unordered " style="font-size:30px"></i><span>Incoming Request List</span></a></li> --%>
 
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showLineItemCodeReqList"

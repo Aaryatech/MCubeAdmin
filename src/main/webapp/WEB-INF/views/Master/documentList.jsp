@@ -163,30 +163,16 @@
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">
-							<i class="far fa-list-alt mr-3 fa-2x" style="color: black;"></i>&nbsp;&nbsp;Document
+						<h2 class="card-title">
+							<i class="far fa-list-alt mr-3 fa-2x" style="color: black; font-size:25px;"></i>&nbsp;&nbsp;Document
 							List
-						</h5>
-						<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
-							> Add User </a></h5> --%>
+						</h2>
+						<h5 class="card-title"><a href="${pageContext.request.contextPath}/associateDash"
+							> <button type="button" class="btn btn-primary">
+										Back</button> </a></h5>
 
 
-						<%-- 	<table width="100%">
-							<tr width="100%">
-								<td width="60%"><h2 class="card-title">
-										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;User
-										List
-									</h2></td>
-
-								<td width="40%" align="right"><a
-									href="${pageContext.request.contextPath}/addUser"
-									class="breadcrumb-elements-item">
-										<button type="button" class="btn btn-primary">Add
-											User</button>
-								</a></td>
-
-							</tr>
-						</table> --%>
+						 
 
 					</div>
 

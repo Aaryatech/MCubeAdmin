@@ -38,22 +38,86 @@
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">
-							<i class="far fa-list-alt mr-3 fa-2x" style="color: black;"></i>&nbsp;&nbsp;Raw
+						<h2 class="card-title">
+							<i class="far fa-list-alt mr-3 fa-2x" style="color: black; font-size:25px;"></i>&nbsp;&nbsp;Raw
 							Data Validation
 
-						</h5>
+						</h2>
 					</div>
 
 					<div class="card-body">
+					
+					
+						<div class="form-group row"
+							style="background-color: #ffeead; width: 80%;">
 
+							<label class="col-md-6" for="reqId"> Request Id : 1</label> <label
+								class="col-md-6" for="clntName"> Client Name : Alan
+								Macedo</label> <label class="col-md-6" for="reqId"> Property
+								Type : Hotel</label> <label class="col-md-6" for="reqId">
+								Document No. : D766R33/Loan NOCs</label>
+
+
+						</div>
+
+
+						<div class="modal-body">
+						
+						<div class="form-group row">
+										<label class="col-form-label col-lg-1" for="locId">
+										Property <span style="color: red"> </span>:
+										</label>
+										<div class="col-lg-3">
+											<select name="locId" data-placeholder="Select" id="locId"
+												class="form-control form-control-select2 select2-hidden-accessible"
+												data-fouc="" aria-hidden="true">
+
+												<option value="">Select</option>
+
+
+												<option selected="selected" value="1">Property 1</option>
+
+												<option value="1">Property 2</option>
+
+											 
+
+											</select>
+										</div>
+									</div>
+						 
+							<div class="form-group row" style=" padding-left: 40%;">
+								<a href="#"><button type="button" disabled="disabled" class="btn btn-primary">1</button></a>&nbsp;&nbsp;
+								<a href="#"><button type="button"  class="btn btn-primary">2</button></a>&nbsp;&nbsp;
+								<a href="#"><button type="button"  disabled="disabled" class="btn btn-primary">3</button></a>&nbsp;&nbsp;
+								<a href="#"><button type="button" disabled="disabled"  class="btn btn-primary">4</button></a>&nbsp;&nbsp;
+							</div>
+							<div  style=" padding-left: 40%;">
+								<div class="col-md-2 text-center mt-2" style="align-self: center;">
+
+									<label class="d-block"
+										style="text-align: center; font-size: x-medium;">Convert
+										to Excel</label>
+									<div class="progress-bar bg-success"
+										style="width: 100%; font-size: x-medium;" id="3pro">100%</div>
+
+									<ul class="fab-menu">
+										<li><a href="#"
+											>
+												<i class="icon-sync " style="color: black; font-size:40px;"></i> <i
+												class="fab-icon-close icon-cross2"></i>
+										</a></li>
+									</ul>
+
+								</div>
+								</div>
+								<div class="form-group row"></div>
 
 						<div class="form-group row">
 
-							<div class="col-lg-5 "><h5>Source File</h5></div>
-							<div class="col-lg-2"></div>
+							<div class="col-lg-5 "><h3>Source File</h3></div>
+							<div class="col-lg-1"></div>
 
-							<div class="col-lg-5"><h5>Converted Excel</h5></div>
+							<div class="col-lg-5"><h3>Converted Excel</h3></div>
 						</div>
 
 						<div class="form-group row">
@@ -64,16 +128,8 @@
 									alt="" onclick="myFunction1(this);">
 								<h5>Doc No:D433H22/Finance Docs</h5>
 							</div>
-							<div class="col-lg-2">
-								<div class="row h-100">
-									<div class="col-sm-12 my-auto">
-										<div class="card card-block   mx-auto">
-											<div class="progress">
-												<div class="progress-bar" style="width: 70%"></div>
-											</div>
-										</div>
-									</div>
-								</div>
+							<div class="col-lg-1">
+								 
 							</div>
 							<div class="col-lg-5 border overflow-hidden">
 								<img
@@ -81,23 +137,25 @@
 									alt="" onclick="myFunction1(this);">
 							</div>
 						</div>
-
-<table width="100%">
-							<tr width="100%">
-								<!-- <td width="60%"><h2 class="card-title">
-										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Customer
-										List
-									</h2></td> -->
-
-								<td width="40%" align="right"><a
-									href="${pageContext.request.contextPath}/showExcelToexcel"
-									class="breadcrumb-elements-item">
-										<button type="button" class="btn btn-primary"> Submit
-											 </button>
-								</a></td>
-
-							</tr>
-						</table>
+ 
+						
+						<div class="modal-body">
+						 
+							<div class="form-group row"  style=" padding-left: 39%;"  >
+							
+							<a href="${pageContext.request.contextPath}/documentList"><button 
+												type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp;
+							
+							
+												
+												<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
+												type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
+							
+									<a href="${pageContext.request.contextPath}/showExcelToexcel"><button 
+												type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
+							</div>
+						</div>
+						
 						<%-- 	
 						
 						<table

@@ -74,7 +74,7 @@
 						<div class="card">
 							<div class="card-header header-elements-inline">
 								<h2 class="card-title"><i class="icon-user-plus "
-											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add User</h2>
+											style="color: black; font-size:25px;"></i>&nbsp;&nbsp;Add User</h2>
 								<a href="${pageContext.request.contextPath}/userList"
 							class="breadcrumb-elements-item">User List</a>
 							</div>
@@ -156,7 +156,7 @@
 
 									<div class="form-group row">
 										<label class="col-form-label col-lg-2" for="fname">
-											Employee Name <span style="color: red">* </span>:
+											User Details <span style="color: red">* </span>:
 										</label>
 										<div class="col-lg-3">
 											<input type="text" class="form-control  "
@@ -230,8 +230,8 @@
 												autocomplete="off"> <span
 												class="validation-invalid-label" id="error_email"
 												style="display: none;">This field is required.</span> <span
-												class="validation-invalid-label" id="error_email_unique"
-												style="display: none;">This Email is already exist.</span>
+												 id="error_email_unique" style="color: red"
+												>Email Id Bill Be Default Username to Enter in System</span>
 										</div>
 
 

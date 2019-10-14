@@ -70,7 +70,7 @@
 						<table width="100%">
 							<tr width="100%">
 								<td width="60%"><h2 class="card-title">
-										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Customer
+										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Client
 										List
 									</h2></td>
 
@@ -78,7 +78,7 @@
 									href="${pageContext.request.contextPath}/addCustomer"
 									class="breadcrumb-elements-item">
 										<button type="button" class="btn btn-primary">Add
-											Customer</button>
+											Client</button>
 								</a></td>
 
 							</tr>

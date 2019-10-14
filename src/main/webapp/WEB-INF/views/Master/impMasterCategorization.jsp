@@ -155,7 +155,7 @@
 									<div class="form-group row">
  
 										<label class="col-form-label col-lg-2" for="locId">
-											Customer Name : </label> <label class="col-form-label col-lg-3"
+											Client Name : </label> <label class="col-form-label col-lg-3"
 											for="locId"> Nikhil Salunkhe </label>
   
 									</div>
@@ -212,7 +212,7 @@
 											<td>Home Loan</td>
 											<td>X</td>
 											<td>-</td>
-											<td><a href="#">L1</a></td>
+											<td>I1</td>
 
 											<td class="text-center"><a href="#" title="Edit"><i
 													class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
@@ -223,11 +223,11 @@
 
 
 										<tr>
-											<td>1</td>
+											<td>2</td>
 											<td>Car Loan</td>
 											<td>Y</td>
 											<td>-</td>
-											<td><a href="#">L2</a></td>
+											<td>I2</td>
 											<td class="text-center"><a href="#" title="Edit"><i
 													class="icon-pencil7" style="color: black; font-size: 20px;"></i></a>
 												<a href="#" onClick="delForm()" title="Delete"><i

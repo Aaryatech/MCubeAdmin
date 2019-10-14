@@ -130,7 +130,7 @@
 
 
 										<label class="col-form-label col-lg-2" for="locId">
-											Customer Name : </label> <label class="col-form-label col-lg-2"
+											Client Name : </label> <label class="col-form-label col-lg-2"
 											for="locId"> Nikhil Salunkhe </label>
  
 									</div>

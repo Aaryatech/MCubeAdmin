@@ -208,5 +208,15 @@ public class MasterController {
 	}
 	
 	
+	@RequestMapping(value = "/showTab", method = RequestMethod.GET)
+	public ModelAndView showTab(Locale locale, Model model,HttpSession session) {
+
+		 
+ 			ModelAndView mav = new ModelAndView("tabFile");
+	  
+		return mav;
+	}
+	
+	
 	
 }

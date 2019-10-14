@@ -74,7 +74,7 @@
 						<div class="card">
 							<div class="card-header header-elements-inline">
 								<h2 class="card-title"><i class="icon-user-plus "
-											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add Customer</h2>
+											style="color: black; font-size:25px"></i>&nbsp;&nbsp;Add Client</h2>
 								 
 							</div>
 
