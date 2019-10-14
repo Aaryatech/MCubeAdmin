@@ -269,7 +269,7 @@ a:hover {
 													<td width="10%"><input type="checkbox" name="TaskId"
 														class="select_all" checked>&nbsp;<img
 														src="${pageContext.request.contextPath}/resources/assets/doc_type/ex1.png"
-														style="width: 90%;" " class="img-preview rounded"
+														style="width: 90%;" class="img-preview rounded"
 														onclick="myFunction(this);"></td>
 
 												</tr>
@@ -278,7 +278,7 @@ a:hover {
 													<td width="10%"><input type="checkbox" name="TaskId"
 														class="select_all">&nbsp;<img
 														src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform.png"
-														style="width: 90%;" " class="img-preview rounded"
+														style="width: 90%;" class="img-preview rounded"
 														onclick="myFunction(this);"></td>
 
 												</tr>
@@ -287,7 +287,7 @@ a:hover {
 													<td width="10%"><input type="checkbox" name="TaskId"
 														class="select_all">&nbsp;<img
 														src="${pageContext.request.contextPath}/resources/assets/doc_type/filled.png"
-														style="width: 90%;" " class="img-preview rounded"
+														style="width: 90%;" class="img-preview rounded"
 														onclick="myFunction(this);"></td>
 
 												</tr>
@@ -296,7 +296,7 @@ a:hover {
 													<td width="10%"><input type="checkbox" name="TaskId"
 														class="select_all">&nbsp;<img
 														src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform1.png"
-														style="width: 90%;" " class="img-preview rounded"
+														style="width: 90%;"class="img-preview rounded"
 														onclick="myFunction(this);"></td>
 
 												</tr>
@@ -305,7 +305,7 @@ a:hover {
 													<td width="10%"><input type="checkbox" name="TaskId"
 														class="select_all">&nbsp;<img
 														src="${pageContext.request.contextPath}/resources/assets/doc_type/excel-pivot-start.jpg"
-														style="width: 90%;" " class="img-preview rounded"
+														style="width: 90%;" class="img-preview rounded"
 														onclick="myFunction(this);"></td>
 
 												</tr>
