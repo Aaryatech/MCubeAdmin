@@ -67,9 +67,7 @@ td {
   color: #7c7c80;
   font-size: 12px;
 } */
-.btn{
-padding-right: 0 !important;
-}
+
 </style>
 </head>
 
@@ -92,16 +90,12 @@ padding-right: 0 !important;
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-		<!-- 	<div class="page-header page-header-light">
-
-
-				<div
+		<div
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="#" class="breadcrumb-item"><i
-								class="icon-home2 mr-2"></i> Home</a> <span
-								class="breadcrumb-item active">Dashboard</span>
+							<a href="${pageContext.request.contextPath}/dash" class="breadcrumb-item"><i
+								class="icon-home2 mr-2"></i> Dashboard</a>  
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i
@@ -112,10 +106,9 @@ padding-right: 0 !important;
 					</div>
 
 
-				 
+
 
 				</div>
-			</div> -->
 			<!-- /page header -->
 
 
@@ -215,7 +208,7 @@ padding-right: 0 !important;
 									
 									<td class="text-center">
 										<a
-										href="#" title="Edit" onclick="editItemLink1()">	<i class="icon-pencil7" style="color: black; font-size:16px;"></i>
+										href="#" title="Edit" onclick="editItemLink1()"><i class="icon-pencil7" style="color: black; font-size:16px;"></i>
 										</a>
 										
 									 <a
@@ -226,7 +219,7 @@ padding-right: 0 !important;
 										<a
 										href="#"
 										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
+										title="Disapprove"><i class="icon-cross2 mr-3 icon-2x" style="color: black; font-size:16px; "></i>
 									</a></td>
 								</tr>
 
@@ -256,7 +249,7 @@ padding-right: 0 !important;
 										<a
 										href="#"
 										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
+										title="Disapprove"><i class="icon-cross2 mr-3 icon-2x" style="color: black; font-size:16px; "></i>
 									</a></td>
 								</tr>
 								
@@ -288,7 +281,7 @@ padding-right: 0 !important;
 										<a
 										href="#"
 										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:16px; "></i>
+										title="Disapprove"><i class="icon-cross2 mr-3 icon-2x" style="color: black; font-size:16px; "></i>
 									</a></td>
 							
 								</tr>
@@ -354,6 +347,7 @@ padding-right: 0 !important;
 	     <!-- Horizontal form modal -->
 				<div id="modal_form_horizontal1" class="modal fade" tabindex="-1">
 					<div class="modal-dialog modal-lg">
+					
 						<div class="modal-content">
 							<div class="modal-header">
 								<h5 class="modal-title">Edit Line Item
@@ -408,11 +402,10 @@ padding-right: 0 !important;
 										</div>
 								</div>
 										
-								<div class="modal-footer">
-								<button type="button" class="btn btn-primary">Approve</button>
-								<button type="button" class="btn btn-primary">Disapprove</button>
-								<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-					
+								<div class="modal-footer pt-3">
+									<button type="button" class="btn btn-primary">Approve</button>
+									<button type="button" class="btn btn-primary">Disapprove</button>
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
 								</div>
 								</div>
 							</form>
@@ -474,7 +467,7 @@ padding-right: 0 !important;
 										</div>
 									</div>
 
-								<div class="modal-footer">
+								<div class="modal-footer pt-3">
 								<button type="button" class="btn btn-primary">Approve</button>
 								<button type="button" class="btn btn-primary">Disapprove</button>
 								<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
@@ -538,10 +531,10 @@ padding-right: 0 !important;
 										</div>
 									</div>
 
-								<div class="modal-footer">
+								<div class="modal-footer pt-3">
 									<button type="button" class="btn btn-primary">Approve</button>
-								<button type="button" class="btn btn-primary">Disapprove</button>
-								<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+									<button type="button" class="btn btn-primary">Disapprove</button>
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
 								</div>
 								</div>
 							</form>
