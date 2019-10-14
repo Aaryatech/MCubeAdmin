@@ -349,7 +349,7 @@ padding-right: 0 !important;
 			</div>
 		</div>
 	</div>
-	</script>
+	
 
 	     <!-- Horizontal form modal -->
 				<div id="modal_form_horizontal1" class="modal fade" tabindex="-1">
@@ -394,7 +394,8 @@ padding-right: 0 !important;
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Bot Date</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="" class="form-control daterange-single" value="16-03-2019" id="bot_date">
+											<input type="text" class="form-control daterange-single"
+																	value="03/16/2019">
 										</div>
 									</div>
 
@@ -402,19 +403,11 @@ padding-right: 0 !important;
 										<label class="col-form-label col-sm-3">Associate Date</label>
 										<div class="col-sm-9">
 										
-										<input type="text" class="form-control daterange-single"
-																	value="16/03/2019">
-											
+											<input type="text" class="form-control daterange-single"
+																	value="03/16/2019">											
 										</div>
 								</div>
-										<div class="form-group row">
-										<label class="col-form-label col-sm-3">Bot Date</label>
-										<div class="col-sm-9">
 										
-										<input type="text" class="form-control daterange-single"
-																	value="16/03/2019">
-											
-										</div>
 								<div class="modal-footer">
 								<button type="button" class="btn btn-primary">Approve</button>
 								<button type="button" class="btn btn-primary">Disapprove</button>
@@ -470,14 +463,14 @@ padding-right: 0 !important;
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Bot Date</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="" class="form-control daterange-single" value="01-06-2019" id="bot_date">
+											<input type="text" placeholder="" class="form-control daterange-single" value="03-01-2019" id="bot_date">
 										</div>
 									</div>
 
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Associate Date</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="" class="form-control daterange-single" value="01-06-2019" id="asso_date">
+											<input type="text" placeholder="" class="form-control daterange-single" value="03-01-2019" id="asso_date">
 										</div>
 									</div>
 
@@ -534,14 +527,14 @@ padding-right: 0 !important;
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Bot Date</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="" class="form-control daterange-single" value="20-10-2019" id="bot_date">
+											<input type="text" placeholder="" class="form-control daterange-single" value="10-20-2019" id="bot_date">
 										</div>
 									</div>
 
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Associate Date</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="" class="form-control daterange-single" value="20-10-2019" id="asso_date">
+											<input type="text" placeholder="" class="form-control daterange-single" value="10-20-2019" id="asso_date">
 										</div>
 									</div>
 
