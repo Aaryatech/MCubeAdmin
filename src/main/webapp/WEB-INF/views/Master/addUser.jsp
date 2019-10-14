@@ -226,7 +226,7 @@
 												class="validation-invalid-label" id="error_email"
 												style="display: none;">This field is required.</span> <span
 												 id="error_email_unique" style="color: red"
-												>Email Id Bill Be Default Username to Enter in System</span>
+												>Email Id Will Be Default Username to Enter in System</span>
 										</div>
 
 

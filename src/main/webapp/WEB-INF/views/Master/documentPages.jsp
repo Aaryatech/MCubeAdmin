@@ -381,12 +381,12 @@
 
 </div>
 			<!-- Footer -->
+			<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
 		
 			<!-- /footer -->
 
 		</div>
 		<!-- /main content -->
-	<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
 	</div>
 	<!-- /page content -->
 
