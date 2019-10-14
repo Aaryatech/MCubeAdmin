@@ -81,7 +81,9 @@
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showLineItemCodeReqList"
 							class="nav-link"><i class="icon-list3" style="font-size:30px"></i><span>Line Item Code Request</span></a></li>
-							
+							<li class="nav-item"><a
+							href="${pageContext.request.contextPath}/showAppReq"
+							class="nav-link"><i class="icon-list-unordered " style="font-size:30px"></i><span>Approved Request List</span></a></li>
 						<li class="nav-item"><a
 							href="${pageContext.request.contextPath}/showDeclineItemCodeReqList"
 							class="nav-link"><i class="icon-menu4" style="font-size:30px"></i><span>Decline Item Code Request</span></a></li>

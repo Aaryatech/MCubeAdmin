@@ -218,5 +218,15 @@ public class MasterController {
 	}
 	
 	
+	@RequestMapping(value = "/showAppReq", method = RequestMethod.GET)
+	public ModelAndView showAppReq(Locale locale, Model model,HttpSession session) {
+
+		 
+ 			ModelAndView mav = new ModelAndView("Master/approvedRequestList");
+	  
+		return mav;
+	}
+	
+	
 	
 }

@@ -107,7 +107,7 @@ td {
 					<div class="card-header header-elements-inline">
 					<h2 class="card-title"><i class="icon-list3"
 						style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Line Item
-						 Code Request</h2>
+						 Code </h2>
 					
 					<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5>  --%>

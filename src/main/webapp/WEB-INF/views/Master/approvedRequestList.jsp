@@ -106,8 +106,8 @@ td {
 				<div class="card">
 					<div class="card-header header-elements-inline">
 					<h2 class="card-title"><i class="icon-menu4"
-						style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Declined Line Item
-						 Code </h2>
+						style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Approved Line Item
+						 Code Request</h2>
 					
 					<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5>  --%>
@@ -169,8 +169,8 @@ td {
 									<th scope="col">Client Name</th>
 									<th scope="col">Request Id</th>
 									<th scope="col">Line Item</th>
-									<th scope="col">Decline by Associate</th>
-									<th scope="col">Decline Date </th>
+									<th scope="col">Approved by Associate</th>
+									<th scope="col">Approval Date </th>
 									<th scope="col">Actions</th>
 								</tr>
 							</thead>
