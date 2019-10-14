@@ -79,6 +79,32 @@
 	-webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 	-o-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 }
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.previous {
+	background-color: #f1f1f1;
+	color: black;
+	left: 0px !important;
+}
+
+.next {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.round {
+	border-radius: 50%;
+}
 </style>
 </head>
 
@@ -102,24 +128,25 @@
 
 			<!-- page header -->
 			<div
-					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-					<div class="d-flex">
-						<div class="breadcrumb">
-							<a href="${pageContext.request.contextPath}/associateDash" class="breadcrumb-item"><i
-								class="icon-home2 mr-2"></i> Dashboard</a>  
-						</div>
-
-						<a href="#" class="header-elements-toggle text-default d-md-none"><i
-							class="icon-more"></i></a>
-
-
-
+				class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+				<div class="d-flex">
+					<div class="breadcrumb">
+						<a href="${pageContext.request.contextPath}/associateDash"
+							class="breadcrumb-item"><i class="icon-home2 mr-2"></i>
+							Dashboard</a>
 					</div>
 
+					<a href="#" class="header-elements-toggle text-default d-md-none"><i
+						class="icon-more"></i></a>
 
 
 
 				</div>
+
+
+
+
+			</div>
 			<!-- /page header -->
 
 
@@ -132,8 +159,8 @@
 					<div class="card-header header-elements-inline">
 						<h2 class="card-title">
 							<i class="far fa-list-alt mr-3 fa-2x"
-								style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Select
-							Deselect Cashflow Pages
+								style="color: black; font-size: 25px;"></i> Select Deselect
+							Cashflow Pages
 
 						</h2>
 						<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
@@ -190,6 +217,14 @@
 					
 					
  -->
+						<div class="form-group row" style="padding-left: 40%;">
+							<span class="badge badge-primary badge-pill  mr-2 	">1</span> <span
+								class="badge badge-secondary badge-pill mr-2 ">2</span> <span
+								class="badge badge-secondary badge-pill mr-2  ">3</span> <span
+								class="badge badge-secondary badge-pill mr-2">4</span>
+
+
+						</div>
 
 						<div class="form-group row"
 							style="background-color: #ffeead; width: 85%;">
@@ -202,20 +237,15 @@
 
 
 						</div>
-						
-									
+
+
 
 
 						<div class="modal-body">
-						
-						 
-							<div class="form-group row" style=" padding-left: 40%;">
-								<a href="#"><button type="button" class="rounded-circle">1</button></a>&nbsp;&nbsp;
-								<a href="#"><button type="button" disabled="disabled" class="btn btn-primary">2</button></a>&nbsp;&nbsp;
-								<a href="#"><button type="button"  disabled="disabled" class="btn btn-primary">3</button></a>&nbsp;&nbsp;
-								<a href="#"><button type="button" disabled="disabled"  class="btn btn-primary">4</button></a>&nbsp;&nbsp;
-							</div>
-						 
+
+
+
+
 							<div class="form-group row">
 								<div class="col-md-6">
 									<div class="table-responsive"
@@ -280,7 +310,7 @@
 
 											</tbody>
 										</table>
-									
+
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -291,30 +321,38 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="modal-body">
-						 
-							<div class="form-group row"  style=" padding-left: 39%;"  >
-							
-							<a href="${pageContext.request.contextPath}/showDocumentList"><button 
-												type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp;
-							
-							
-												
-												<a href="${pageContext.request.contextPath}/showOCR"><button
-												type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
-							
-									<a href="${pageContext.request.contextPath}/showOCR"><button 
-												type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
+
+								<div class="form-group row" style="padding-left: 39%;">
+
+									<%-- 	<a href="${pageContext.request.contextPath}/showDocumentList"><button
+											type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp; --%>
+
+
+
+									<a href="${pageContext.request.contextPath}/showOCR"><button
+											type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
+									<%-- 
+									<a href="${pageContext.request.contextPath}/showOCR"><button
+											type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
+											 --%>
+
+									<a href="${pageContext.request.contextPath}/showDocumentList"
+										class="previous round">&#8249;&nbsp;Prev</a>
+									<div align="right">
+										<a href="${pageContext.request.contextPath}/showOCR"
+											class="next round">&#8250;&nbsp;Next</a>
+									</div>
+								</div>
 							</div>
-						</div>
 
 
 
 
 
 
-						<%-- 	<div class="modal-body">
+							<%-- 	<div class="modal-body">
 				<div class="form-group row">
 				<div class="col-md-6">
 				 <div class = "table-responsive" style="overflow: auto; height: 105%; width:60%;">
@@ -371,18 +409,18 @@
 
 
 
+						</div>
+
 					</div>
+					<!-- /highlighting rows and columns -->
 
 				</div>
-				<!-- /highlighting rows and columns -->
+				<!-- /content area -->
 
 			</div>
-			<!-- /content area -->
-
-</div>
 			<!-- Footer -->
 			<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
-		
+
 			<!-- /footer -->
 
 		</div>
