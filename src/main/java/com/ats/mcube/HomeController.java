@@ -103,7 +103,7 @@ public class HomeController {
 		return mav;
 	}
 	
-	@RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
+	@RequestMapping(value = "/loginProcess", method = RequestMethod.GET)
 	public String loginProcess(Locale locale, Model model, HttpServletRequest request, HttpServletResponse response,
 			HttpSession session) {
 		String mav = null;
