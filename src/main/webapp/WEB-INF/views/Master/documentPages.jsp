@@ -131,7 +131,7 @@ a:hover {
 		<div class="content-wrapper">
 
 			<!-- page header -->
-			<div
+			<%-- <div
 				class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 				<div class="d-flex">
 					<div class="breadcrumb">
@@ -142,15 +142,8 @@ a:hover {
 
 					<a href="#" class="header-elements-toggle text-default d-md-none"><i
 						class="icon-more"></i></a>
-
-
-
 				</div>
-
-
-
-
-			</div>
+			</div> --%>
 			<!-- /page header -->
 
 
