@@ -6,7 +6,7 @@
 <head>
 
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
-<style CSS>
+<style >
 /* show border around full height container */
 .h-100 {
 	border: 0px;
@@ -31,7 +31,25 @@
 
 		<!-- Main content -->
 		<div class="content-wrapper">
+<div
+					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="${pageContext.request.contextPath}/dash" class="breadcrumb-item"><i
+								class="icon-home2 mr-2"></i> Dashboard</a>  
+						</div>
 
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i
+							class="icon-more"></i></a>
+
+
+
+					</div>
+
+
+
+
+				</div>
 			<div class="content">
 
 
@@ -135,42 +153,9 @@
 							</div>
 						</div>
 						
-						<%-- 	
-						
-						<table
-							class="table table-table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
-							id="printtable1">
-							 
-							<tbody>
-
-								<tr>
-									<td   style="width:20%; height:50%; border:10px solid green;" ><img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/pfform.jpg"  
-										alt=""   onclick="myFunction1(this);"></td>
-									<td  style="width:20%;"> </td>
-									<td  style="width:30%; height:50%; border:10px solid green;" ><img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/excel-pivot-start.jpg"  
-										alt=""  onclick="myFunction1(this);"> </td>
-									 
-								</tr>
-
- 
-
-							</tbody>
-						</table>
-
-
- --%>
-
+						 
 					</div>
-					
-<%-- <div class="row">
-<div class="col-md-6">
-<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
-													type="button" class="btn btn-primary">
-													<i class="${sessionScope.cancelIcon}" aria-hidden="true"></i>&nbsp;&nbsp;
-													Submit
-												</button></a></div></div> --%>
+ 
 
 
 
@@ -183,12 +168,14 @@
 
 
 			<!-- Footer -->
-			<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
+		
 			<!-- /footer -->
 
 		</div>
 		<!-- /main content -->
-
+	<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
+	</div>
+	
 	</div>
 	<!-- /page content -->
 

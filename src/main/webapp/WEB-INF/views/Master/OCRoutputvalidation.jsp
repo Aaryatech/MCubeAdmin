@@ -27,16 +27,16 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-			<!-- <div class="page-header page-header-light">
+			<div class="page-header page-header-light">
 
 
 				<div
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="#" class="breadcrumb-item"><i
-								class="icon-home2 mr-2"></i> Home</a> <span
-								class="breadcrumb-item active">Dashboard</span>
+							<a href="${pageContext.request.contextPath}/dash"
+								class="breadcrumb-item"><i class="icon-home2 mr-2"></i>
+								Dashboard</a>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i
@@ -50,7 +50,7 @@
 
 
 				</div>
-			</div> -->
+			</div>
 			<!-- /page header -->
 
 
@@ -62,8 +62,9 @@
 				<div class="card">
 					
 				<div class="card-header header-elements-inline">
-						<h2 class="card-title">Client Proprietary
+						<h2 class="card-title">	<i class="icon-stack2 " style="color: black; font-size:25px;"></i>&nbsp;&nbsp;Client Proprietary
 										 Model Selection Screen</h2>
+										 
 						
 						<div class="card-title">  
 						
@@ -96,6 +97,27 @@
 
 
 					<div class="card-body">
+					<div class="form-group row"
+							style="background-color: #ffeead; width: 85%;">
+
+							<label class="col-md-6" for="reqId"> Request Id : 1</label> <label
+								class="col-md-6" for="clntName"> Client Name : Alan
+								Macedo</label> <label class="col-md-6" for="reqId"> Property
+								Type : Hotel</label> <label class="col-md-6" for="reqId">
+								Document No. : D766R33/Loan NOCs</label>
+
+
+						</div>
+						
+									
+					
+					
+					<div class="form-group row" style=" padding-left: 40%;">
+								<a href="#"><button type="button"  disabled="disabled" class="btn btn-primary">1</button></a>&nbsp;&nbsp;
+								<a href="#"><button type="button" disabled="disabled" class="btn btn-primary">2</button></a>&nbsp;&nbsp;
+								<a href="#"><button type="button"  disabled="disabled" class="btn btn-primary">3</button></a>&nbsp;&nbsp;
+								<a href="#"><button type="button"  class="btn btn-primary">4</button></a>&nbsp;&nbsp;
+							</div>
 
 						<table
 							class="table table- table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
@@ -156,28 +178,20 @@
 					</div>
 
 						<div class="card-header header-elements-inline">
-						<%-- <h5 class="card-title"><i class="icon-users4 "
-											style="color: black;"></i>&nbsp;&nbsp;User List</h5>
-								<h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
-							> Add User </a></h5> --%>
-
-
-						<table width="100%">
-							<tr width="100%">
-								<!-- <td width="60%"><h2 class="card-title">
-										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;Customer
-										List
-									</h2></td> -->
-
-								<td width="40%" align="right"><a
-									href="${pageContext.request.contextPath}/associateDash"
-									class="breadcrumb-elements-item">
-										<button type="button" class="btn btn-primary"> Export
-											 </button>
-								</a></td>
-
-							</tr>
-						</table>
+					
+						
+						<div class="form-group row"  style=" padding-left: 40%;"  >
+							
+							<a href="${pageContext.request.contextPath}/showExcelToexcel"><button 
+												type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp;
+							
+							
+												
+												<a href="${pageContext.request.contextPath}/associateDash"><button
+												type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
+							
+								 
+							</div>
 
 					</div>
 

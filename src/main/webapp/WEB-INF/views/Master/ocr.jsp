@@ -31,6 +31,30 @@
 
 		<!-- Main content -->
 		<div class="content-wrapper">
+			<div class="page-header page-header-light">
+
+
+				<div
+					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="${pageContext.request.contextPath}/dash"
+								class="breadcrumb-item"><i class="icon-home2 mr-2"></i>
+								Dashboard</a>
+						</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i
+							class="icon-more"></i></a>
+
+
+
+					</div>
+
+
+
+
+				</div>
+			</div>
 
 			<div class="content">
 
@@ -39,15 +63,16 @@
 				<div class="card">
 					<div class="card-header header-elements-inline">
 						<h2 class="card-title">
-							<i class="far fa-list-alt mr-3 fa-2x" style="color: black; font-size:25px;"></i>&nbsp;&nbsp;Raw
-							Data Validation
+							<i class="far fa-list-alt mr-3 fa-2x"
+								style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Raw Data
+							Validation
 
 						</h2>
 					</div>
 
 					<div class="card-body">
-					
-					
+
+
 						<div class="form-group row"
 							style="background-color: #ffeead; width: 80%;">
 
@@ -62,37 +87,40 @@
 
 
 						<div class="modal-body">
-						
-						<div class="form-group row">
-										<label class="col-form-label col-lg-1" for="locId">
-										Property <span style="color: red"> </span>:
-										</label>
-										<div class="col-lg-3">
-											<select name="locId" data-placeholder="Select" id="locId"
-												class="form-control form-control-select2 select2-hidden-accessible"
-												data-fouc="" aria-hidden="true">
 
-												<option value="">Select</option>
+							<div class="form-group row">
+								<label class="col-form-label col-lg-1" for="locId">
+									Property <span style="color: red"> </span>:
+								</label>
+								<div class="col-lg-3">
+									<select name="locId" data-placeholder="Select" id="locId"
+										class="form-control form-control-select2 select2-hidden-accessible"
+										data-fouc="" aria-hidden="true">
+
+										<option value="">Select</option>
 
 
-												<option selected="selected" value="1">Property 1</option>
+										<option selected="selected" value="1">Property 1</option>
 
-												<option value="1">Property 2</option>
+										<option value="1">Property 2</option>
 
-											 
 
-											</select>
-										</div>
-									</div>
-						 
-							<div class="form-group row" style=" padding-left: 40%;">
-								<a href="#"><button type="button" disabled="disabled" class="btn btn-primary">1</button></a>&nbsp;&nbsp;
-								<a href="#"><button type="button"  class="btn btn-primary">2</button></a>&nbsp;&nbsp;
-								<a href="#"><button type="button"  disabled="disabled" class="btn btn-primary">3</button></a>&nbsp;&nbsp;
-								<a href="#"><button type="button" disabled="disabled"  class="btn btn-primary">4</button></a>&nbsp;&nbsp;
+
+									</select>
+								</div>
 							</div>
-							<div  style=" padding-left: 40%;">
-								<div class="col-md-2 text-center mt-2" style="align-self: center;">
+
+							<div class="form-group row" style="padding-left: 40%;">
+								<a href="#"><button type="button" disabled="disabled"
+										class="btn btn-primary">1</button></a>&nbsp;&nbsp; <a href="#"><button
+										type="button" class="btn btn-primary">2</button></a>&nbsp;&nbsp; <a
+									href="#"><button type="button" disabled="disabled"
+										class="btn btn-primary">3</button></a>&nbsp;&nbsp; <a href="#"><button
+										type="button" disabled="disabled" class="btn btn-primary">4</button></a>&nbsp;&nbsp;
+							</div>
+							<div style="padding-left: 40%;">
+								<div class="col-md-2 text-center mt-2"
+									style="align-self: center;">
 
 									<label class="d-block"
 										style="text-align: center; font-size: x-medium;">Convert
@@ -101,118 +129,83 @@
 										style="width: 100%; font-size: x-medium;" id="3pro">100%</div>
 
 									<ul class="fab-menu">
-										<li><a href="#"
-											>
-												<i class="icon-sync " style="color: black; font-size:40px;"></i> <i
+										<li><a href="#"> <i class="icon-sync "
+												style="color: black; font-size: 40px;"></i> <i
 												class="fab-icon-close icon-cross2"></i>
 										</a></li>
 									</ul>
 
 								</div>
+							</div>
+							<div class="form-group row"></div>
+
+							<div class="form-group row">
+
+								<div class="col-lg-5 ">
+									<h3>Source File</h3>
 								</div>
-								<div class="form-group row"></div>
+								<div class="col-lg-1"></div>
 
-						<div class="form-group row">
+								<div class="col-lg-5">
+									<h3>Converted Excel</h3>
+								</div>
+							</div>
 
-							<div class="col-lg-5 "><h3>Source File</h3></div>
-							<div class="col-lg-1"></div>
+							<div class="form-group row">
 
-							<div class="col-lg-5"><h3>Converted Excel</h3></div>
+								<div class="col-lg-5 border overflow-hidden">
+									<img
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/pfform.jpg"
+										alt="" onclick="myFunction1(this);">
+									<h5>Doc No:D433H22/Finance Docs</h5>
+								</div>
+								<div class="col-lg-1"></div>
+								<div class="col-lg-5 border overflow-hidden">
+									<img
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/abc.png"
+										alt="" onclick="myFunction1(this);">
+								</div>
+							</div>
+
+
+							<div class="modal-body">
+
+								<div class="form-group row" style="padding-left: 39%;">
+
+									<a href="${pageContext.request.contextPath}/documentList"><button
+											type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp;
+
+
+
+									<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
+											type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
+
+									<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
+											type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
+								</div>
+							</div>
+
 						</div>
 
-						<div class="form-group row">
 
-							<div class="col-lg-5 border overflow-hidden">
-								<img
-									src="${pageContext.request.contextPath}/resources/assets/doc_type/pfform.jpg"
-									alt="" onclick="myFunction1(this);">
-								<h5>Doc No:D433H22/Finance Docs</h5>
-							</div>
-							<div class="col-lg-1">
-								 
-							</div>
-							<div class="col-lg-5 border overflow-hidden">
-								<img
-									src="${pageContext.request.contextPath}/resources/assets/doc_type/abc.png"
-									alt="" onclick="myFunction1(this);">
-							</div>
-						</div>
- 
-						
-						<div class="modal-body">
-						 
-							<div class="form-group row"  style=" padding-left: 39%;"  >
-							
-							<a href="${pageContext.request.contextPath}/documentList"><button 
-												type="button" class="btn btn-primary">Prev</button></a>&nbsp;&nbsp;
-							
-							
-												
-												<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
-												type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
-							
-									<a href="${pageContext.request.contextPath}/showExcelToexcel"><button 
-												type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
-							</div>
-						</div>
-						
-						<%-- 	
-						
-						<table
-							class="table table-table-hover datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
-							id="printtable1">
-							 
-							<tbody>
-
-								<tr>
-									<td   style="width:20%; height:50%; border:10px solid green;" ><img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/pfform.jpg"  
-										alt=""   onclick="myFunction1(this);"></td>
-									<td  style="width:20%;"> </td>
-									<td  style="width:30%; height:50%; border:10px solid green;" ><img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/excel-pivot-start.jpg"  
-										alt=""  onclick="myFunction1(this);"> </td>
-									 
-								</tr>
-
- 
-
-							</tbody>
-						</table>
-
-
- --%>
 
 					</div>
-					
-<%-- <div class="row">
-<div class="col-md-6">
-<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
-													type="button" class="btn btn-primary">
-													<i class="${sessionScope.cancelIcon}" aria-hidden="true"></i>&nbsp;&nbsp;
-													Submit
-												</button></a></div></div> --%>
-
-
-
+					<!-- /highlighting rows and columns -->
 
 				</div>
-				<!-- /highlighting rows and columns -->
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+
+				<!-- /footer -->
 
 			</div>
-			<!-- /content area -->
-
-
-			<!-- Footer -->
+			<!-- /main content -->
 			<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
-			<!-- /footer -->
-
 		</div>
-		<!-- /main content -->
-
+		<!-- /page content -->
 	</div>
-	<!-- /page content -->
-
 	<script>
 		function myFunction(imgs) {
 			var expandImg = document.getElementById("expandedImg");
