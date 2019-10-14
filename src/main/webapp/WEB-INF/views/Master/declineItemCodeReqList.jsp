@@ -70,7 +70,7 @@ td {
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<!-- Page header -->
+	<%-- 		<!-- Page header -->
 		<div
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
@@ -89,7 +89,7 @@ td {
 
 
 
-				</div>
+				</div> --%>
 			<!-- /page header -->
 
 

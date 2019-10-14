@@ -103,7 +103,7 @@
 
 
 		<!-- Main content -->
-		 <div class="content-wrapper">
+	<%-- 	 <div class="content-wrapper">
 
 			<!-- page header -->
 			<div
@@ -124,7 +124,7 @@
 
 
 
-				</div>
+				</div> --%>
 			<!-- /page header -->
 
 

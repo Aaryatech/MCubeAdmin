@@ -90,8 +90,7 @@ td {
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-		<div
-					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+		<%-- <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="${pageContext.request.contextPath}/dash" class="breadcrumb-item"><i
@@ -100,15 +99,8 @@ td {
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i
 							class="icon-more"></i></a>
-
-
-
 					</div>
-
-
-
-
-				</div>
+		</div> --%>
 			<!-- /page header -->
 
 
@@ -121,7 +113,7 @@ td {
 					<div class="card-header header-elements-inline">
 					<h2 class="card-title"><i class="icon-list3"
 						style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Line Item
-						 Code </h2>
+						 Code Request</h2>
 					
 					<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5>  --%>
