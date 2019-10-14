@@ -82,6 +82,16 @@ public class HomeController {
 		return mav;
 	}
 	
+	@RequestMapping(value = "/rawData", method = RequestMethod.GET)
+	public ModelAndView rawData(Locale locale, Model model,HttpSession session) {
+
+		
+		ModelAndView mav = new ModelAndView("tabFile");
+		 
+
+		return mav;
+	}
+	
 
 	@RequestMapping(value = "/welcomePage", method = RequestMethod.GET)
 	public ModelAndView welcomePage(Locale locale, Model model,HttpSession session) {
