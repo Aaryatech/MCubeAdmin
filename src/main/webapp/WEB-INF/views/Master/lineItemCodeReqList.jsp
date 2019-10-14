@@ -4,6 +4,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script
+	src="${pageContext.request.contextPath}/resources/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+<script
+	src="${pageContext.request.contextPath}/resources/global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
+<script
+	src="${pageContext.request.contextPath}/resources/global_assets/js/plugins/extensions/jquery_ui/effects.min.js"></script>
+
+<script
+	src="${pageContext.request.contextPath}/resources/global_assets/js/demo_pages/jqueryui_navigation.js"></script>
+<!-- /theme JS files -->
+
+<script
+	src="${pageContext.request.contextPath}/resources/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+
+<script
+	src="${pageContext.request.contextPath}/resources/global_assets/js/demo_pages/picker_date.js"></script>
+
+
 <jsp:include page="/WEB-INF/views/include/metacssjs.jsp"></jsp:include>
 <style type="text/css">
 /* th,
@@ -49,6 +67,9 @@ td {
   color: #7c7c80;
   font-size: 12px;
 } */
+.btn{
+padding-right: 0 !important;
+}
 </style>
 </head>
 
@@ -193,10 +214,10 @@ td {
 									</td>
 									
 									<td class="text-center">
-									<a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
-									
+										<a
+										href="#" title="Edit" onclick="editItemLink1()">	<i class="icon-pencil7" style="color: black; font-size:16px;"></i>
+										</a>
+										
 									 <a
 										href="#"
 										title="Approve"><i class="icon-checkmark3"
@@ -224,10 +245,9 @@ td {
 										<span class="text-offset">01:05</span>
 									</td>
 									<td class="text-center">
-									 <a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
-									
+									 	<a
+										href="#" title="Edit" onclick="editItemLink2()">	<i class="icon-pencil7" style="color: black; font-size:16px;"></i>
+										</a>
 									 <a
 										href="#"
 										title="Approve"><i class="icon-checkmark3"
@@ -257,8 +277,8 @@ td {
 
 									<td class="text-center">
 									<a
-										href="#"
-										title="Edit"><i class="icon-pencil7" style="color: black; font-size:16px;"></i></a>
+										href="#" title="Edit" onclick="editItemLink3()">	<i class="icon-pencil7" style="color: black; font-size:16px;"></i>
+									</a>
 									
 									 <a
 										href="#"
@@ -329,5 +349,260 @@ td {
 			</div>
 		</div>
 	</div>
+	</script>
+
+	     <!-- Horizontal form modal -->
+				<div id="modal_form_horizontal1" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Edit Line Item
+						 Code</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#" class="form-horizontal">
+								<div class="modal-body">
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Client name</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" value="Satish Patil" class="form-control" id="client_name">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Line Item</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="ABC" id="line_item">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Proposed by Bot</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="TT200" id="bot">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Proposed by Associate</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="Mahesh G" id="associate">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Bot Date</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control daterange-single" value="16-03-2019" id="bot_date">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Associate Date</label>
+										<div class="col-sm-9">
+										
+										<input type="text" class="form-control daterange-single"
+																	value="16/03/2019">
+											
+										</div>
+								</div>
+										<div class="form-group row">
+										<label class="col-form-label col-sm-3">Bot Date</label>
+										<div class="col-sm-9">
+										
+										<input type="text" class="form-control daterange-single"
+																	value="16/03/2019">
+											
+										</div>
+								<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Approve</button>
+								<button type="button" class="btn btn-primary">Disapprove</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+					
+								</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+<!-- ******************************************************************************************************************* -->
+	<div id="modal_form_horizontal2" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Edit Line Item
+						 Code</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#" class="form-horizontal">
+								<div class="modal-body">
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Client name</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" value="Kabir Singh" class="form-control" id="client_name">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Line Item</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="DEF" id="line_item">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Proposed by Bot</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="KK21" id="bot">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Proposed by Associate</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="Yogest T" id="associate">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Bot Date</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control daterange-single" value="01-06-2019" id="bot_date">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Associate Date</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control daterange-single" value="01-06-2019" id="asso_date">
+										</div>
+									</div>
+
+								<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Approve</button>
+								<button type="button" class="btn btn-primary">Disapprove</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+								</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+<!-- ************************************************************************************************************************** -->
+		<div id="modal_form_horizontal3" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Edit Line Item
+						 Code</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<form action="#" class="form-horizontal">
+								<div class="modal-body">
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Client name</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" value="Suresh Jha" class="form-control" id="client_name">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Line Item</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="HIJ" id="line_item">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Proposed by Bot</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="SS10" id="bot">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Proposed by Associate</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control" value="Priya G" id="associate">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Bot Date</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control daterange-single" value="20-10-2019" id="bot_date">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Associate Date</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="" class="form-control daterange-single" value="20-10-2019" id="asso_date">
+										</div>
+									</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary">Approve</button>
+								<button type="button" class="btn btn-primary">Disapprove</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+								</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /horizontal form modal -->
+				
+<script>
+	function editItemLink1() {		
+		$("#modal_form_horizontal1").modal('show');
+	}
+	
+	function editItemLink2() {
+		$("#modal_form_horizontal2").modal('show');
+	}
+	
+	function editItemLink3() {
+		$("#modal_form_horizontal3").modal('show');
+	}
+</script>	
+
+<!-- <script type="text/javascript">
+		/* // Single picker
+		$('.datepickerclass').daterangepicker({
+			singleDatePicker : true,
+			selectMonths : true,
+			selectYears : true,
+			locale : {
+				format : 'DD-MM-YYYY'
+			}
+		});
+
+		//daterange-basic_new
+		// Basic initialization
+		$('.daterange-basic_new').daterangepicker({
+			applyClass : 'bg-slate-600',
+
+			cancelClass : 'btn-light',
+			locale : {
+				format : 'DD-MM-YYYY',
+				separator : ' to '
+			}
+		}); */
+		
+		 $('.daterange-single').daterangepicker({
+			singleDatePicker : true,
+			selectMonths : true,
+			selectYears : true,
+			locale : {
+				format : 'DD-MM-YYYY'
+			}
+		}); 
+ 	 
+	</script>		 -->	
 </body>
 </html>
