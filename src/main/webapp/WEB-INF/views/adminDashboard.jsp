@@ -89,7 +89,7 @@ body {
 
 
 			<!-- Content area -->
-			<div class="content">
+			<div class="content" style="padding: 0.7rem 0.7rem;">
 
 
 
@@ -97,7 +97,8 @@ body {
 				<div class="row">
 
 					<div class="col-sm-6 col-xl-2" id="1" onclick="dashMenuShow(1)">
-						<div class="card card-body bg-blue-400 has-bg-image">
+						<div class="card card-body bg-blue-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">16</h3>
@@ -109,12 +110,15 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-info"
-							style="width: 100%; display: none;" id="1pro">HOTEL</div>
+						<hr id="1pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #00BCD4; border-width: medium;">
+						<!-- <div class="card"
+							style="width: 100%; display: none;" id="1pro">a</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="2" onclick="dashMenuShow(2)">
-						<div class="card card-body bg-danger-400 has-bg-image">
+						<div class="card card-body bg-danger-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">256</h3>
@@ -126,12 +130,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-danger"
-							style="width: 100%; display: none;" id="2pro">FAMILY</div>
+
+						<hr id="2pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #F44336; border-width: medium;">
+
+						<!-- <div class="progress-bar bg-danger"
+							style="width: 100%; display: none;" id="2pro">FAMILY</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="3" onclick="dashMenuShow(3)">
-						<div class="card card-body bg-success-400 has-bg-image">
+						<div class="card card-body bg-success-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">83</h3>
@@ -143,12 +152,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-success"
-							style="width: 100%; display: none;" id="3pro">RETAIL</div>
+						
+						<hr id="3pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #4CAF50; border-width: medium;">
+						
+						<!-- <div class="progress-bar bg-success"
+							style="width: 100%; display: none;" id="3pro">RETAIL</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="4" onclick="dashMenuShow(4)">
-						<div class="card card-body bg-indigo-400 has-bg-image">
+						<div class="card card-body bg-indigo-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">183</h3>
@@ -160,12 +174,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-indigo"
-							style="width: 100%; display: none;" id="4pro">INDUSTRIAL</div>
+						
+							<hr id="4pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #3F51B5; border-width: medium;">
+						
+						<!-- <div class="progress-bar bg-indigo"
+							style="width: 100%; display: none;" id="4pro">INDUSTRIAL</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="5" onclick="dashMenuShow(5)">
-						<div class="card card-body bg-orange-400 has-bg-image">
+						<div class="card card-body bg-orange-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">803</h3>
@@ -177,12 +196,17 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-orange"
-							style="width: 100%; display: none;" id="5pro">OFFICE</div>
+						
+						<hr id="5pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #FF9800; border-width: medium;">
+						
+						<!-- <div class="progress-bar bg-orange"
+							style="width: 100%; display: none;" id="5pro">OFFICE</div> -->
 					</div>
 
 					<div class="col-sm-6 col-xl-2" id="6" onclick="dashMenuShow(6)">
-						<div class="card card-body bg-pink-400 has-bg-image">
+						<div class="card card-body bg-pink-400 has-bg-image"
+							style="margin-bottom: 0.25rem;">
 							<div class="media">
 								<div class="media-body">
 									<h3 class="mb-0">100</h3>
@@ -194,8 +218,12 @@ body {
 								</div>
 							</div>
 						</div>
-						<div class="progress-bar bg-pink"
-							style="width: 100%; display: none;" id="6pro">OTHER</div>
+						
+						<hr id="6pro"
+							style="display: none; margin-top: 0rem; margin-bottom: 0.3rem; border-color: #E91E63; border-width: medium;">
+						
+						<!-- <div class="progress-bar bg-pink"
+							style="width: 100%; display: none;" id="6pro">OTHER</div> -->
 					</div>
 
 
@@ -306,28 +334,62 @@ body {
 								</div>
 							</div>
 
-							<button type="button" class="btn btn-primary"
-								data-toggle="collapse" data-target="#filter-panel">
-								<span class="glyphicon glyphicon-cog"></span> Advanced Filter
-							</button>
+							<div class="row">
+								<div class="form-group" style="margin: 10px;">
+									<button type="button" class="btn btn-primary"
+										data-toggle="collapse" data-target="#filter-panel">
+										<span class="glyphicon glyphicon-cog"></span> Advanced Filter
+									</button>
+								</div>
 
-							<button type="button" class="btn btn-primary" data-toggle="modal"
-								data-target="#modal_default">
-								<span class="glyphicon glyphicon-cog"></span> Assign To
-								Associate
-							</button>
+								<div class="form-group" style="margin: 10px;">
+									<button type="button" class="btn btn-primary"
+										data-toggle="modal" data-target="#modal_default" id="assign1">
+										<span class="glyphicon glyphicon-cog"></span> Assign To
+										Associate
+									</button>
+								</div>
+
+								<div class="form-group" style="margin: 10px;">
+									<button type="button" class="btn btn-primary" id="reassign"
+										onclick="reassign()" style="display: none;">
+										<span class="glyphicon glyphicon-cog"></span> Re-Assign
+										Associate
+									</button>
+								</div>
+
+								<div class="form-group" style="margin: 10px;">
+									<button type="button" class="btn btn-primary"
+										data-toggle="modal" data-target="#modal_default2" id="assign2"
+										style="display: none;">
+										<span class="glyphicon glyphicon-cog"></span> Assign To
+										Associate
+									</button>
+								</div>
 
 
-							<div class="table-responsive">
+
+								<div class="form-group" style="margin: 10px;">
+									<button type="button" class="btn btn-primary" id="unassign"
+										onclick="unassign()" style="display: none;">
+										<span class="glyphicon glyphicon-cog"></span> Unassigned List
+									</button>
+								</div>
+
+							</div>
+
+							<div class="table-responsive" id="table1">
 								<table
 									class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1 table-hover"
 									id="printtable1">
+
 									<thead>
 										<tr class="bg-blue">
 
 											<th>Request ID</th>
-											<th class="text-center">Client</th>
+											<th class="text-center">Assigned To</th>
 											<th>Property Type</th>
+											<th>Client</th>
 											<th>Deal Name</th>
 											<th>Received From</th>
 											<th>Date</th>
@@ -343,27 +405,20 @@ body {
 														1
 													</label>
 												</div></td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Alan
-															Macedo</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Not Assigned"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/profile_default.png"
+														class="rounded-circle mr-2 " height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Alan Macedo</td>
 											<td>Abc Deal</td>
-
 											<td>ABC</td>
 											<td>10/10/2019</td>
 											<td><span class="badge bg-grey-400">Unassigned</span></td>
-
 
 										</tr>
 
@@ -380,23 +435,17 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Robert
-															Hauber</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Not Assigned"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/profile_default.png"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Robert Hauber</td>
 											<td>Abc Deal</td>
-
 											<td>ABC</td>
 											<td>10/10/2019</td>
 											<td><span class="badge bg-grey-400">Unassigned</span></td>
@@ -416,23 +465,17 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Chris
-															Macintyre</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Not Assigned"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/profile_default.png"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Chris Macintyre</td>
 											<td>Abc Deal</td>
-
 											<td>ABC</td>
 											<td>10/10/2019</td>
 											<td><span class="badge bg-grey-400">Unassigned</span></td>
@@ -450,23 +493,17 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Brett
-															Castellano</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Brett Castellano</td>
 											<td>Abc Deal</td>
-
 											<td>ABC</td>
 											<td>10/10/2019</td>
 											<td><span class="badge bg-danger">Assigned</span></td>
@@ -482,42 +519,187 @@ body {
 
 
 											</td>
-											<td><div class="d-flex align-items-center">
-													<div class="mr-3">
-														<a href="#"> <img
-															src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-															class="rounded-circle mr-2" height="34" alt="">
-														</a>
-													</div>
-													<div>
-														<a href="#" class="text-default font-weight-semibold">Roxanne
-															Forbes</a>
-
-													</div>
+											<td class="text-center"><div>
+													<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
 												</div></td>
 
 											<td>Hotel</td>
+											<td>Roxanne Forbes</td>
 											<td>Abc Deal</td>
-
 											<td>ABC</td>
+											<td>10/10/2019</td>
+											<td><span class="badge bg-danger">Assigned</span></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+
+
+							<div class="table-responsive" id="table2" style="display: none;">
+								<table
+									class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1 table-hover"
+									id="printtable1">
+
+									<thead>
+										<tr class="bg-blue">
+
+											<th>Request ID</th>
+											<th class="text-center">Assigned To</th>
+											<th>Property Type</th>
+											<th>Client</th>
+											<th>Deal Name</th>
+											<th>Received From</th>
+											<th>Date</th>
+											<th>Assigned Date</th>
+											<th>Request Status</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr>
+											<td><div class="form-check">
+													<label class="form-check-label"> <input
+														type="checkbox" class="form-check-input-styled" data-fouc>
+														1
+													</label>
+												</div></td>
+											<td class="text-center"><div>
+
+													<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
+
+												</div></td>
+
+											<td>Hotel</td>
+											<td>Alan Macedo</td>
+											<td>Abc Deal</td>
+											<td>ABC</td>
+											<td>10/10/2019</td>
 											<td>10/10/2019</td>
 											<td><span class="badge bg-danger">Assigned</span></td>
 
 										</tr>
 
 
+										<tr>
+											<td><div class="form-check">
+													<label class="form-check-label"> <input
+														type="checkbox" class="form-check-input-styled" data-fouc>
+														2
+													</label>
+												</div></td>
+											<td class="text-center"><div>
+
+													<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
+
+												</div></td>
+
+											<td>Hotel</td>
+											<td>Robert Hauber</td>
+											<td>Abc Deal</td>
+											<td>ABC</td>
+											<td>10/10/2019</td>
+											<td>10/10/2019</td>
+											<td><span class="badge bg-danger">Assigned</span></td>
+
+										</tr>
+
+										<tr>
+											<td><div class="form-check">
+													<label class="form-check-label"> <input
+														type="checkbox" class="form-check-input-styled" data-fouc>
+														3
+													</label>
+												</div></td>
+											<td class="text-center"><div>
+
+													<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
+
+												</div></td>
+
+											<td>Hotel</td>
+											<td>Chris Macintyre</td>
+											<td>Abc Deal</td>
+											<td>ABC</td>
+											<td>10/10/2019</td>
+											<td>10/10/2019</td>
+											<td><span class="badge bg-danger">Assigned</span></td>
+
+										</tr>
+
+
+										<tr>
+											<td><div class="form-check">
+													<label class="form-check-label"> <input
+														type="checkbox" class="form-check-input-styled" data-fouc>
+														4
+													</label>
+												</div></td>
+											<td class="text-center"><div>
+
+													<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
+
+												</div></td>
+
+											<td>Hotel</td>
+											<td>Brett Castellano</td>
+											<td>Abc Deal</td>
+											<td>ABC</td>
+											<td>10/10/2019</td>
+											<td>10/10/2019</td>
+											<td><span class="badge bg-danger">Assigned</span></td>
+
+										</tr>
+
+										<tr>
+											<td><div class="form-check">
+													<label class="form-check-label"> <input
+														type="checkbox" class="form-check-input-styled" data-fouc>
+														5
+													</label>
+												</div></td>
+											<td class="text-center"><div>
+
+													<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+														data-placement="right"> <img
+														src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+														class="rounded-circle mr-2" height="34" alt="">
+													</a>
+
+												</div></td>
+
+											<td>Hotel</td>
+											<td>Roxanne Forbes</td>
+											<td>Abc Deal</td>
+											<td>ABC</td>
+											<td>10/10/2019</td>
+											<td>10/10/2019</td>
+											<td><span class="badge bg-danger">Assigned</span></td>
+
+										</tr>
 									</tbody>
 								</table>
-
 							</div>
-
-							<!-- <div style="display: none;">
-								<button
-									class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block"
-									id="hiddenButton"></button>
-							</div>
-
- -->
 
 
 							<!-- Basic modal -->
@@ -525,7 +707,10 @@ body {
 								<div class="modal-dialog modal-full">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title">Assign Associate</h5>
+											<h2 class="modal-title">
+												<i class="icon-list-unordered " style="font-size: 30px"></i>&nbsp;Assign
+												Associate
+											</h2>
 											<button type="button" class="close" data-dismiss="modal">&times;</button>
 										</div>
 
@@ -533,11 +718,10 @@ body {
 
 											<div class="form-group">
 												<div class="row">
-													<div class="col-md-2"></div>
-													<div class="col-md-3" style="align-self: flex-end;">
-														<label class="d-block" style="text-align: right;">Associate
-															Name : </label>
+													<div class="col-md-2" style="align-self: center;">
+														<label class="d-block">Associate Name :</label>
 													</div>
+
 													<div class="col-md-4">
 														<select class="form-control select" data-fouc>
 															<option value="AZ">Alan Macedo</option>
@@ -547,7 +731,37 @@ body {
 															<option value="WY">Roxanne Forbes</option>
 														</select>
 													</div>
-													<div class="col-md-3"></div>
+													<div class="col-md-6">
+
+														<!-- Numbers -->
+														<div class="card-body py-0">
+															<div class="row text-center">
+																<div class="col-3">
+																	<div class="mb-3">
+																		<h5 class="font-weight-semibold mb-0">150</h5>
+																		<span class="badge bg-teal-400">Alloted</span>
+																	</div>
+																</div>
+
+																<div class="col-3">
+																	<div class="mb-3">
+																		<h5 class="font-weight-semibold mb-0">100</h5>
+																		<span class="badge bg-danger-400">In Progress</span>
+																	</div>
+																</div>
+
+																<div class="col-3">
+																	<div class="mb-3">
+																		<h5 class="font-weight-semibold mb-0">50</h5>
+																		<span class="badge bg-green-400">Completed</span>
+																	</div>
+																</div>
+																<div class="col-3"></div>
+															</div>
+															<!-- /numbers -->
+
+														</div>
+													</div>
 												</div>
 											</div>
 
@@ -560,8 +774,8 @@ body {
 														<tr class="bg-blue">
 
 															<th>Request ID</th>
-															<th class="text-center">Client</th>
 															<th>Property Type</th>
+															<th>Client</th>
 															<th>Deal Name</th>
 															<th>Received From</th>
 															<th>Date</th>
@@ -573,21 +787,8 @@ body {
 															<td><div class="form-check">
 																	<label class="form-check-label"> 1 </label>
 																</div></td>
-															<td><div class="d-flex align-items-center">
-																	<div class="mr-3">
-																		<a href="#"> <img
-																			src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																			class="rounded-circle mr-2" height="34" alt="">
-																		</a>
-																	</div>
-																	<div>
-																		<a href="#" class="text-default font-weight-semibold">Alan
-																			Macedo</a>
-
-																	</div>
-																</div></td>
-
 															<td>Hotel</td>
+															<td>Alan Macedo</td>
 															<td>Abc Deal</td>
 															<td>ABC</td>
 															<td>10/10/2019</td>
@@ -599,19 +800,8 @@ body {
 																	<label class="form-check-label"> 2 </label>
 																</div>
 															</td>
-															<td><div class="d-flex align-items-center">
-																	<div class="mr-3">
-																		<a href="#"> <img
-																			src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
-																			class="rounded-circle mr-2" height="34" alt="">
-																		</a>
-																	</div>
-																	<div>
-																		<a href="#" class="text-default font-weight-semibold">Robert
-																			Hauber</a>
-																	</div>
-																</div></td>
 															<td>Hotel</td>
+															<td>Robert Hauber</td>
 															<td>Abc Deal</td>
 															<td>ABC</td>
 															<td>10/10/2019</td>
@@ -635,6 +825,173 @@ body {
 								</div>
 							</div>
 							<!-- /basic modal -->
+
+
+							<!-- Basic modal   RE_ASSIGN-->
+							<div id="modal_default2" class="modal fade" tabindex="-1">
+								<div class="modal-dialog modal-full">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h2 class="modal-title">
+												<i class="icon-list-unordered " style="font-size: 30px"></i>&nbsp;Re-Assign
+												Associate
+											</h2>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<div class="modal-body">
+
+											<div class="form-group">
+												<div class="row">
+													<div class="col-md-2" style="align-self: center;">
+														<label class="d-block">Associate Name :</label>
+													</div>
+
+													<div class="col-md-4">
+														<select class="form-control select" data-fouc>
+															<option value="AZ">Alan Macedo</option>
+															<option value="CO">Robert Hauber</option>
+															<option value="ID">Chris Macintyre</option>
+															<option value="WY">Brett Castellano</option>
+															<option value="WY">Roxanne Forbes</option>
+														</select>
+													</div>
+													<div class="col-md-6">
+
+														<!-- Numbers -->
+														<div class="card-body py-0">
+															<div class="row text-center">
+																<div class="col-3">
+																	<div class="mb-3">
+																		<h5 class="font-weight-semibold mb-0">150</h5>
+																		<span class="badge bg-teal-400">Alloted</span>
+																	</div>
+																</div>
+
+																<div class="col-3">
+																	<div class="mb-3">
+																		<h5 class="font-weight-semibold mb-0">100</h5>
+																		<span class="badge bg-danger-400">In Progress</span>
+																	</div>
+																</div>
+
+																<div class="col-3">
+																	<div class="mb-3">
+																		<h5 class="font-weight-semibold mb-0">50</h5>
+																		<span class="badge bg-green-400">Completed</span>
+																	</div>
+																</div>
+																<div class="col-3"></div>
+															</div>
+															<!-- /numbers -->
+
+														</div>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-2">
+														<label class="d-block">Reason :</label>
+													</div>
+													<div class="col-4">
+														<input type="text" class="form-control  "
+															placeholder=" Reason" autocomplete="off"
+															onchange="trim(this)">
+													</div>
+													<div class="col-6"></div>
+
+												</div>
+
+
+												<div class="table-responsive">
+													<table
+														class="table text-nowrap datatable-highlight1 datatable-button-html5-basic  datatable-button-print-columns1"
+														id="printtable1">
+														<thead>
+															<tr class="bg-blue">
+
+																<th>Request ID</th>
+																<th class="text-center">Assigned To</th>
+																<th>Property Type</th>
+																<th>Client</th>
+																<th>Deal Name</th>
+																<th>Received From</th>
+																<th>Date</th>
+																<th>Assigned Date</th>
+																<th>Reason</th>
+
+															</tr>
+														</thead>
+														<tbody>
+
+															<tr>
+																<td><div class="form-check">
+																		<label class="form-check-label"> 1 </label>
+																	</div></td>
+																<td class="text-center"><div
+																		class="d-flex align-items-center">
+																		<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+																			data-placement="right"> <img
+																			src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																			class="rounded-circle mr-2" height="34" alt="">
+																		</a>
+																	</div></td>
+
+																<td>Hotel</td>
+																<td>Alan Macedo</td>
+																<td>Abc Deal</td>
+																<td>ABC</td>
+																<td>10/10/2019</td>
+																<td>10/10/2019</td>
+																<td><input type="text" class="form-control  "
+																	placeholder=" Reason" autocomplete="off"
+																	onchange="trim(this)"></td>
+															</tr>
+
+															<tr>
+																<td>
+																	<div class="form-check">
+																		<label class="form-check-label"> 2 </label>
+																	</div>
+																</td>
+																<td class="text-center"><div
+																		class="d-flex align-items-center">
+																		<a href="#" data-popup="tooltip" title="Nilesh Kedar"
+																			data-placement="right"> <img
+																			src="${pageContext.request.contextPath}/resources/assets/images/8.jpg"
+																			class="rounded-circle mr-2" height="34" alt="">
+																		</a>
+																	</div></td>
+																<td>Hotel</td>
+																<td>Robert Hauber</td>
+																<td>Abc Deal</td>
+																<td>ABC</td>
+																<td>10/10/2019</td>
+																<td>10/10/2019</td>
+																<td><input type="text" class="form-control  "
+																	placeholder=" Reason" autocomplete="off"
+																	onchange="trim(this)"></td>
+															</tr>
+														</tbody>
+													</table>
+
+												</div>
+
+
+
+											</div>
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-link"
+													data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary"
+													data-dismiss="modal">Assign</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /basic modal   RE_ASSIGN-->
 
 
 
@@ -715,7 +1072,7 @@ body {
 						<!-- Basic pie -->
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Work Status</h5>
+								<h5 class="card-title">Total Work Status</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 										<a class="list-icons-item" data-action="collapse"></a> <a
@@ -990,7 +1347,7 @@ body {
 
 											// Add title
 											title : {
-												text : 'Work Status',
+												text : 'Total Work Status',
 												subtext : 'Date - 01/10/2019 to 31/10/2019',
 												left : 'center',
 												textStyle : {
@@ -1084,6 +1441,26 @@ body {
 		}
 	</script>
 
+	<script type="text/javascript">
+		function reassign() {
+			document.getElementById("table1").style.display = "none";
+			document.getElementById("table2").style.display = "block";
+			document.getElementById("reassign").style.display = "none";
+			document.getElementById("unassign").style.display = "block";
+			document.getElementById("assign1").style.display = "none";
+			document.getElementById("assign2").style.display = "block";
+		}
+	</script>
 
+	<script type="text/javascript">
+		function unassign() {
+			document.getElementById("table1").style.display = "block";
+			document.getElementById("table2").style.display = "none";
+			document.getElementById("reassign").style.display = "block";
+			document.getElementById("unassign").style.display = "none";
+			document.getElementById("assign1").style.display = "block";
+			document.getElementById("assign2").style.display = "none";
+		}
+	</script>
 </body>
 </html>

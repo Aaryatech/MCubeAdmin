@@ -38,15 +38,15 @@
 
 		<ul class="navbar-nav ml-md-auto">
 
-			<li class="nav-item dropdown dropdown-user "><a href="#"
-				title="Notification"
+			<li class="nav-item dropdown dropdown-user "><a href="${pageContext.request.contextPath}/showLineItemCodeReqList"
+				title="Line Code Request"
 				class="navbar-nav-link d-flex align-items-center"
-				data-toggle="dropdown"> <i class="icon-bubbles4"
+				data-toggle="dropdown"> <i class="icon-stack-text "
 					style="font-size: 1.5rem; margin-top: 7px;"></i><span class="badge badge-pill bg-blue-400 ml-auto ml-md-0">5</span>
 			</a></li>
 
-			<li class="nav-item dropdown dropdown-user "><a href="${pageContext.request.contextPath}/showLineItemCodeReqList"
-				title="Line Code Request"
+			<li class="nav-item dropdown dropdown-user "><a href="#"
+				title="Notification"
 				class="navbar-nav-link d-flex align-items-center"
 				> <i class="icon-bell2"
 					style="font-size: 1.5rem; margin-top: 7px;"></i><span class="badge badge-pill bg-danger-400 ml-auto ml-md-0">2</span>
