@@ -130,6 +130,7 @@ AUTOMATION</h2>
 
                 </div>
                 </form>
+                  
               </div>
             </div>
           </div>
@@ -139,13 +140,7 @@ AUTOMATION</h2>
 		 </section>
 	  
 	    
-    <footer class="app-footer-v2">
-      <div>
-       
-        <span>&copy; 2019 Mcube Financials. All rights reserved.</span>
-      </div>
-    
-    </footer>
+   
     <!-- CoreUI and necessary plugins-->
    
      

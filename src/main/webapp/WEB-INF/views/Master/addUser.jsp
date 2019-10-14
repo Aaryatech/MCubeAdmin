@@ -30,7 +30,7 @@
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-			<
+			
 				<div
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">

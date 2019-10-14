@@ -105,7 +105,7 @@
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="${pageContext.request.contextPath}/dash" class="breadcrumb-item"><i
+							<a href="${pageContext.request.contextPath}/associateDash" class="breadcrumb-item"><i
 								class="icon-home2 mr-2"></i> Dashboard</a>  
 						</div>
 
@@ -257,6 +257,24 @@
 														onclick="myFunction(this);"></td>
 
 												</tr>
+												<tr>
+
+													<td width="10%"><input type="checkbox" name="TaskId"
+														class="select_all">&nbsp;<img
+														src="${pageContext.request.contextPath}/resources/assets/doc_type/excelform1.png"
+														style="width: 90%;" " class="img-preview rounded"
+														onclick="myFunction(this);"></td>
+
+												</tr>
+												<tr>
+
+													<td width="10%"><input type="checkbox" name="TaskId"
+														class="select_all">&nbsp;<img
+														src="${pageContext.request.contextPath}/resources/assets/doc_type/excel-pivot-start.jpg"
+														style="width: 90%;" " class="img-preview rounded"
+														onclick="myFunction(this);"></td>
+
+												</tr>
 
 
 
@@ -361,14 +379,14 @@
 			</div>
 			<!-- /content area -->
 
-
+</div>
 			<!-- Footer -->
-			<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
+		
 			<!-- /footer -->
 
 		</div>
 		<!-- /main content -->
-
+	<jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
 	</div>
 	<!-- /page content -->
 
