@@ -331,7 +331,7 @@ a:hover {
 
 
 									<a href="${pageContext.request.contextPath}/showOCR"><button
-											type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
+											type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<%-- 
 									<a href="${pageContext.request.contextPath}/showOCR"><button
 											type="button" class="btn btn-primary">Next</button></a>&nbsp;&nbsp;
