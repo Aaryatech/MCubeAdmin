@@ -215,7 +215,7 @@ a:hover {
 										Source File
 										</label>
 										<label class="col-form-label col-lg-2" for="fname">
-										Convert to Excel  <i class="icon-sync " style="color: black; font-size:40px;"> </i>
+									  <i class="icon-sync " style="color: black; font-size:40px;"> </i>
 										</label>
 										 	<label class="col-form-label col-lg-1" for="fname"></label>
 											<label class="col-form-label col-lg-5" for="fname">
@@ -223,6 +223,27 @@ a:hover {
 										</label>
 							</div>
 
+
+
+					<div class="other-gov-site other-gov-site-home" style="vertical-align: middle;">
+            <div class="container">
+            <div class="jcarousel-wrapper">
+            <div class="jcarousel" id="slideshow">
+                <ul>
+              <c:forEach items="${sessionScope.image}" var="imageList" varStatus="count">
+              
+			  <li><a href="${imageList.urlLink}" target="_blank"><img src="${sessionScope.url}${imageList.sliderImage}" alt="${imageList.titleName}"  ></a></li>
+								  
+				</c:forEach>  
+              </ul>
+              </div>
+                <a href="#" class="jcarousel-control-prev pegination-control"><i class="icon-arrowhead-thin-outline-to-the-left icon"></i></a>
+            <a href="#" class="jcarousel-control-next pegination-control"><i class="icon-arrow-point-to-right icon"></i></a>
+
+              </div>
+              
+            </div>
+        </div>
 							<div class="form-group row">
 
 								<div class="col-lg-5 border overflow-hidden">

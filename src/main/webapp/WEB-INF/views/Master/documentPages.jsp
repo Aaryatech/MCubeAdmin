@@ -160,26 +160,7 @@ a:hover {
 							Cashflow Pages
 
 						</h2>
-						<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
-							> Add User </a></h5> --%>
-
-
-						<%-- <table width="100%">
-							<tr width="100%">
-								<td width="60%"><h2 class="card-title">
-										<i class="icon-users4 " style="color: black; font-size: 25px"></i>&nbsp;&nbsp;User
-										List
-									</h2></td>
-
-								<td width="40%" align="right"><a
-									href="${pageContext.request.contextPath}/addUser"
-									class="breadcrumb-elements-item">
-										<button type="button" class="btn btn-primary">Add
-											User</button>
-								</a></td>
-
-							</tr>
-						</table> --%>
+						
 
 					</div>
 
@@ -189,9 +170,9 @@ a:hover {
 
 					<div class="card-body">
 
-						<!-- <div class="form-group row">
-						<label class="col-form-label col-lg-2" for="locId"> Access
-							Right:
+						<div class="form-group row">
+						<label class="col-form-label col-lg-2" for="locId"> 
+							Pages:
 						</label>
 						<div class="col-lg-4">
 							<select name="locId" data-placeholder="Select" id="locId"
@@ -201,11 +182,11 @@ a:hover {
 								<option value="">Select</option>
 
 
-								<option value="1">Master Admin</option>
+								<option value="1">All</option>
 
-								<option value="1">Admin</option>
+								<option value="1">Selected</option>
 
-								<option value="1">Associate</option>
+								<option value="1">Deselected</option>
 
 							</select>
 						</div>
@@ -213,7 +194,7 @@ a:hover {
 					</div>
 					
 					
- -->
+
 						<div class="form-group row" style="padding-left: 40%;">
 							<span class="badge badge-primary badge-pill  mr-2 	">1</span> <span
 								class="badge badge-secondary badge-pill mr-2 ">2</span> <span

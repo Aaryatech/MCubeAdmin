@@ -353,7 +353,7 @@ body {
 											</button>
 										</div>
 
-										<div class="form-group" style="margin: 10px; ">
+										<div class="form-group" style="margin: 10px;">
 											<button type="button" class="btn btn-primary" id="reassign"
 												onclick="reassign()">
 												<span class="glyphicon glyphicon-cog"></span> Re-Assign
@@ -365,7 +365,8 @@ body {
 
 								<div class="form-group" style="margin: 10px;">
 									<button type="button" class="btn btn-primary"
-										data-toggle="modal" data-target="#modal_default2" id="assign2" style="display: none;">
+										data-toggle="modal" data-target="#modal_default2" id="assign2"
+										style="display: none;">
 										<span class="glyphicon glyphicon-cog"></span> Assign To
 										Associate
 									</button>
@@ -376,6 +377,9 @@ body {
 										onclick="unassign()" style="display: none;">
 										<span class="glyphicon glyphicon-cog"></span> Unassigned List
 									</button>
+
+									<a href="${pageContext.request.contextPath}/addRequest"><button
+											type="button" class="btn btn-primary">Add Request</button></a>
 								</div>
 
 

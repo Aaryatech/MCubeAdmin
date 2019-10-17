@@ -164,4 +164,37 @@ public class MCubeController {
 		
 		return mav;
 	}
+	
+	
+	@RequestMapping(value = "/addRequest", method=RequestMethod.GET)
+	public String addRequest(HttpServletRequest request, HttpServletResponse response, Model model) {
+		String mav = "Master/addRequest";
+		try {
+			
+			
+		}catch (Exception e) {
+			System.err.println("Exception in documentList:"+e.getMessage());
+			e.printStackTrace();
+		}
+		
+		return mav;
+	}
+	
+	@RequestMapping(value = "/addDoc", method=RequestMethod.GET)
+	public String addDoc(HttpServletRequest request, HttpServletResponse response, Model model) {
+		String mav = "Master/addDoc";
+		try {
+			
+			
+		}catch (Exception e) {
+			System.err.println("Exception in documentList:"+e.getMessage());
+			e.printStackTrace();
+		}
+		
+		return mav;
+	}
+	
+
 }
+
+

@@ -11,23 +11,23 @@ td {
   padding: 4px 15px 0px 15px!important;
   vertical-align: middle !important;
 } */
-
-th{
-  text-align: left !important;
+th {
+	text-align: left !important;
 }
 
 td {
-  text-align: center;
+	text-align: center;
 }
-.bot-date,.asso-date{
 
- font-size: 15px;
-  text-align: center;
+.bot-date, .asso-date {
+	font-size: 15px;
+	text-align: center;
 }
-.text-offset {  	
-  font-size: 14px;
-  color: #7c7c80;
-} 
+
+.text-offset {
+	font-size: 14px;
+	color: #7c7c80;
+}
 /* table {
   font: 14px/1.4  'Muli', sans-serif; !important;
 }
@@ -71,7 +71,7 @@ td {
 		<div class="content-wrapper">
 
 			<!-- Page header -->
-	<%-- <div
+			<%-- <div
 					class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
@@ -100,13 +100,15 @@ td {
 				<!-- Highlighting rows and columns -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-					<h2 class="card-title"><i class="icon-list-unordered"
-						style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Approved Line Item
-						 Code Request</h2>
-					
-					<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
+						<h2 class="card-title">
+							<i class="icon-list-unordered"
+								style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;Approved
+							Line Item Code Request
+						</h2>
+
+						<%-- <h5 class="card-title"><a href="${pageContext.request.contextPath}/addUser"
 							> Add User </a></h5>  --%>
-							
+
 						<%-- 	
 							<table width="100%">
 							<tr width="100%">
@@ -123,16 +125,16 @@ td {
 							 
 							</tr>
 						</table> --%>
-						 
+
 					</div>
-					
-				 
-					
-						 
-				 
+
+
+
+
+
 					<div class="card-body">
-					
-					<!-- <div class="form-group row">
+
+						<!-- <div class="form-group row">
 						<label class="col-form-label col-lg-2" for="locId"> Access
 							Right:
 						</label>
@@ -162,10 +164,11 @@ td {
 								<tr class="bg-blue">
 									<th scope="col">Sr.No.</th>
 									<th scope="col">Client Name</th>
+									<th scope="col">Property Type</th>
 									<th scope="col">Request Id</th>
 									<th scope="col">Line Item</th>
 									<th scope="col">Approved by Associate</th>
-									<th scope="col">Approval Date </th>
+									<th scope="col">Approval Date</th>
 									<th scope="col">Actions</th>
 								</tr>
 							</thead>
@@ -174,57 +177,51 @@ td {
 								<tr>
 									<td style="text-align: left;">1</td>
 									<td class="client-name">Satish Patil</td>
-									<td class="req-id">123 </td>
+									<td class="client-name">Prop-1</td>
+									<td class="req-id">123</td>
 									<td class="line_item">ABC</td>
-									<td class="associate">Mahesh G</td>									
-									<td class="asso-date">16-03-2019 <br>
-										<span class="text-offset">03:45</span>
+									<td class="associate">Mahesh G</td>
+									<td class="asso-date">16-03-2019 <br> <span
+										class="text-offset">03:45</span>
 									</td>
-									
-									<td class="text-center">
-										<a
-										href="#"
-										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a></td>
+
+									<td class="text-center"><a href="#" onClick="delForm()"
+										title="Delete"><i class="icon-trash"
+											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
 
 
 								<tr>
 									<td style="text-align: left;">2</td>
 									<td class="client-name">Kabir Singh</td>
+									<td class="client-name">Prop-2</td>
 									<td class="req-id">456</td>
 									<td class="line_item">DEF</td>
 									<td class="associate">Yogest T</td>
-									<td class="asso-date">01-06-2019 <br>									
-										<span class="text-offset">01:05</span>
+									<td class="asso-date">01-06-2019 <br> <span
+										class="text-offset">01:05</span>
 									</td>
-									<td class="text-center">									
-										<a
-										href="#"
-										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a></td>
+									<td class="text-center"><a href="#" onClick="delForm()"
+										title="Delete"><i class="icon-trash"
+											style="color: black; font-size: 20px;"></i> </a></td>
 								</tr>
-								
-								
+
+
 								<tr>
 									<td style="text-align: left;">3</td>
 									<td class="client-name">Suresh Jha</td>
-									<td class="req-id">789 </td>
+									<td class="client-name">Prop-3</td>
+									<td class="req-id">789</td>
 									<td class="line_item">HIJ</td>
-									<td class="associate">Priya G</td>									
-									<td class="asso-date">20-10-2019  <br>									
-										<span class="text-offset">12:40</span>
+									<td class="associate">Priya G</td>
+									<td class="asso-date">20-10-2019 <br> <span
+										class="text-offset">12:40</span>
 									</td>
 
-									<td class="text-center">
-										<a
-										href="#"
-										onClick="delForm()"
-										title="Delete"><i class="icon-trash" style="color: black; font-size:20px; "></i>
-									</a></td>
-							
+									<td class="text-center"><a href="#" onClick="delForm()"
+										title="Delete"><i class="icon-trash"
+											style="color: black; font-size: 20px;"></i> </a></td>
+
 								</tr>
 
 
@@ -252,7 +249,7 @@ td {
 	<script>
 		function submitForm() {
 			$('#modal_scrollable').modal('hide');
-		 
+
 			document.getElementById("submitInsertCompany").submit();
 
 		}

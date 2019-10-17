@@ -59,20 +59,12 @@
 
 					</div>
 
-
-
-
-
 					<div class="card-body">
 
-
 						<div class="card card-body mb-3 twbs-content-separated">
-
 							<br>
 
 							<div class="row">
-
-
 								<div class="col-md-5">
 
 									<div class="panel panel-default card border-2 border-success">
@@ -86,7 +78,8 @@
 									</div>
 
 								</div>
-								<div class="col-md-2 text-center mt-2" style="align-self: center;">
+								<div class="col-md-2 text-center mt-2"
+									style="align-self: center;">
 
 									<label class="d-block"
 										style="text-align: center; font-size: x-small;">convert

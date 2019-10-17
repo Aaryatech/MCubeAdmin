@@ -205,7 +205,7 @@ a:hover {
 
 								<div class="col-lg-5 border overflow-hidden">
 									<img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/pfform.jpg"
+										src="${pageContext.request.contextPath}/resources/assets/doc_type/abc.png"
 										alt="" onclick="myFunction1(this);">
 									<h5>Doc No:D433H22/Finance Docs</h5>
 								</div>

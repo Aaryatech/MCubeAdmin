@@ -162,6 +162,7 @@ td {
 								<tr class="bg-blue">
 									<th scope="col">Sr.No.</th>
 									<th scope="col">Client Name</th>
+									<th scope="col">Property Type</th>
 									<th scope="col">Request Id</th>
 									<th scope="col">Line Item</th>
 									<th scope="col">Decline by Associate</th>
@@ -174,6 +175,8 @@ td {
 								<tr>
 									<td style="text-align: left;">1</td>
 									<td class="client-name">Satish Patil</td>
+									<td class="client-name">Prop 1</td>
+									
 									<td class="req-id">123 </td>
 									<td class="line_item">ABC</td>
 									<td class="associate">Mahesh G</td>									
@@ -193,6 +196,7 @@ td {
 								<tr>
 									<td style="text-align: left;">2</td>
 									<td class="client-name">Kabir Singh</td>
+									<td class="client-name">Prop 2</td>
 									<td class="req-id">456</td>
 									<td class="line_item">DEF</td>
 									<td class="associate">Yogest T</td>
@@ -211,6 +215,7 @@ td {
 								<tr>
 									<td style="text-align: left;">3</td>
 									<td class="client-name">Suresh Jha</td>
+									<td class="client-name">Prop 3</td>
 									<td class="req-id">789 </td>
 									<td class="line_item">HIJ</td>
 									<td class="associate">Priya G</td>									

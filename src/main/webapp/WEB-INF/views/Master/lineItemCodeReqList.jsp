@@ -173,6 +173,7 @@ td {
 								<tr class="bg-blue">
 									<th scope="col">Sr.No.</th>
 									<th scope="col">Client Name</th>
+									<th scope="col">Property Types</th>
 									<th scope="col">Request Id</th>
 									<th scope="col">Line Item</th>
 									<th scope="col">Proposed by BOT</th>
@@ -187,6 +188,7 @@ td {
 								<tr>
 									<td style="text-align: left;">1</td>
 									<td class="client-name">Satish Patil</td>
+										<td class="req-id">Prop-1 </td>
 									<td class="req-id">123 </td>
 									<td class="line_item">ABC</td>
 									<td class="code-bot">TT200</td>
@@ -219,6 +221,7 @@ td {
 								<tr>
 									<td style="text-align: left;">2</td>
 									<td class="client-name">Kabir Singh</td>
+									<td class="req-id">Prop-2 </td>
 									<td class="req-id">456</td>
 									<td class="line_item">DEF</td>
 									<td class="code-bot">KK21</td>
@@ -249,6 +252,7 @@ td {
 								<tr>
 									<td style="text-align: left;">3</td>
 									<td class="client-name">Suresh Jha</td>
+									<td class="req-id">Prop-3 </td>
 									<td class="req-id">789 </td>
 									<td class="line_item">HIJ</td>
 									<td class="code-bot">SS10</td>
