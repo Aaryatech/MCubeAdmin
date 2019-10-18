@@ -378,10 +378,14 @@ body {
 										<span class="glyphicon glyphicon-cog"></span> Unassigned List
 									</button>
 
+
+								</div>
+
+
+								<div class="form-group" style="margin: 10px;">
 									<a href="${pageContext.request.contextPath}/addRequest"><button
 											type="button" class="btn btn-primary">Add Request</button></a>
 								</div>
-
 
 							</div>
 
