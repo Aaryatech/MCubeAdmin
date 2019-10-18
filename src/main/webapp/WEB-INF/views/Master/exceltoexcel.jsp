@@ -105,10 +105,10 @@ a:hover {
 .round {
 	border-radius: 50%;
 }
-.mr-3{
-    color: black;
-}
 
+.mr-3 {
+	color: black;
+}
 </style>
 </head>
 
@@ -153,14 +153,14 @@ a:hover {
 					<div class="card-header header-elements-inline">
 						<h2 class="card-title">
 							<i class="far fa-list-alt mr-3 fa-2x"
-								style="color: black; font-size: 25px;"></i>&nbsp;&nbsp;
-							Data Reconciliation 
+								style="color: black; font-size: 25px;"></i>&nbsp;&nbsp; Data
+							Reconciliation
 						</h2>
 					</div>
 
 					<div class="card-body">
 
-<div class="form-group row" style="padding-left: 44%;">
+						<div class="form-group row" style="padding-left: 44%;">
 							<span class="badge badge-secondary badge-pill mr-2  	">1</span> <span
 								class="badge badge-secondary badge-pill mr-2 ">2</span> <span
 								class="badge badge-primary badge-pill  mr-2 ">3</span> <span
@@ -184,23 +184,32 @@ a:hover {
 
 						<div class="modal-body">
 
-							 
+
 
 							<div class="form-group row">
- 
-								
-								<label class="col-form-label col-lg-3" for="fname">
-										Validated Raw Excel Data
-										</label>
-										<label class="col-form-label col-lg-2" for="fname">
-										Convert to Excel  <i class="icon-sync " style="color: black; font-size:40px;"> </i>
-										</label>
-										 	<label class="col-form-label col-lg-1" for="fname"></label>
-											<label class="col-form-label col-lg-5" for="fname">
-										Mcube Template
-										</label>
-							</div>
 
+
+								<label class="col-form-label col-lg-3" for="fname">
+									Validated Raw Excel Data </label> <label class="col-form-label col-lg-3" for="fname"></label> <label
+									class="col-form-label col-lg-4" for="fname"> Mcube
+									Template </label><label
+									class="col-form-label col-lg-2" for="fname"> <i
+									class="icon-sync " style="color: black; font-size: 40px;">
+								</i>
+								</label> 
+							</div>
+							<div class="form-group row" style="padding-left: 10%;">
+								<span class="badge badge-secondary badge-pill mr-2">1</span> <span
+									class="badge badge-dark badge-pill mr-2">2</span> <span
+									class="badge badge-secondary badge-pill mr-2">3</span> <span
+									class="badge badge-secondary badge-pill mr-2">4</span> <span
+									class="badge badge-secondary badge-pill mr-2">5</span> <span
+									class="badge badge-secondary badge-pill mr-2">6</span> <span
+									class="badge badge-secondary badge-pill mr-2">7</span> <span
+									class="badge badge-secondary badge-pill mr-2">8</span>
+
+
+							</div>
 							<div class="form-group row">
 
 								<div class="col-lg-5 border overflow-hidden">
@@ -222,19 +231,18 @@ a:hover {
 
 								<div class="form-group row" style="padding-left: 39%;">
 
-									 
+
 
 									<a href="${pageContext.request.contextPath}/showOCR"
-										class="icon-backward mr-3 icon-2x" title="Previous"></a>
-
-
-									<a href="${pageContext.request.contextPath}/showOCRoutputvalidation"><button
+										class="icon-backward mr-3 icon-2x" title="Previous"></a> <a
+										href="${pageContext.request.contextPath}/showOCRoutputvalidation"><button
 											type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
 
-								 
-												
-									<a href="${pageContext.request.contextPath}/showOCRoutputvalidation"
-											class="icon-forward2 mr-3 icon-2x" title="Next"></a>
+
+
+									<a
+										href="${pageContext.request.contextPath}/showOCRoutputvalidation"
+										class="icon-forward2 mr-3 icon-2x" title="Next"></a>
 								</div>
 							</div>
 

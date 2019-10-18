@@ -105,10 +105,10 @@ a:hover {
 .round {
 	border-radius: 50%;
 }
-.mr-3{
-    color: black;
-}
 
+.mr-3 {
+	color: black;
+}
 </style>
 </head>
 
@@ -161,9 +161,9 @@ a:hover {
 
 					<div class="card-body">
 
-<div class="form-group row" style="padding-left: 44%;">
+						<div class="form-group row" style="padding-left: 44%;">
 							<span class="badge badge-secondary badge-pill mr-2	">1</span> <span
-								class="badge badge-primary badge-pill  mr-2 	">2</span> <span
+								class="badge badge-primary badge-pill  mr-2 ">2</span> <span
 								class="badge badge-secondary badge-pill mr-2  ">3</span> <span
 								class="badge badge-secondary badge-pill mr-2">4</span>
 
@@ -209,41 +209,31 @@ a:hover {
 
 
 							<div class="form-group row">
- 
-								
+
+
 								<label class="col-form-label col-lg-3" for="fname">
-										Source File
-										</label>
-										<label class="col-form-label col-lg-2" for="fname">
-									  <i class="icon-sync " style="color: black; font-size:40px;"> </i>
-										</label>
-										 	<label class="col-form-label col-lg-1" for="fname"></label>
-											<label class="col-form-label col-lg-5" for="fname">
-										Converted Excel
-										</label>
+									Source File </label>  <label class="col-form-label col-lg-3" for="fname"></label> <label
+									class="col-form-label col-lg-4" for="fname"> Converted
+									Excel </label><label class="col-form-label col-lg-2" for="fname">
+									<i class="icon-sync " style="color: black; font-size: 40px;">
+								</i>
+								</label>
 							</div>
 
 
 
-					<div class="other-gov-site other-gov-site-home" style="vertical-align: middle;">
-            <div class="container">
-            <div class="jcarousel-wrapper">
-            <div class="jcarousel" id="slideshow">
-                <ul>
-              <c:forEach items="${sessionScope.image}" var="imageList" varStatus="count">
-              
-			  <li><a href="${imageList.urlLink}" target="_blank"><img src="${sessionScope.url}${imageList.sliderImage}" alt="${imageList.titleName}"  ></a></li>
-								  
-				</c:forEach>  
-              </ul>
-              </div>
-                <a href="#" class="jcarousel-control-prev pegination-control"><i class="icon-arrowhead-thin-outline-to-the-left icon"></i></a>
-            <a href="#" class="jcarousel-control-next pegination-control"><i class="icon-arrow-point-to-right icon"></i></a>
+							<div class="form-group row" style="padding-left: 10%;">
+								<span class="badge badge-secondary badge-pill mr-2" >1</span> <span
+									class="badge badge-dark badge-pill mr-2">2</span> <span
+									class="badge badge-secondary badge-pill mr-2">3</span> <span
+									class="badge badge-secondary badge-pill mr-2">4</span>
+									<span class="badge badge-secondary badge-pill mr-2" >5</span> <span
+									class="badge badge-secondary badge-pill mr-2">6</span> <span
+									class="badge badge-secondary badge-pill mr-2">7</span> <span
+									class="badge badge-secondary badge-pill mr-2">8</span>
 
-              </div>
-              
-            </div>
-        </div>
+
+							</div>
 							<div class="form-group row">
 
 								<div class="col-lg-5 border overflow-hidden">
@@ -254,9 +244,10 @@ a:hover {
 								</div>
 								<div class="col-lg-1"></div>
 								<div class="col-lg-5 border overflow-hidden">
-									<img
-										src="${pageContext.request.contextPath}/resources/assets/doc_type/abc.png"
-										alt="" onclick="myFunction1(this);">
+									<iframe
+										src='https://docs.google.com/spreadsheets/d/1ITJbfjaIpZBeDXS_mZPP_P-nLqYUdcC-/edit#gid=0'
+										width='100%' height='100%' frameborder='0'> </iframe>
+
 								</div>
 							</div>
 
@@ -265,19 +256,17 @@ a:hover {
 
 								<div class="form-group row" style="padding-left: 39%;">
 
-									 
+
 
 									<a href="${pageContext.request.contextPath}/documentList"
-										class="icon-backward mr-3 icon-2x"></a>
-
-
-									<a href="${pageContext.request.contextPath}/showExcelToexcel"><button
+										class="icon-backward mr-3 icon-2x"></a> <a
+										href="${pageContext.request.contextPath}/showExcelToexcel"><button
 											type="button" class="btn btn-primary">Submit</button></a>&nbsp;&nbsp;
 
-								 
-												
+
+
 									<a href="${pageContext.request.contextPath}/showExcelToexcel"
-											class="icon-forward2 mr-3 icon-2x"></a>
+										class="icon-forward2 mr-3 icon-2x"></a>
 								</div>
 							</div>
 

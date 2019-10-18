@@ -233,8 +233,7 @@
 
 								<tr>
 									<td>1</td>
-									<td><a
-										href="${pageContext.request.contextPath}/documentList">D766R33</a></td>
+									<td>D766R33</td>
 									<td>Loan NOCs</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/excel-sm.png"
@@ -258,8 +257,7 @@
 
 								<tr>
 									<td>2</td>
-									<td><a
-										href="${pageContext.request.contextPath}/documentListPdf">D433H22</a></td>
+									<td>D433H22</td>
 									<td>Finance Docs</td>
 									<td><img
 										src="${pageContext.request.contextPath}/resources/assets/doc_type/pdf-sm.png"
